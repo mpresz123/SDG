@@ -1,0 +1,271 @@
+header{
+    height: 6vh;
+    position: relative;
+    background-color:#f8f2e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+html{
+    font-family: Arial, sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    right: 50px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.5s ease-in;
+    font-size: 1.2em;
+}
+
+nav ul li:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a {
+    color: #333;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+
+h1{
+    display: inline;
+    margin-block-start: 0em;
+}
+
+#active {
+    color: white; /* White text for better visibility */
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 20px; /* Add spacing for prominence */
+    border-radius: 8px; /* Smooth rounded edges */
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6); /* Subtle glow */
+    font-weight: bold; /* Highlight the font */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transform: scale(1.1); /* Slightly larger size */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+#main_title{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #333;
+}
+
+#logo{
+    width: 10%;
+}
+
+
+#image_container{
+    text-align: center;
+}
+
+#featured_goals{
+    background-color:#f8f2e4;
+    text-align: center;
+    
+}
+
+#check_out_team{
+    background-color:#f8f2e4;
+
+}
+
+
+    h2 {
+        font-size: 2.5em;
+        color: #4CAF50;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 8px;
+        letter-spacing: 1px;
+    }
+
+    h3{
+        font-size: 2.5em;
+        color: #4CAF50;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #fff;
+        letter-spacing: 1px;
+    }
+
+#sac_text{
+        font-size: 2.5em;
+        color: #4CAF50;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        border-bottom: 2px solid #4CAF50;
+        letter-spacing: 1px;
+      
+}
+    
+
+#SDG{
+    font-size: 3.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #5ba55e;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+}
+
+#SDG2{
+    font-size: 2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #5ba55e;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+
+#footer{
+
+        background-color: #4CAF50;
+        color:white;
+        padding: 1rem;
+        position:inherit;
+        bottom: 0;
+        width: 100%;
+        font-size: 0.9em;
+        text-align:inherit;
+        padding-left: 20px;
+        margin-top: 32px;
+        
+    }
+
+#footer_text{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+article{
+    display: inline-block;
+    width: 22%;
+    background-color:#b3e178;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;   
+
+
+}
+
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+#no_poverty_pic, #zero_hunger_pic, #good_health_pic{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+
+}
+
+#team{
+    width: auto;
+}
+
+#no_poverty_button, #zero_hunger_button, #gh_wb_button{
+    display: block;
+    margin: auto;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in 0.5s;
+    border: none;
+    text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea, 0 0 24px #00ffea;
+}
+
+#no_poverty_button:hover, #zero_hunger_button:hover, #gh_wb_button:hover{
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+#team{
+    display: block;
+    text-align: center;
+    width: 25%;
+}
+
+
+
+
+#link_button{
+    color: white;
+    text-decoration: none;
+}
+
+
+#sac{
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+    z-index: 1;
+  }
+  
+.overlay h1{
+    position: relative;
+    top: 200px;
+}
+
+.overlay h2{
+    position: relative;
+    top: 200px;
+}
