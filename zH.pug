@@ -1,0 +1,152 @@
+doctype html
+
+html 
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Zero Hunger 
+        link(rel="stylesheet" href="styles.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        script(src="app.js")
+        
+    body 
+        div(class="navSection")
+            figure
+                image(src="assets/logo.png")
+            i(class="fa-solid fa-bars" id="nBtn")
+            nav(class="navBar")
+                button(class="hamburger")
+                ul 
+                    li: a(href="index.html") Home
+                    li: a(href="zeroHunger.html" class="active") Zero Hunger 
+                    li: a(href="noPoverty.html") No Poverty
+                    li: a(href="health.html") Health and Wellbeing
+                    li: a(class="newsLetter" href="newsLetter.html") Newsletter 
+        header  
+            figure 
+                image(src="assets/goal2.png")
+            div(class="headerRight")
+                h3 Goal 3
+                h1 Zero Hunger 
+                p Ensure no one is hungry
+        main 
+            //- Key Target
+            section(class="keyTargets")
+                h2 Key Targets 
+                article(class="target")
+                    h3 Target 1
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Unde illum iusto qui, 
+                        possimus similique eligendi facere 
+                        velit inventore molestias 
+                        voluptas earum totam explicabo reiciendis 
+                        quasi quos voluptatem praesentium! Laborum, non.
+                    figure
+                article(class="target")
+                    h3 Target 2
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Unde illum iusto qui, 
+                        possimus similique eligendi facere 
+                        velit inventore molestias 
+                        voluptas earum totam explicabo reiciendis 
+                        quasi quos voluptatem praesentium! Laborum, non.
+                    figure
+                article(class="target")
+                    h3 Target 3
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Unde illum iusto qui, 
+                        possimus similique eligendi facere 
+                        velit inventore molestias 
+                        voluptas earum totam explicabo reiciendis 
+                        quasi quos voluptatem praesentium! Laborum, non.
+                    figure
+            //- interactive element can be added later
+            section(class="interactive")
+            //- plans 
+            section(class="plans")
+                h1 Implenmentation Plan
+                ul(class="planList")
+                    //-List item: class: planListBox item can be add via js
+                    li(class="planListBox")
+                        div 1
+                        h3 step 1
+                        p.
+                            details of step1
+                            this is how its done
+                            html is hard 
+                    li(class="planListBox")
+                        div 2
+                        h3 step 2
+                        p.
+                            details of step2 
+                            this is how its done
+                            html is hard 
+                    li(class="planListBox")
+                        div 3
+                        h3 step 3
+                        p.
+                            details of step3 
+                            this is how its done  
+                            html is hard 
+            //- Policy Recommendations
+            section(class="policy")
+                h1 Policy Recommendations
+                ul(class="policyList")
+                    li(class="policyListBox")
+                        div 1
+                        h3 policy name
+                        p.
+                            detail of li one 
+                            something something 
+                            something something
+                    li(class="policyListBox")
+                        div 2
+                        h3 policy name
+                        p.
+                            detail of li one 
+                            rasldkjfa asdfasdlf 
+                            asdfkjh asdfasdf 
+                            asdfasdfasdf 
+            //- News Paper signup section
+            button(id="sBtn") Sign Up for Our Newsletter 
+            section(class="hidden signUp" id="signup")
+                h1 Sign Up for Our Newsletter 
+                form(action="app.js" method="post")
+                    p 
+                        label First Name: 
+                            input(type="text" name="firstName")
+                    p 
+                        label Last Name: 
+                            input(type="text" name="lastName")
+                    p   
+                        label Email: 
+                            input(type="email" name="email")
+                    p 
+                        label Comments: 
+                            input(type="text" name="comments")
+                    p
+                        label I would like to receive newsletters 
+                            input(type="checkbox" name="receive")
+                    p 
+                        input(type="submit" name="sumit" class="submitBtn")
+
+        footer 
+            //-name and perpose of the team
+            section(class="footerSection")
+                h4(id="teaminfo") Sustainability Advisory Committee
+                p.
+                    Just do something random
+                    this can be edited later 
+                    this will be loaded from a json file later 
+            section(class="footerSection")
+                div(class="footerLinks")
+                    h4 Quick Links 
+                    nav 
+                        ul 
+                            li: a(href="index.html") Home
+                            li: a(href="zeroHunger.html") Zero Hunger 
+                            li: a(href="noPoverty.html") No Poverty
+                            li: a(href="health.html") Health and Wellbeing
+                            li: a(class="newLetter" href="newLetter.html") News Letter 
