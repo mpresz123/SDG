@@ -1,3 +1,4 @@
+/* Bosco Chan */
 *{
     margin: 0;
     padding: 0;
@@ -75,11 +76,11 @@ header{
 }
 
 /* header image */
-header figure{
+#headerLeft{
     display: inline-block;
     width: 70%;
 }
-header figure img{
+#headerLeft img{
     width: 30%;
     height: 30%;
     padding-top: 170px;
@@ -119,11 +120,9 @@ main{
 }
 .target figure{
     display: inline-block;
-    border: solid;
-    border-color: red;
     border-width: 5px;
     width: 200px;
-    height: 200px
+    height: 200px;
 }
 
 /* plan */

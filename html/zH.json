@@ -1,0 +1,53 @@
+{"header":{
+    "imgURL": "assets/goal2.png",
+    "h3Content": "Goal3",
+    "h1Content": "Zero Hunger",
+    "pContent": "Make sure no one straves anymore"
+},
+
+"targets":[
+    {
+    "Title": "Target 1",
+    "Target": "100% access to adequate food all year round\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+    "imgurl":"assets/food_safety.png",
+    "source":"https://www.foodsafety.gov/keep-food-safe/food-safety-by-type-food"
+},
+    {
+    "Title": "Target 2",
+    "Target": "Zero stunted children under the age of two\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+    "imgurl": "assests/starvation.png",
+    "source": "https://www.aljazeera.com/news/2023/10/25/starvation-used-as-a-weapon-of-war-on-civilians-in-gaza-oxfam"
+},
+    {
+    "Title": "Target 3",
+    "Target": "All food systems are substainable\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+    "imgurl": "assets/substainable.png",
+    "source": "https://healthchefjulia.com/sustainability-sustainable-food-system/"
+}],
+"plans":[
+    {
+    "Title": "Plan 1",
+    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+},
+    {
+    "Title": "Plan 2",
+    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+},
+    {
+    "Title": "Plan 3",
+    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+}],
+"policy": [
+    {
+        "Title": "Policy 1",
+        "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+    },
+        {
+        "Title": "Policy 2",
+        "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+    },
+        {
+        "Title": "Policy 3",
+        "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+}]
+}
