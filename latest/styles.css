@@ -17,7 +17,7 @@ references : 1 rem = 1 font size. more useful than what we have been taught beca
   box-sizing: border-box;
 }
 
-/* font selection */
+
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
