@@ -2,15 +2,15 @@ header{
     height: 6vh;
     position: relative;
     background-color:#f8f2e4;
-    display: flex;
+    display: flex; /*flex layout*/
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*space between content*/
     padding: 2rem;
     overflow: hidden;
 }
 
 html{
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /*sets the font for the whole page*/
 }
 
 html, body{
@@ -22,14 +22,14 @@ html, body{
 nav ul{
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 50px; /*creates a spacing between each button on the nav bar*/
 }
 
 .navigation{
     position: relative;
     display: flex;
     margin: auto;
-    justify-content: center;
+    justify-content: center; /*centers the content*/
     right: 50px;
 }
 
@@ -37,14 +37,14 @@ nav ul li{
     display: inline;
     padding: 15px;
     border-radius: 8px;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease-in; 
     font-size: 1.2em;
 }
 
 nav ul li:hover{
-    transform: scale(1.05);
+    transform: scale(1.05); /*increases the size of the button slightly*/
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; /*eases into the increase*/
 }
 
 nav ul li a {
@@ -53,7 +53,7 @@ nav ul li a {
     border: 2px solid transparent;
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
-    text-decoration: none;
+    text-decoration: none; /*removes the underline*/
 }
 
 
@@ -63,19 +63,19 @@ h1{
 }
 
 #active {
-    color: white; /* White text for better visibility */
-    background-color: #4CAF50; /* Green background */
-    padding: 10px 20px; /* Add spacing for prominence */
-    border-radius: 8px; /* Smooth rounded edges */
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6); /* Subtle glow */
-    font-weight: bold; /* Highlight the font */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    transform: scale(1.1); /* Slightly larger size */
-    transition: all 0.3s ease; /* Smooth transition */
+    color: white;
+    background-color: #4CAF50; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+    font-weight: bold; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
 }
 
 #main_title{
-    font-size: 1.5rem;
+    font-size: 1.5rem; /*increases the font size by 1.5x the default font size*/
     margin-left: 10px;
     color: #333;
 }
@@ -115,7 +115,7 @@ h1{
         color: #4CAF50;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         padding: 15px;
-        border-radius: 8px;
+        border-radius: 8px; /*rounds the corners of the heading*/
         background-color: #fff;
         letter-spacing: 1px;
     }
@@ -256,8 +256,8 @@ article:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /*changes the object on the z axis (depth)*/
   }
   
 .overlay h1{

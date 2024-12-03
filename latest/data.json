@@ -1,0 +1,83 @@
+{
+  "navigation": {
+    "brand": "SDG advisory comittee",
+    "links": [
+      { "text": "Home", "url": "index.html" },
+      { "text": "No Poverty", "url": "goal1-page.html", "active": true },
+      { "text": "About Us", "url": "aboutus.html" },
+      { "text": "Newsletter", "url": "signup.html", "isButton": true }
+    ]
+  },
+  "main-banner": {
+    "title": "No Poverty",
+    "subtitle": "End poverty in all its forms everywhere."
+  },
+  "statistics": {
+    "title": "Key Statistics",
+    "stats": [
+      {
+        "value": "575 Million",
+        "description": "People will be living in extreme poverty by 2030"
+      },
+      {
+        "value": "7 trillion",
+        "description": "words that word and word with word"
+      },
+      {
+        "value": "50%",
+        "description": "chance of getting heads"
+      }
+    ]
+  },
+  "targets": {
+    "title": "Key Targets",
+    "items": [
+      {
+        "title": "Eradicate extreme poverty",
+        "description": "Eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day."
+      },
+      {
+        "title": "Reduce Poverty By At Least 50%",
+        "description": "By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions."
+      },
+      {
+        "title": "Implement Social Protection Systems",
+        "description": "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable."
+      },
+      {
+        "title": "Build Resilience to Environmental, Economic and Social Disasters",
+        "description": "Build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to extreme events."
+      }
+    ]
+  },
+  "signup": {
+    "title": "Stay Informed",
+    "description": "Join our newsletter to receive updates on our progress towards No Poverty",
+    "buttonText": "Sign Up for Updates",
+    "buttonUrl": "signup.html"
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact Us",
+      "email": "email: info@sdginitiative.org",
+      "phone": "phone: +44 7927149538"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "Zero Hunger", "url": "goal2-page.html" },
+        { "text": "About Us", "url": "aboutus.html" }
+      ]
+    },
+    "social": {
+      "title": "Follow Us",
+      "links": [
+        { "platform": "Twitter", "url": "#" },
+        { "platform": "LinkedIn", "url": "#" },
+        { "platform": "Facebook", "url": "#" }
+      ]
+    },
+    "copyright": "© 2024 Sustainability Advisory Committee. All rights reserved."
+  }
+}
