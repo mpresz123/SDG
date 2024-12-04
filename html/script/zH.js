@@ -13,6 +13,7 @@ signUpButton.addEventListener("click", (e)=>{
 const targets = document.getElementsByClassName("keyTargets");
 const localJsonFile = "zH.json";
 console.log(localJsonFile);
+
 document.addEventListener("DOMContentLoaded", ()=>{
     fetch(localJsonFile)
     .then(response => response.json())
@@ -52,8 +53,21 @@ document.addEventListener("DOMContentLoaded", ()=>{
             targetArticle.appendChild(targetFigure);
             document.getElementById("targets").appendChild(targetArticle);
         }
+        //create plan element
+        count = 1;
         for (item of responseData.plans){
-            
+            planBox = document.createElement("li");
+            planBox.classList.add("planListBox");
+            planElement = document.createElement("div");
+            planElemnt.textContent = count;
+            planBox.appendChild(planElement);
+            count += 1;
+            planElement = doucment.createElement("h3");
+            planElement.textContent = item.Title;
+            planBox.appendChild(planElement);
+            planElment = document.createElement("p");
+            planElment.textContent = item.Plan;
+            planBox.appendChild(planElement);
         }
 
 
