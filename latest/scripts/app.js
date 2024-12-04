@@ -1,3 +1,4 @@
+if()
 localJsonFile = "data.json";
 document.addEventListener("DOMContentLoaded", () => {
   fetch(localJsonFile)
