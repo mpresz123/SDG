@@ -39,10 +39,7 @@ references : 1 rem = 1 font size. more useful than what we have been taught beca
   }
   
   .nav-logo img {
-    color: var(--off-black);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+    
   }
   
   .nav-links {
