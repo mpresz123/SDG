@@ -236,9 +236,14 @@
           "name": "email"
         },
         {
-          "label": "Comments",
+          "label": "Comments: ",
           "type": "text",
           "name": "comments"
+        },
+        {
+          "label": "I would like to receive newsletters: ",
+          "type": "checkbox",
+          "name": "receive"
         }
       ]
     },
