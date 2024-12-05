@@ -12,7 +12,7 @@ hamburger.addEventListener('click', showNav);
 
 
 
-let localJsonFile = "data.JSON";
+let localJsonFile = "data.json";
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch(localJsonFile)
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // const mainInitiatives = document.querySelector('article');
 
             // const initiativesList = mainInitiatives.querySelectorAll('li');
-            // const localChallenges = document.querySelector('article.overview-card');
+            // const localChallenges = document.querySelector('article.gH-overview-card');
             // const challengesList = localChallenges.querySelectorAll('li');
             // const developmentplan = document.querySelector('article.Development-plan');
             // const developmentsteps = developmentplan.querySelectorAll('li');
@@ -80,20 +80,5 @@ document.addEventListener('DOMContentLoaded', () => {
         //      footerEmail.textContent = data.footer.contact.email
         // })
         //.catch(error => console.error("Error fetching JSON data:", error));
-
-        const footer = document.getElementById('footer');
-if (footer) {
-    const title = footer.querySelector('h2');
-    if (title) title.textContent = data.footer.title;
-
-    const description = footer.querySelector('p');
-    if (description) description.textContent = data.footer.description;
-
-    const phone = footer.querySelector('.contact-phone');
-    if (phone) phone.textContent = 'Phone: ${data.footer.contact.phone}';
-
-    const email = footer.querySelector('.contact-email');
-    if (email) email.textContent = 'Email: ${data.footer.contact.email}';
-}
 
 })})

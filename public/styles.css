@@ -144,7 +144,7 @@ td th {
   width: 10%;
 }
 
-#team-container {
+#home-team-container {
   display: block;
   background-color: #f8f2e4;
   text-align: center;
@@ -203,6 +203,36 @@ td th {
 #home-bg-image {
   width: 100%;
 }
+
+#team-contributions-article {
+  display: inline-block;
+  width: 22%;
+  background-color: #b3e178;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+#team-contributions-article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+
 
 
 /* navigation */
@@ -263,10 +293,6 @@ td th {
 
 .nav-button:hover {
   background-color: var(--highlight-color);
-}
-
-.burger-menu {
-  display: none;
 }
 
 /* main content */
@@ -399,51 +425,6 @@ td th {
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
-/*@media only screen and (max-width: 786px) {
-  .burger-menu {
-    display: inline;
-  }
-}*/
-
-.navigation {
-  position: relative;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  right: 50px;
-}
-
-h3 {
-  font-size: 2.5em;
-  color: #4caf50;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #fff;
-  letter-spacing: 1px;
-}
-
-article {
-  display: inline-block;
-  width: 22%;
-  background-color: #b3e178;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 11px;
-  padding-right: 11px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  border-radius: 20px;
-  box-sizing: border-box;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-}
-
-article:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
 #no_poverty_pic,
 #zero_hunger_pic,
 #good_health_pic {
@@ -508,12 +489,7 @@ article:hover {
 }
 
 
-.navigation {
-  position: relative;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
+
 
 /* Bosco Chan */
 /* nav-bar*/
@@ -797,25 +773,35 @@ footer {
   }
 }
 
-/* Alistair Rekaka
-referencing for css: 
+/*referencing for css: 
 1 rem meaning = 1 font-size. I believe it is more useful than what we have been taught in lab sessions as the sizing does not match well when using px as using rem can ensure consistency.
 1fr meaning = 1 fraction. when we have many items within a page this 1fr function allows us to portray each item into an available space which makes the page look more presentable for users. */
 
-.body {
-    font-style:normal;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #4CAF50;
+.gH-body {
+  font-style:normal;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #4CAF50;
 }
 
-.header {
+.gH-header {
     background-color: #4CAF50;
     text-align: center;
     padding: 4rem;
     
+}
+
+.gH-Introduction {
+  width: 90%;
+  margin: auto;
+  overflow-wrap: normal;
+  padding: 20px;
+}
+
+#hamburger-icon{
+  display: none;
 }
 
 .h1, .h2, .h3{
@@ -830,7 +816,6 @@ referencing for css:
     background-color: lightskyblue;
     height: 50px;
   }
-
   
   .nav-links {
     display: flex;
@@ -865,34 +850,7 @@ referencing for css:
     font-weight: bold;
   }
 
-.Introduction {
-    width: 90%;
-    margin: auto;
-    overflow-wrap: normal;
-    padding: 20px;
-}
-
-.main-content {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-#footer {
-    background-color: #4CAF50;
-    color:white;
-    padding: 1rem;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9em;
-    padding-left: 20px;
-    margin-top: 32px;
-    height: 250px;
-    
-}
-
-.article, .overview-card, .Development-plan, .step-card, .policy-recommendations{
+.article, .gH-overview-card, .Development-plan, .step-card, .policy-recommendations{
     width: 92%;
     background-color: #fff;
     padding-top: 24px;
@@ -905,19 +863,6 @@ referencing for css:
     margin-right: auto;
     box-sizing: border-box;   
     border-radius: 20px;
-}
-
-.heading{
-    padding-top: 65px;
-}
-
-#hamburger-icon{
-  display: none;
-}
-
-.contact-phone, .contact-email, .p{
-  font-variant: small-caps;
-  font-weight: bold;
 }
 
 /* This is the media screen allows my web pages to go into a smaller version as stated 768px,this will clearly show all the nav and footer content on the page whilst in a reduced tab.
@@ -942,10 +887,6 @@ flex-direction= This is used to set the direction of the flex containers axis, a
   
     .challenge-list, .recommendations-grid {
       grid-template-columns: 1fr;
-    }
-  
-    .footer-content {
-      flex-direction: column;
     }
   
 
