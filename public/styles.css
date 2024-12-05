@@ -117,18 +117,6 @@ td th {
   text-align: center;
 }
 
-#home-team-active {
-  color: white;
-  background-color: #4caf50;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
 #team-section {
   display: flex;
   flex-wrap: wrap;
@@ -247,32 +235,39 @@ td th {
   max-width: 5rem;
 }
 
-
-
-/* navigation */
-
-
-.nav-button {
+.final-nav-button {
   background-color: var(--zerohunger-red);
-  color: var(
-    --white
-  ) !important; /* this overrides the black colour it was before so you can see it over the red */
+  color: var(--white) !important; /* this overrides the black colour it was before so you can see it over the red */
   padding: 0.6rem 1rem;
   border-radius: 50px;
 }
 /* same as the one above but color is different -Bosco Chan */
-.nav-button-zH {
+.final-nav-button-zH {
   background-color: var(--secondary-color);
-  color: var(
-    --white
-  ) !important; /* this overrides the black colour it was before so you can see it over the red */
+  color: var(--white) !important; /* this overrides the black colour it was before so you can see it over the red */
   padding: 0.6rem 1rem;
   border-radius: 50px;
 }
 
-.nav-button:hover {
+.final-nav-button:hover {
   background-color: var(--highlight-color);
 }
+
+.final-active {
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+
+
+
+
 
 /* main content */
 
@@ -471,62 +466,6 @@ td th {
 
 
 /* Bosco Chan */
-/* nav-bar*/
-#nBtn {
-  display: none;
-}
-.navSection {
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  z-index: 1000;
-}
-/* nav-image */
-.navSection figure {
-  display: inline;
-  margin-left: 1%;
-}
-.navSection figure img {
-  width: 8%;
-  height: 8%;
-}
-
-/* nav-bar */
-.navBar {
-  display: inline-block;
-  width: fit-content;
-  margin-left: 50%;
-  margin-bottom: 0.5%;
-}
-.navBar ul {
-  list-style: none;
-}
-.navBar ul li {
-  display: inline;
-  padding-left: 1rem;
-}
-.navBar ul li a {
-  text-decoration: none;
-}
-
-/* news letter button */
-.newsLetter {
-  display: inline-block;
-  background-color: var(--secondary-color);
-  border-radius: 20px;
-  padding: 1rem;
-}
-
-/* active page has different color text */
-.active {
-  color: var(--primary-color);
-}
-
-/* changes color when hover mouse */
-.navSection nav ul li a:hover {
-  color: var(--primary-color);
-}
-
 
 
 /* header image */
@@ -803,47 +742,6 @@ footer {
   border-radius: 20px;
 }
 
-.navbar {
-    position:fixed;
-    top: 0;
-    width: 100%;
-    background-color: lightskyblue;
-    height: 50px;
-  }
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    margin-right: 5%;
-  }
-
-  .nav-links ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-links li{
-    margin-left: 2.5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-  }
-
-  .nav-links a:hover{
-    color: #4CAF50;
-  }
-
-  .nav-links a.active {
-    color: #4CAF50;
-    font-weight: bold;
-  }
-
 @media screen and (max-width: 768px) {
     .nav-links {
       flex-direction: column;
@@ -906,4 +804,97 @@ footer {
     }
   }
 
+/*
+alistair-------------------------------------
+
+.navbar {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightskyblue;
+    height: 50px;
+  }
   
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    margin-right: 5%;
+  }
+
+  .nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li{
+    margin-left: 2.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover{
+    color: #4CAF50;
+  }
+
+  .nav-links a.active {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+
+  bosco----------------------------
+
+  #nBtn {
+  display: none;
+}
+.navSection {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navSection figure {
+  display: inline;
+  margin-left: 1%;
+}
+.navSection figure img {
+  width: 8%;
+  height: 8%;
+}
+
+
+.navBar {
+  display: inline-block;
+  width: fit-content;
+  margin-left: 50%;
+  margin-bottom: 0.5%;
+}
+.navBar ul {
+  list-style: none;
+}
+.navBar ul li {
+  display: inline;
+  padding-left: 1rem;
+}
+.navBar ul li a {
+  text-decoration: none;
+}
+.newsLetter {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.navSection nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+*/

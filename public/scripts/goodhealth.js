@@ -1,6 +1,6 @@
 //This is a implementation of my hamburger icon for my websiet in which allows users to click the icon and get the different options within the navbar.
 const hamburger = document.querySelector('#hamburger-icon');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.querySelector('.final-nav-links');
 //'#hamburger-icon' selects the element with the matching id
 // on the other hand 'nav-links' selects the elemnt with the matching class
 function showNav() {
