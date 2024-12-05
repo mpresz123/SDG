@@ -65,6 +65,15 @@ table {
   background-color: #dda63a;
 }
 
+/* footer */
+#finalfooter {
+  background-color: var(--off-black);
+  color: var(--white);
+  padding: 3rem 5% 1rem;
+}
+
+
+
 
 
 #bodyy {
@@ -221,12 +230,7 @@ table {
   background-color: var(--highlight-color);
 }
 
-/* footer */
-footer {
-  background-color: var(--off-black);
-  color: var(--white);
-  padding: 3rem 5% 1rem;
-}
+
 
 .footer-content {
   display: grid;
