@@ -28,7 +28,7 @@ references : 1 rem = 1 font size. more useful than what we have been taught beca
 }
 
 /* navigation */
-.navbar {
+.navbor {
   background-color: var(--white);
   padding: 1.4rem 5%;
   display: flex;
