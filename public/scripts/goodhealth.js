@@ -12,7 +12,7 @@ hamburger.addEventListener('click', showNav);
 
 
 
-let localJsonFile = "data.json";
+let localJsonFile = "final.json";
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch(localJsonFile)

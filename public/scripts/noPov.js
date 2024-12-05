@@ -1,4 +1,4 @@
-localJsonFile = "noPov.json";
+localJsonFile = "final.json";
 document.addEventListener("DOMContentLoaded", () => {
   fetch(localJsonFile)
     .then((response) => response.json())

@@ -1,4 +1,4 @@
-var localJSONFile = "data.json";
+var localJSONFile = "final.json";
 var scheduley = document.querySelector("#featured_goals");
 
 if (document.getElementById("homepage")) {

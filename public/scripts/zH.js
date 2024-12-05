@@ -11,7 +11,7 @@ signUpButton.addEventListener("click", (e)=>{
 
 // fetch content of the website
 const targets = document.getElementsByClassName("keyTargets");
-const localJsonFile = "zH.json";
+const localJsonFile = "final.json";
 console.log(localJsonFile);
 document.addEventListener("DOMContentLoaded", ()=>{
     fetch(localJsonFile)

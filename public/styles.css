@@ -804,9 +804,24 @@ footer {
   display: none;
 }
 
-.h1, .h2, .h3{
+.gH-h1, .gH-h2, .gH-h3{
     color: lightskyblue;
     font-style: initial;
+}
+
+.gH-overview-card, .gH-Development-plan, .gH-step-card, .gH-policy-recommendations{
+  width: 92%;
+  background-color: #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: auto;
+  box-sizing: border-box;   
+  border-radius: 20px;
 }
 
 .navbar {
@@ -844,31 +859,12 @@ footer {
   .nav-links a:hover{
     color: #4CAF50;
   }
-  
+
   .nav-links a.active {
     color: #4CAF50;
     font-weight: bold;
   }
 
-.article, .gH-overview-card, .Development-plan, .step-card, .policy-recommendations{
-    width: 92%;
-    background-color: #fff;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-top: auto;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: auto;
-    box-sizing: border-box;   
-    border-radius: 20px;
-}
-
-/* This is the media screen allows my web pages to go into a smaller version as stated 768px,this will clearly show all the nav and footer content on the page whilst in a reduced tab.
-Referencing: 
-grid-template columns= This defines the number of columns in my recommendations grid layout, the value will define the width of each column within the layout.
-flex-direction= This is used to set the direction of the flex containers axis, as for our web page it is in a column as shown.  */
 @media screen and (max-width: 768px) {
     .nav-links {
       flex-direction: column;
