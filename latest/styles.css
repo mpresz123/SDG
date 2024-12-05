@@ -1,8 +1,4 @@
-/* mikolaj presz
-references : 1 rem = 1 font size. more useful than what we have been taught because it doesnt resize well with zooming if using px.
-1fr = when talking about many items in a space, splits each item into an equal fraction within that space */
-
-/* global variables declared */
+/*Global Variables */
 :root {
   --zerohunger-red: #e5243b;
   --highlight-color: #4c9f38;
@@ -28,14 +24,29 @@ main {
 
 }
 
-
 html {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header {
+table {
+  border: 2px solid dodgerblue;
+  padding: 10px;
+}
+
+td th {
+  width: 100%;
+}
+
+#zH-header {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: #dda63a;
+}
+
+#home-header {
   height: 6vh;
   position: relative;
   background-color: #f8f2e4;
@@ -46,26 +57,7 @@ header {
   overflow: hidden;
 }
 
-table {
-  border: 2px solid dodgerblue;
-}
-
-td th {
-  width: 100%;
-}
-
-table {
-  padding: 10px;
-}
-
-#zH-header {
-  width: 100%;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  background-color: #dda63a;
-}
-
-/* footer */
+/* decided footer */
 #finalfooter {
   background-color: var(--off-black);
   color: var(--white);
@@ -77,7 +69,6 @@ table {
   display: flex;
   gap: 50px;
 }
-
 
 #home-nav-ul-li {
   display: inline;
@@ -102,6 +93,49 @@ table {
   text-decoration: none;
 }
 
+#our-team-h1 {
+  display: inline;
+  margin-block-start: 0em;
+}
+
+#home-h1 {
+  font-size: 3.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #5ba55e;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+}
+
+#home-h2 {
+  font-size: 2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #5ba55e;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+#team-article {
+  display: inline-block;
+  background-color: #f8f2e4;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+#team-article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 
 
@@ -324,10 +358,7 @@ table {
 
 
 
-h1 {
-  display: inline;
-  margin-block-start: 0em;
-}
+
 
 #active {
   color: white;
@@ -392,24 +423,7 @@ h3 {
   letter-spacing: 1px;
 }
 
-#SDG {
-  font-size: 3.5em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  color: #5ba55e;
-  text-align: center;
-  display: block;
-  position: relative;
-  margin-top: 20px;
-}
 
-#SDG2 {
-  font-size: 2em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  color: #5ba55e;
-  text-align: center;
-  display: block;
-  position: relative;
-}
 
 #footer {
   background-color: #4caf50;
@@ -581,26 +595,6 @@ h2 {
 #footer_text {
   text-align: center;
   padding: 20px;
-}
-
-article {
-  display: inline-block;
-  background-color: #f8f2e4;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 11px;
-  padding-right: 11px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  border-radius: 20px;
-  box-sizing: border-box;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-}
-
-article:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 #team_section {
