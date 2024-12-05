@@ -915,3 +915,196 @@ footer {
     display: none;
   }
 }
+
+/* Alistair Rekaka
+referencing for css: 
+1 rem meaning = 1 font-size. I believe it is more useful than what we have been taught in lab sessions as the sizing does not match well when using px as using rem can ensure consistency.
+1fr meaning = 1 fraction. when we have many items within a page this 1fr function allows us to portray each item into an available space which makes the page look more presentable for users. */
+
+.body {
+    font-style:normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #4CAF50;
+}
+
+.header {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 4rem;
+    
+}
+
+.h1, .h2, .h3{
+    color: lightskyblue;
+    font-style: initial;
+}
+
+.navbar {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightskyblue;
+    height: 50px;
+  }
+
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    margin-right: 5%;
+  }
+
+  .nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li{
+    margin-left: 2.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover{
+    color: #4CAF50;
+  }
+  
+  .nav-links a.active {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+
+.Introduction {
+    width: 90%;
+    margin: auto;
+    overflow-wrap: normal;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#footer {
+    background-color: #4CAF50;
+    color:white;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    padding-left: 20px;
+    margin-top: 32px;
+    height: 250px;
+    
+}
+
+.article, .overview-card, .Development-plan, .step-card, .policy-recommendations{
+    width: 92%;
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: auto;
+    box-sizing: border-box;   
+    border-radius: 20px;
+}
+
+.heading{
+    padding-top: 65px;
+}
+
+#hamburger-icon{
+  display: none;
+}
+
+.contact-phone, .contact-email, .p{
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* This is the media screen allows my web pages to go into a smaller version as stated 768px,this will clearly show all the nav and footer content on the page whilst in a reduced tab.
+Referencing: 
+grid-template columns= This defines the number of columns in my recommendations grid layout, the value will define the width of each column within the layout.
+flex-direction= This is used to set the direction of the flex containers axis, as for our web page it is in a column as shown.  */
+@media screen and (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      height: 0;
+      overflow: hidden;
+    }
+  
+    .nav-links a {
+      margin-bottom: 0.4rem;
+    }
+  
+    .heading img {
+      height: 150px;
+    }
+  
+    .challenge-list, .recommendations-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+    }
+  
+
+    #hamburger-icon{
+        float: right;
+        display: block;
+        color: #7f869a;
+        padding: 2%;
+        opacity: 0.5;
+    }
+
+    .nav-links.shownav{
+      height: 300px;
+      display:block;
+  }
+  }
+  
+  /* whereby this is also a media screen which shows an even more reduced version of the website as stated(480px), this also allows users to view content visibly in a 480 px tab.  */
+  @media screen and (max-width: 480px) {
+    .heading img {
+      height: 100px;
+    }
+  
+    .h1 {
+      font-size: 1.4rem;
+    }
+  
+    .h2 {
+      font-size: 1.1rem;
+    }
+  
+    .h3 {
+      font-size: 1rem;
+    }
+  
+    .Introduction, .overview-card, .Development-plan, .policy-recommendations {
+      padding: 1rem;
+    }
+  
+    .video {
+      height: 150px;
+    }
+  }
