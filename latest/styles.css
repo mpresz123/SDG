@@ -21,6 +21,52 @@ references : 1 rem = 1 font size. more useful than what we have been taught beca
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+  margin: 0px 15% 0px 15%;
+  flex: 1;
+  margin-top: var(--navbar-height, 80px); /* Fallback if var not set */
+
+}
+
+
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 6vh;
+  position: relative;
+  background-color: #f8f2e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+table {
+  border: 2px solid dodgerblue;
+}
+
+td th {
+  width: 100%;
+}
+
+table {
+  padding: 10px;
+}
+
+#zH-header {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: #dda63a;
+}
+
+
+
 #bodyy {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
@@ -92,10 +138,7 @@ references : 1 rem = 1 font size. more useful than what we have been taught beca
 }
 
 /* main content */
-main {
-  flex: 1;
-  margin-top: var(--navbar-height, 80px); /* Fallback if var not set */
-}
+
 
 .main-banner {
   background-color: var(--zerohunger-red);
@@ -229,33 +272,13 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
-@media only screen and (max-width: 786px) {
+/*@media only screen and (max-width: 786px) {
   .burger-menu {
     display: inline;
   }
-}
+}*/
 
-/*alex*/
 
-header {
-  height: 6vh;
-  position: relative;
-  background-color: #f8f2e4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  overflow: hidden;
-}
-
-html {
-  font-family: Arial, sans-serif;
-}
-
-html {
-  margin: 0;
-  padding: 0;
-}
 
 nav ul {
   list-style: none;
@@ -489,20 +512,6 @@ article:hover {
   top: 200px;
 }
 
-header {
-  height: 6vh;
-  position: relative;
-  background-color: #f8f2e4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  overflow: hidden;
-}
-
-html {
-  font-family: Arial, sans-serif;
-}
 
 .navigation {
   position: relative;
@@ -629,17 +638,6 @@ article:hover {
   text-align: center;
 }
 
-table {
-  border: 2px solid dodgerblue;
-}
-
-td th {
-  width: 100%;
-}
-
-table {
-  padding: 10px;
-}
 
 #footer {
   background-color: #4caf50;
@@ -715,13 +713,7 @@ table {
   color: var(--primary-color);
 }
 
-/* header */
-header {
-  width: 100%;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  background-color: #dda63a;
-}
+
 
 /* header image */
 #headerLeft {
@@ -745,9 +737,7 @@ header {
 }
 
 /* main */
-main {
-  margin: 0px 15% 0px 15%;
-}
+
 
 /* targets */
 .KeyTargets {
@@ -932,10 +922,7 @@ footer {
     width: 40%;
     height: 40%;
   }
-  /* main */
-  main {
-    margin: 0px 10% 0px 10%;
-  }
+  
   /* targets */
   .target {
     width: 70%;
