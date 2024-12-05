@@ -137,6 +137,27 @@ td th {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+#home-team-logo {
+  width: 10%;
+}
+
+#team-container {
+  display: block;
+  background-color: #f8f2e4;
+  text-align: center;
+}
+
+#home-team-active {
+  color: white;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 
 
 
@@ -356,31 +377,13 @@ td th {
 }
 
 
-
-
-
-
-#active {
-  color: white;
-  background-color: #4caf50;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
 #main_title {
   font-size: 1.5rem;
   margin-left: 10px;
   color: #333;
 }
 
-#logo {
-  width: 10%;
-}
+
 
 #image_container {
   text-align: center;
@@ -389,10 +392,6 @@ td th {
 #featured_goals {
   background-color: #f8f2e4;
   text-align: center;
-}
-
-#check_out_team {
-  background-color: #f8f2e4;
 }
 
 h2 {
@@ -438,10 +437,7 @@ h3 {
   margin-top: 32px;
 }
 
-#footer_text {
-  text-align: center;
-  padding: 20px;
-}
+
 
 article {
   display: inline-block;
@@ -500,10 +496,7 @@ article:hover {
   transform: scale(1.05);
 }
 
-#check_out_team {
-  display: block;
-  text-align: center;
-}
+
 
 #link_button {
   color: white;
@@ -539,24 +532,6 @@ article:hover {
   display: flex;
   margin: auto;
   justify-content: center;
-}
-
-#active {
-  color: white;
-  background-color: #4caf50;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
-h1 {
-  display: block;
-  margin-block-start: 0em;
-  text-align: center;
 }
 
 #main_title {
