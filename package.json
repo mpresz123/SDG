@@ -1,0 +1,14 @@
+{
+  "name": "sdg",
+  "version": "1.0.0",
+  "description": "sustainable development goals",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Group M17",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
