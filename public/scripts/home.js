@@ -30,7 +30,7 @@ if (document.getElementById("homepage")) {
                 const imageElement = document.createElement("img");
                 imageElement.src = item.imageURL;
                 imageElement.alt = item.alt;
-                imageElement.setAttribute("id", "no_poverty_pic")
+                imageElement.setAttribute("id", "home-info-pic")
 
                 const heading4 = document.createElement("h4");
                 heading4.textContent = item.title;
@@ -39,7 +39,7 @@ if (document.getElementById("homepage")) {
                 text1.textContent = item.text1;
 
                 const button = document.createElement("button");
-                button.setAttribute("id", "no_poverty_button");
+                button.setAttribute("id", "home-info-button");
                 button.textContent = item.button;
 
                 
@@ -62,10 +62,10 @@ if (document.getElementById("homepage")) {
                 const imageElement = document.createElement("img");
                 imageElement.src = item.imageURL2;
                 imageElement.alt = item.alt;
-                imageElement.setAttribute("id", "zero_hunger_pic")
+                imageElement.setAttribute("id", "home-info-pic")
 
                 const button = document.createElement("button");
-                button.setAttribute("id", "no_poverty_button");
+                button.setAttribute("id", "home-info-button");
                 button.textContent = item.button;
 
                 const text2 = document.createElement("p");
@@ -88,10 +88,10 @@ if (document.getElementById("homepage")) {
                 const imageElement = document.createElement("img");
                 imageElement.src = item.imageURL3;
                 imageElement.alt = item.alt;
-                imageElement.setAttribute("id", "good_health_pic")
+                imageElement.setAttribute("id", "home-info-pic")
 
                 const button = document.createElement("button");
-                button.setAttribute("id", "no_poverty_button");
+                button.setAttribute("id", "home-info-button");
                 button.textContent = item.button;
 
                 const text3 = document.createElement("p");

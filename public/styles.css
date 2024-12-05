@@ -264,6 +264,60 @@ td th {
   transition: all 0.3s ease;
 }
 
+#home-info-pic {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+}
+
+#home-info-button {
+  display: block;
+  margin: auto;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: ease-in 0.5s;
+  border: none;
+  text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea, 0 0 24px #00ffea;
+}
+
+#home-info-button:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+#home-link-button {
+  color: white;
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay h1 {
+  position: relative;
+  top: 200px;
+}
+
+.overlay h2 {
+  position: relative;
+  top: 200px;
+}
+
 
 
 
@@ -399,68 +453,8 @@ td th {
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
-#no_poverty_pic,
-#zero_hunger_pic,
-#good_health_pic {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin: auto;
-  padding: 10px 10px 10px 10px;
-  border-radius: 20px;
-}
-
-#no_poverty_button,
-#zero_hunger_button,
-#gh_wb_button {
-  display: block;
-  margin: auto;
-  background-color: blue;
-  cursor: pointer;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  transition: ease-in 0.5s;
-  border: none;
-  text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea, 0 0 24px #00ffea;
-}
-
-#no_poverty_button:hover,
-#zero_hunger_button:hover,
-#gh_wb_button:hover {
-  background-color: #4caf50;
-  transform: scale(1.05);
-}
 
 
-
-#link_button {
-  color: white;
-  text-decoration: none;
-}
-
-
-.overlay {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.overlay h1 {
-  position: relative;
-  top: 200px;
-}
-
-.overlay h2 {
-  position: relative;
-  top: 200px;
-}
 
 
 
@@ -569,38 +563,6 @@ td th {
   height: 40px;
   justify-content: center;
   align-items: center;
-}
-
-/* newsletter */
-#sBtn {
-  display: flex;
-  padding: 1rem;
-  margin-left: 40%;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  background-color: var(--secondary-color);
-  color: white;
-}
-.showSignUp:hover {
-  cursor: pointer;
-}
-.signUp {
-  box-shadow: --shadow;
-}
-.hidden {
-  display: none;
-}
-.signUp form {
-  padding: 10px;
-}
-.signUp form p {
-  margin: 20px;
-}
-.submitBtn {
-  color: white;
-  padding: 1rem;
-  background-color: var(--primary-color);
-  border-radius: 10%;
 }
 
 /* footer */
@@ -814,35 +776,29 @@ alistair-------------------------------------
     background-color: lightskyblue;
     height: 50px;
   }
-  
   .nav-links {
     display: flex;
     align-items: center;
     justify-content:flex-end;
     margin-right: 5%;
   }
-
   .nav-links ul{
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-
   .nav-links li{
     margin-left: 2.5rem;
   }
-  
   .nav-links a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
   }
-
   .nav-links a:hover{
     color: #4CAF50;
   }
-
   .nav-links a.active {
     color: #4CAF50;
     font-weight: bold;
@@ -859,7 +815,6 @@ alistair-------------------------------------
   width: 100%;
   z-index: 1000;
 }
-
 .navSection figure {
   display: inline;
   margin-left: 1%;
@@ -868,8 +823,6 @@ alistair-------------------------------------
   width: 8%;
   height: 8%;
 }
-
-
 .navBar {
   display: inline-block;
   width: fit-content;
@@ -892,9 +845,40 @@ alistair-------------------------------------
   border-radius: 20px;
   padding: 1rem;
 }
-
 .navSection nav ul li a:hover {
   color: var(--primary-color);
 }
 
+/* newsletter */
+/*
+#sBtn {
+  display: flex;
+  padding: 1rem;
+  margin-left: 40%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+.showSignUp:hover {
+  cursor: pointer;
+}
+.signUp {
+  box-shadow: --shadow;
+}
+.hidden {
+  display: none;
+}
+.signUp form {
+  padding: 10px;
+}
+.signUp form p {
+  margin: 20px;
+}
+.submitBtn {
+  color: white;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 10%;
+}
 */
