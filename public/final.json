@@ -214,6 +214,38 @@
             "buttonUrl": "signup.html"
           }
     },
+    "newsletter":{
+      "header": {
+        "title": "Stay Informed",
+        "description": "Join our newsletter to receive updates on our progress towards No Poverty"
+      },
+      "inputs": [
+        {
+          "label": "First Name: ",
+          "type": "text",
+          "name": "firstName"
+        },
+        {
+          "label": "Last Name: ",
+          "type": "text",
+          "name": "lastName"
+        },
+        {
+          "label": "Email: ",
+          "type": "email",
+          "name": "email"
+        },
+        {
+          "label": "Comments",
+          "type": "text",
+          "name": "comments"
+        }
+      ]
+    },
+
+
+
+
     "common": {
         "footer": {
             "contact": {
