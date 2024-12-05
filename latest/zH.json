@@ -50,7 +50,28 @@
         "Title": "Policy 3",
         "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
 }],
-"footer": [
-    
-]
+"footer": {
+    "contact": {
+      "title": "Contact Us",
+      "email": "email: info@sdginitiative.org",
+      "phone": "phone: +44 7927149538"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "Zero Hunger", "url": "goal2-page.html" },
+        { "text": "About Us", "url": "aboutus.html" }
+      ]
+    },
+    "social": {
+      "title": "Follow Us",
+      "links": [
+        { "platform": "Twitter", "url": "#" },
+        { "platform": "LinkedIn", "url": "#" },
+        { "platform": "Facebook", "url": "#" }
+      ]
+    },
+    "copyright": "© 2024 Sustainability Advisory Committee. All rights reserved."
+  }
 }
