@@ -109,12 +109,15 @@ td th {
 }
 
 #home-h2 {
-  font-size: 2em;
+  font-size: 2.5em;
+  color: #4caf50;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  color: #5ba55e;
-  text-align: center;
-  display: block;
-  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #4caf50;
+  text-transform: uppercase;
+  letter-spacing: 1px;  
 }
 
 #team-article {
@@ -408,18 +411,6 @@ td th {
   margin: auto;
   justify-content: center;
   right: 50px;
-}
-
-h2 {
-  font-size: 2.5em;
-  color: #4caf50;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  border-radius: 8px;
-  letter-spacing: 1px;
-  border-bottom: 2px solid #4caf50;
-  text-transform: uppercase;
-  letter-spacing: 1px;  
 }
 
 h3 {
