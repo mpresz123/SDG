@@ -10,9 +10,9 @@ if (document.getElementById("homepage")) {
                 
             for (const item of responseData) {
                 const schedules = document.createElement("section");
-                schedules.setAttribute("id", "featured_goals");
+                schedules.setAttribute("id", "home-featured-goals");
                 const heading1 = document.createElement("h1");
-                heading1.setAttribute("id", "SDG")
+                heading1.setAttribute("id", "home-main-title")
                 heading1.textContent = item.main_title;
                 
                 schedules.appendChild(heading1);
