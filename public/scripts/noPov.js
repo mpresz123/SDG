@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       /*nav*/
-      const navLinks = document.querySelector(".nav-links");
+      const navLinks = document.querySelector(".final-nav-links");
       data.navigation.links.forEach((link) => {
         const li = document.createElement("li");
         const a = document.createElement("a");

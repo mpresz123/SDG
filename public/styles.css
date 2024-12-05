@@ -64,35 +64,6 @@ td th {
   padding: 3rem 5% 1rem;
 }
 
-#home-nav-ul {
-  list-style: none;
-  display: flex;
-  gap: 50px;
-}
-
-#home-nav-ul-li {
-  display: inline;
-  padding: 15px;
-  border-radius: 8px;
-  transition: 0.5s ease-in;
-  font-size: 1.2em;
-}
-
-#home-nav-ul-li:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transition: 0.5s ease-in-out;
-}
-
-#home-nav-ul-li-a {
-  color: #333;
-  padding: 8px 15px;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
 #our-team-h1 {
   display: inline;
   margin-block-start: 0em;
@@ -138,10 +109,6 @@ td th {
 #team-article:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-#home-team-logo {
-  width: 10%;
 }
 
 #home-team-container {
@@ -225,18 +192,10 @@ td th {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.navigation {
-  position: relative;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
 
+/*decided navbar*/
 
-
-
-/* navigation */
-.navbor {
+.final-nav-bar {
   background-color: var(--white);
   padding: 1.4rem 5%;
   display: flex;
@@ -249,29 +208,49 @@ td th {
   z-index: 100; /* keeps bar on top of other content */
 }
 
-.nav-logo img {
-  max-width: 5rem;
-}
-
-.nav-links {
-  display: flex;
+.final-nav-links {
   list-style: none;
+  display: flex;
+  gap: 50px;
   align-items: center;
 }
 
-.nav-links li {
-  margin-left: 2rem;
+.final-nav-links li{
+  display: inline;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.5s ease-in;
+  font-size: 1.2em;
 }
 
-.nav-links a {
+.final-nav-links li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease-in-out;
+}
+
+.final-nav-links a {
   color: var(--off-black);
-  text-decoration: none;
+  padding: 8px 15px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
   font-weight: 500;
+  text-decoration: none;  
 }
 
-.nav-links a:hover {
+.final-nav-links a:hover {
   color: var(--zerohunger-red);
 }
+
+.final-logo {
+  max-width: 5rem;
+}
+
+
+
+/* navigation */
+
 
 .nav-button {
   background-color: var(--zerohunger-red);
