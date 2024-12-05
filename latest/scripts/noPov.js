@@ -1,10 +1,9 @@
-localJsonFile = "data.json";
+localJsonFile = "noPov.json";
 document.addEventListener("DOMContentLoaded", () => {
   fetch(localJsonFile)
     .then((response) => response.json())
     .then((data) => {
       /*nav*/
-      document.querySelector(".nav-logo a").textContent = data.navigation.brand;
       const navLinks = document.querySelector(".nav-links");
       data.navigation.links.forEach((link) => {
         const li = document.createElement("li");
@@ -18,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       /*banner*/
       document.querySelector(".main-banner h1").textContent =
-        data.main - banner.title;
+        data.mainbanner.title;
       document.querySelector(".main-banner p").textContent =
-        data.main - banner.subtitle;
+        data.mainbanner.subtitle;
       /*stats*/
       document.querySelector(".content-section h2").textContent =
         data.statistics.title;
