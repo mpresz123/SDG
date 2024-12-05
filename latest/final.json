@@ -1,0 +1,245 @@
+{
+    "home":{
+        "title2": "Zero Hunger",
+        "main_title": "Features Sustained Development Goals",
+        "title": "No Poverty",
+        "title3": "Good Health & Wellbeing",
+        "text1": "Click here to learn more about our plans to eliminate poverty!",
+        "text2": "Click here to learn more about our plans to estinguish starvation!",
+        "text3": "Click here to see our plans for good health and wellbeing!",
+        "imageURL": "no_poverty.jpg",
+        "imageURL2": "zero_hunger.jpg",
+        "imageURL3": "good_health_&_wb.jpg",
+        "button": "Learn More",
+        "alt": "no poverty image"
+    },
+    "zero-hunger": {
+        "header": {
+            "imgURL": "assets/goal2.png",
+            "h3Content": "Goal3",
+            "h1Content": "Zero Hunger",
+            "pContent": "Make sure no one straves anymore"
+        },
+        "targets":{
+            "title": "Targets",
+            "items": [
+                {
+                    "Title": "Target 1",
+                    "Target": "100% access to adequate food all year round\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+                    "imgurl":"assets/food_safety.png",
+                    "source":"https://www.foodsafety.gov/keep-food-safe/food-safety-by-type-food"
+                },
+                {
+                    "Title": "Target 2",
+                    "Target": "Zero stunted children under the age of two\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+                    "imgurl": "assets/starvation.png",
+                    "source": "https://www.aljazeera.com/news/2023/10/25/starvation-used-as-a-weapon-of-war-on-civilians-in-gaza-oxfam"
+                },
+                {
+                    "Title": "Target 3",
+                    "Target": "All food systems are substainable\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+                    "imgurl": "assets/substainable.png",
+                    "source": "https://healthchefjulia.com/sustainability-sustainable-food-system/"
+                }
+            ]
+        },
+        "plans":{
+            "title": "Plans",
+            "items": [
+                {
+                    "Title": "Plan 1",
+                    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+                },
+                {
+                    "Title": "Plan 2",
+                    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+                },
+                {
+                    "Title": "Plan 3",
+                    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+                }
+            ]
+        },
+        "policy": {
+            "title": "Policys",
+            "items": [
+                {
+                    "Title": "Policy 1",
+                    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+                },
+                {
+                    "Title": "Policy 2",
+                    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+                },
+                {
+                    "Title": "Policy 3",
+                    "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+                }
+            ]
+        }
+    },
+    "good-health": {
+        "main": [
+      {
+        "Element": "article",
+        "title": "Our main initiatives are:",
+        "initiatives": [
+          "Promoting physical heath",
+          "End preventable deaths of newborns and children",
+          "Supporting mental health issues and awareness",
+          "Reduce premature mortality from non-communicable diseases",
+          "Improving air and water quality"
+        ]
+      },
+      {
+        "Element": "article.overview-card",
+        "title": "Local Challenges",
+        "challenges": [
+          "Healthcare accessibility in rural areas",
+          "Mental health service gaps",
+          "Aging population care needs",
+          "Health inequality in disadvantaged communities"
+        ]
+      },
+      {
+        "Element": "article.Development-plan",
+        "title": "Development Process",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Analyse and research",
+            "description": "Analyse and research current health infrastructure and identify any outstanding gaps in the services which can be further developed and improved."
+          },
+          {
+            "number": 2,
+            "title": "Planning",
+            "description": "Develop targeted interventions and implement new and effective strategies such as reseource allocation in which these new strategies can positively impact the community."
+          },
+          {
+            "number": 3,
+            "title": "Implementation and execution",
+            "description": "Implement and Execute health programs and monitor progress which allows further improvements to be made within the programs if needed."
+          },
+          {
+            "number": 4,
+            "title": "Evaluation",
+            "description": "Measure the outcomes and adjust strategies based on results"
+          }
+        ]
+      },
+      {
+        "Element": "article.policy-recommendations",
+        "title": "Policy Recommendations",
+        "recommendations": [
+          {
+            "title": "Healthcare Access",
+            "description": "Implement mobile health units for rural areas and expand telemedicine services"
+          },
+          {
+            "title": "Mental Health",
+            "description": "Integrate mental health services into primary care and increase funding for community programs"
+          },
+          {
+            "title": "Prevention",
+            "description": "Strengthen early detection programs and health education initiatives"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "title": "Sustainability Advisory Committee",
+      "description": "Supporting local policy makers in sustainable development.",
+      "contact": {
+        "phone": "+12 345678901",
+        "email": "contact@sustainabilityadvisory.committee"
+      }
+    }
+    },
+    "no-poverty": {
+        "navigation": {
+            "brand": "SDG advisory comittee",
+            "links": [
+              { "text": "Home", "url": "index.html" },
+              { "text": "No Poverty", "url": "goal1-page.html", "active": true },
+              { "text": "About Us", "url": "aboutus.html" },
+              { "text": "Newsletter", "url": "signup.html", "isButton": true }
+            ]
+          },
+          "mainbanner": {
+            "title": "No Poverty",
+            "subtitle": "End poverty in all its forms everywhere."
+          },
+          "statistics": {
+            "title": "Key Statistics",
+            "stats": [
+              {
+                "value": "575 Million",
+                "description": "People will be living in extreme poverty by 2030"
+              },
+              {
+                "value": "7 trillion",
+                "description": "words that word and word with word"
+              },
+              {
+                "value": "50%",
+                "description": "chance of getting heads"
+              }
+            ]
+          },
+          "targets": {
+            "title": "Key Targets",
+            "items": [
+              {
+                "title": "Eradicate extreme poverty",
+                "description": "Eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day."
+              },
+              {
+                "title": "Reduce Poverty By At Least 50%",
+                "description": "By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions."
+              },
+              {
+                "title": "Implement Social Protection Systems",
+                "description": "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable."
+              },
+              {
+                "title": "Build Resilience to Environmental, Economic and Social Disasters",
+                "description": "Build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to extreme events."
+              }
+            ]
+          },
+          "signup": {
+            "title": "Stay Informed",
+            "description": "Join our newsletter to receive updates on our progress towards No Poverty",
+            "buttonText": "Sign Up for Updates",
+            "buttonUrl": "signup.html"
+          }
+    },
+    "common": {
+        "footer": {
+            "contact": {
+              "title": "Contact Us",
+              "email": "email: info@sdginitiative.org",
+              "phone": "phone: +44 7927149538"
+            },
+            "quickLinks": {
+              "title": "Quick Links",
+              "links": [
+                { "text": "Home", "url": "index.html" },
+                { "text": "Zero Hunger", "url": "goal2-page.html" },
+                { "text": "About Us", "url": "aboutus.html" }
+              ]
+            },
+            "social": {
+              "title": "Follow Us",
+              "links": [
+                { "platform": "Twitter", "url": "#" },
+                { "platform": "LinkedIn", "url": "#" },
+                { "platform": "Facebook", "url": "#" }
+              ]
+            },
+            "copyright": "© 2024 Sustainability Advisory Committee. All rights reserved."
+          }
+    }
+
+
+}
