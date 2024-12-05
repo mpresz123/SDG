@@ -73,6 +73,15 @@ references : 1 rem = 1 font size. more useful than what we have been taught beca
   padding: 0.6rem 1rem;
   border-radius: 50px;
 }
+/* same as the one above but color is different -Bosco Chan */
+.nav-button-zH {
+  background-color: var(--secondary-color);
+  color: var(
+    --white
+  ) !important; /* this overrides the black colour it was before so you can see it over the red */
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+}
 
 .nav-button:hover {
   background-color: var(--highlight-color);
