@@ -14,14 +14,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
             header[0].textContent = data.header.title;
             header[1].textContent = data.header.description;
             formElement = document.getElementById("signup-form").children;
-            for(let i = 0; i < 4; i++){
-                formElement[i].textContent = data.inputs[i].label;
-                inputElement = document.createElement("input");
-                inputElement.type = data.inputs[i].type;
-                inputElement.name = data.inputs[i].name;
+            for(let i = 0; i < 5; i++){
+                if (i === 3){
+                    inputElement = document.createElement("textarea");
+                    inputElement.name = data.inputs[i].name;      
+                }
+                else {
+                    formElement[i].textContent = data.inputs[i].label;
+                    inputElement = document.createElement("input");
+                    inputElement.type = data.inputs[i].type;
+                    inputElement.name = data.inputs[i].name;
+                }
                 formElement[i].textContent = data.inputs[i].label;
                 formElement[i].appendChild(inputElement);
             }
+            formElement[3].classList.add("comment");
+            formElement[4].classList.add("check-box");
         }
         // index page fetch
         if (currentPage = "/index.html"){

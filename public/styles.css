@@ -600,7 +600,45 @@ td th {
   box-sizing: border-box;   
   border-radius: 20px;
 }
+/* signUp page */
+#newsletter-header {
+  background-color: var(--highlight-color);
+  color: var(--white);
+  margin-top: 97.2px;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  line-height: 3rem;
+}
 
+#form-box {
+  background-color: var(--highlight-color);
+}
+
+#signup-form{
+  border-radius: 5px;
+  line-height: 2rem;
+}
+
+#signup-form label{
+  display: block;
+  padding-left: 20%;
+  color: var(--white);
+}
+
+#signup-form label input {
+  display: block;
+  width: 60%;
+}
+.comment textarea {
+  display: block;
+  width: 60%;
+  height: 4rem;
+}
+#signup-form .check-box input {
+  display: inline;
+  width: auto;
+}
 /*responsive web design / media queries*/
 
 
