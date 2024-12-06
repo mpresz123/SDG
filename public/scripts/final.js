@@ -1,13 +1,13 @@
 const localJsonFile = "final.json";
-// get the id of the body element to get the current page
-currentPage = document.getElementsByTagName("body").id;
+//get the current page
+currentPage = window.location.pathname;
 console.log(currentPage);
 document.addEventListener("DOMContentLoaded", ()=>{
     fetch(localJsonFile)
     .then(response => response.json())
     .then(resopnseData =>{
         // sign up page fetch
-        if (currentPage = "signUp"){
+        if (currentPage = "/newsletter.html"){
             const data = resopnseData.newsletter;
             console.log(data);
             header = document.getElementById("newsletter-header").children;
@@ -24,19 +24,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }
         }
         // index page fetch
-        if (currentPage = "homepage"){
+        if (currentPage = "/index.html"){
 
         }
         // noPov page fetch
-        if (currentPage = "nopov-body"){
+        if (currentPage = "/noPov.html"){
 
         }
         // good health page fetch
-        if (currentPage = "gH-body"){
+        if (currentPage = "/goodhealth.html"){
 
         }
         // zero hunger page fetch
-        if (currentPage = "zerohunger"){
+        if (currentPage = "/zH.html"){
 
         }
     })
