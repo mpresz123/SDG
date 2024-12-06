@@ -39,6 +39,8 @@ td th {
   width: 100%;
 }
 
+/*Headers*/
+
 #zH-header {
   width: 100%;
   margin-bottom: 20px;
@@ -57,6 +59,17 @@ td th {
   overflow: hidden;
 }
 
+#nopov-header{
+  height: 6vh;
+  position: relative;
+  background-color: #f8f2e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  overflow: hidden;
+}
+
 /* decided footer */
 #finalfooter {
   background-color: var(--off-black);
@@ -64,10 +77,14 @@ td th {
   padding: 3rem 5% 1rem;
 }
 
+
+
 #our-team-h1 {
   display: inline;
   margin-block-start: 0em;
 }
+
+/*home & team tags*/
 
 #home-h1 {
   font-size: 3.5em;
@@ -136,11 +153,6 @@ td th {
   text-align: center;
 }
 
-#nopov-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  color: var(--off-black);
-}
 
 #home-main-title {
   font-size: 1.5rem;
@@ -180,6 +192,68 @@ td th {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+#home-info-pic {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+}
+
+#home-info-button {
+  display: block;
+  margin: auto;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: ease-in 0.5s;
+  border: none;
+  text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea, 0 0 24px #00ffea;
+}
+
+#home-info-button:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+#home-link-button {
+  color: white;
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay h1 {
+  position: relative;
+  top: 200px;
+}
+
+.overlay h2 {
+  position: relative;
+  top: 200px;
+}
+
+/*no poverty page body*/
+
+#nopov-body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: var(--off-black);
+}
+
 
 /*decided navbar*/
 
@@ -193,7 +267,7 @@ td th {
   position: fixed; /* keeps bar at the top when scrolling */
   width: 100%;
   top: 0;
-  z-index: 100; /* keeps bar on top of other content */
+  z-index: 100;
 }
 
 .final-nav-links {
@@ -264,59 +338,7 @@ td th {
   transition: all 0.3s ease;
 }
 
-#home-info-pic {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin: auto;
-  padding: 10px 10px 10px 10px;
-  border-radius: 20px;
-}
-
-#home-info-button {
-  display: block;
-  margin: auto;
-  background-color: blue;
-  cursor: pointer;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  transition: ease-in 0.5s;
-  border: none;
-  text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea, 0 0 24px #00ffea;
-}
-
-#home-info-button:hover {
-  background-color: #4caf50;
-  transform: scale(1.05);
-}
-
-#home-link-button {
-  color: white;
-  text-decoration: none;
-}
-
-.overlay {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.overlay h1 {
-  position: relative;
-  top: 200px;
-}
-
-.overlay h2 {
-  position: relative;
-  top: 200px;
-}
+/*no poverty content */
 
 .main-banner {
   background-color: var(--zerohunger-red);
@@ -379,9 +401,7 @@ td th {
   margin-bottom: 1rem;
 }
 
-
-
-/* main content */
+/*footer continued*/
 
 .footer-content {
   display: grid;
@@ -411,6 +431,12 @@ td th {
   color: var(--zerohunger-red);
 }
 
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -421,21 +447,13 @@ td th {
   text-decoration: none;
 }
 
-.footer-bottom {
-  text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 1);
-}
+/* zero hunger header + content*/
 
-
-/* Bosco Chan */
-
-
-/* header image */
 #headerLeft {
   display: inline-block;
   width: 70%;
 }
+
 #headerLeft img {
   width: 30%;
   height: 30%;
@@ -443,7 +461,6 @@ td th {
   margin-left: 10%;
 }
 
-/* header right hand side */
 .headerRight {
   display: inline-block;
   width: 25%;
@@ -452,13 +469,10 @@ td th {
   margin-bottom: 1rem;
 }
 
-/* main */
-
-
-/* targets */
 .KeyTargets {
   padding-bottom: 10px;
 }
+
 .target {
   display: inline-block;
   width: 40%;
@@ -468,9 +482,11 @@ td th {
   border-color: gray;
   box-shadow: var(--shadow);
 }
+
 .target h3 {
   padding-bottom: 10px;
 }
+
 .target figure {
   display: inline-block;
   border-width: 5px;
@@ -478,11 +494,11 @@ td th {
   height: 200px;
 }
 
-/* plan */
 .planList {
   margin-top: 10px;
   list-style-type: none;
 }
+
 .planListBox {
   display: inline-block;
   width: 15rem;
@@ -493,6 +509,7 @@ td th {
   border-radius: 5px;
   box-shadow: var(--shadow);
 }
+
 .planListBox div {
   background-color: var(--secondary-color);
   position: relative;
@@ -506,11 +523,11 @@ td th {
   align-items: center;
 }
 
-/* policy */
 .policyList {
   margin-top: 10px;
   list-style-type: none;
 }
+
 .policyListBox {
   display: inline-block;
   width: 15rem;
@@ -521,6 +538,7 @@ td th {
   border-radius: 5px;
   box-shadow: var(--shadow);
 }
+
 .policyListBox div {
   background-color: var(--secondary-color);
   position: relative;
@@ -534,97 +552,7 @@ td th {
   align-items: center;
 }
 
-/* footer */
-footer {
-  background-color: #2c3e50;
-  color: white;
-  height: 200px;
-}
-
-.footerSection {
-  display: inline-block;
-  width: 512px;
-}
-
-.footerSection p {
-  top: 60px;
-}
-
-#teaminfo {
-  padding-bottom: 60px;
-}
-
-.footerLinks {
-  margin-left: 200px;
-}
-
-.footerSection nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  /* nav-bar*/
-  .navSection {
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  /* nav-image */
-  .navection figure {
-    display: inline;
-    margin-left: 1%;
-  }
-  .navSection figure img {
-    width: 20%;
-    height: 20%;
-  }
-
-  /* nav-links */
-  #nBtn {
-    display: inline-block;
-    color: var(--secondary-color);
-    margin-left: 60%;
-  }
-  #nBtn:hover {
-    cursor: pointer;
-  }
-  .navBar {
-    display: none;
-  }
-  .showNavBar {
-    display: block;
-  }
-
-  /* header */
-  header figure {
-    width: 60%;
-  }
-  header figure img {
-    width: 40%;
-    height: 40%;
-  }
-  
-  /* targets */
-  .target {
-    width: 70%;
-  }
-
-  /* footer */
-  #teaminfo {
-    padding-bottom: 0px;
-  }
-
-  .footerLinks {
-    display: none;
-  }
-}
-
-/*referencing for css: 
-1 rem meaning = 1 font-size. I believe it is more useful than what we have been taught in lab sessions as the sizing does not match well when using px as using rem can ensure consistency.
-1fr meaning = 1 fraction. when we have many items within a page this 1fr function allows us to portray each item into an available space which makes the page look more presentable for users. */
+/* good health and wellbeing content*/
 
 .gH-body {
   font-style:normal;
@@ -673,15 +601,69 @@ footer {
   border-radius: 20px;
 }
 
+/*responsive web design / media queries*/
+
+
+@media (max-width: 768px) {
+  /* nav-bar
+  .navSection {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .navSection figure {
+    display: inline;
+    margin-left: 1%;
+  }
+  .navSection figure img {
+    width: 20%;
+    height: 20%;
+  }*/
+
+  /* nav-links */
+  #nBtn {
+    display: inline-block;
+    color: var(--secondary-color);
+    margin-left: 60%;
+  }
+  #nBtn:hover {
+    cursor: pointer;
+  }
+  .final-nav-bar {
+    display: none;
+  }
+
+  #home-header, #zH-header, #gH-header, #nopov-header figure {
+    width: 60%;
+  }
+
+  #home-header {
+    width: 40%;
+    height: 40%;
+  }
+  
+  /* targets */
+  .target {
+    width: 70%;
+  }
+
+  /* footer */
+  #teaminfo {
+    padding-bottom: 0px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-    .nav-links {
+    .final-nav-links {
       flex-direction: column;
       align-items: center;
       height: 0;
       overflow: hidden;
     }
   
-    .nav-links a {
+    .final-nav-links a {
       margin-bottom: 0.4rem;
     }
   
@@ -702,7 +684,7 @@ footer {
         opacity: 0.5;
     }
 
-    .nav-links.shownav{
+    .final-nav-links.shownav{
       height: 300px;
       display:block;
   }
@@ -737,6 +719,11 @@ footer {
 
 /*
 alistair-------------------------------------
+
+/*referencing for css: 
+1 rem meaning = 1 font-size. I believe it is more useful than what we have been taught in lab sessions as the sizing does not match well when using px as using rem can ensure consistency.
+1fr meaning = 1 fraction. when we have many items within a page this 1fr function allows us to portray each item into an available space which makes the page look more presentable for users. */
+/*
 
 .navbar {
     position:fixed;
@@ -870,4 +857,27 @@ alistair-------------------------------------
 
 .signup-button:hover {
   background-color: var(--highlight-color);
-}*/
+}
+
+.footerSection {
+  display: inline-block;
+  width: 512px;
+}
+
+.footerSection p {
+  top: 60px;
+}
+
+#teaminfo {
+  padding-bottom: 60px;
+}
+
+.footerLinks {
+  margin-left: 200px;
+}
+
+.footerSection nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+*/
