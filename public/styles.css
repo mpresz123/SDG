@@ -169,6 +169,10 @@ td th {
 
 #home-bg-image {
   width: 100%;
+  position: relative;
+  margin-top: 6vh;
+  background-size: cover; 
+  background-position: center;
 }
 
 #team-contributions-article {
@@ -258,8 +262,7 @@ td th {
 /*decided navbar*/
 
 .final-nav-bar {
-  background-color: var(--white);
-  padding: 1.4rem 5%;
+  background-color:  #ffe6b3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,7 +275,6 @@ td th {
 
 .final-nav-links {
   list-style: none;
-  display: flex;
   gap: 50px;
   align-items: center;
 }
@@ -306,7 +308,10 @@ td th {
 }
 
 .final-logo {
-  max-width: 5rem;
+  display: block;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 .final-nav-button {
@@ -600,6 +605,7 @@ td th {
   box-sizing: border-box;   
   border-radius: 20px;
 }
+
 
 /*responsive web design / media queries*/
 
