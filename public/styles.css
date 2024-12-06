@@ -318,14 +318,6 @@ td th {
   top: 200px;
 }
 
-
-
-
-
-
-/* main content */
-
-
 .main-banner {
   background-color: var(--zerohunger-red);
   color: var(--white);
@@ -367,6 +359,10 @@ td th {
   display: block;
   border-radius: 8px;
 }
+
+
+
+/* main content */
 
 .goals-grid {
   display: grid;
