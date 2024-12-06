@@ -605,6 +605,18 @@ td th {
   box-sizing: border-box;   
   border-radius: 20px;
 }
+
+/* sign up page */
+#newsletter-header {
+  background-color: var(--highlight-color);
+  color: var(--white);
+  margin-top: 97.2px;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  line-height: 3rem;
+}
+
 #form-box {
   background-color: var(--highlight-color);
 }
