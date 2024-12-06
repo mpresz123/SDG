@@ -360,10 +360,6 @@ td th {
   border-radius: 8px;
 }
 
-
-
-/* main content */
-
 .goals-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -383,27 +379,9 @@ td th {
   margin-bottom: 1rem;
 }
 
-.signup-section {
-  background-color: var(--paper-gray);
-  text-align: center;
-  padding: 4rem 5%;
-}
-
-.signup-button {
-  display: inline-block;
-  background-color: var(--zerohunger-red);
-  color: var(--white);
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 2rem;
-}
-
-.signup-button:hover {
-  background-color: var(--highlight-color);
-}
 
 
+/* main content */
 
 .footer-content {
   display: grid;
@@ -448,11 +426,6 @@ td th {
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
-
-
-
-
-
 
 
 /* Bosco Chan */
@@ -878,3 +851,23 @@ alistair-------------------------------------
   border-radius: 10%;
 }
 */
+/* Mikolaj------------------------------------
+.signup-section {
+  background-color: var(--paper-gray);
+  text-align: center;
+  padding: 4rem 5%;
+}
+
+.signup-button {
+  display: inline-block;
+  background-color: var(--zerohunger-red);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.signup-button:hover {
+  background-color: var(--highlight-color);
+}*/
