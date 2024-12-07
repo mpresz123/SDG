@@ -7,9 +7,9 @@
         "text1": "Click here to learn more about our plans to eliminate poverty!",
         "text2": "Click here to learn more about our plans to estinguish starvation!",
         "text3": "Click here to see our plans for good health and wellbeing!",
-        "imageURL": "no_poverty.jpg",
-        "imageURL2": "zero_hunger.jpg",
-        "imageURL3": "good_health_&_wb.jpg",
+        "imageURL": "assets/no_poverty.jpg",
+        "imageURL2": "assets/zero_hunger.jpg",
+        "imageURL3": "assets/good_health_&_wb.jpg",
         "button": "Learn More",
         "alt": "no poverty image"
     },
@@ -152,129 +152,137 @@
         "email": "contact@sustainabilityadvisory.committee"
       }
     }
+  },
+  "noPov": {
+    "navigation": {
+      "brand": "SDG advisory comittee",
+      "links": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "No Poverty", "url": "noPov.html", "active": true },
+        { "text": "Zero Hunger", "url": "zH.html" },
+        { "text": "Good Health and Wellbeing", "url": "goodhealth.html" },
+        { "text": "Our Team", "url": "ourteam.html" },
+        { "text": "Newsletter", "url": "newsletter.html", "isButton": true }
+      ]
     },
-    "no-poverty": {
-        "navigation": {
-            "brand": "SDG advisory comittee",
-            "links": [
-              { "text": "Home", "url": "index.html" },
-              { "text": "No Poverty", "url": "goal1-page.html", "active": true },
-              { "text": "About Us", "url": "aboutus.html" },
-              { "text": "Newsletter", "url": "signup.html", "isButton": true }
-            ]
-          },
-          "mainbanner": {
-            "title": "No Poverty",
-            "subtitle": "End poverty in all its forms everywhere."
-          },
-          "statistics": {
-            "title": "Key Statistics",
-            "stats": [
-              {
-                "value": "575 Million",
-                "description": "People will be living in extreme poverty by 2030"
-              },
-              {
-                "value": "7 trillion",
-                "description": "words that word and word with word"
-              },
-              {
-                "value": "50%",
-                "description": "chance of getting heads"
-              }
-            ]
-          },
-          "targets": {
-            "title": "Key Targets",
-            "items": [
-              {
-                "title": "Eradicate extreme poverty",
-                "description": "Eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day."
-              },
-              {
-                "title": "Reduce Poverty By At Least 50%",
-                "description": "By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions."
-              },
-              {
-                "title": "Implement Social Protection Systems",
-                "description": "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable."
-              },
-              {
-                "title": "Build Resilience to Environmental, Economic and Social Disasters",
-                "description": "Build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to extreme events."
-              }
-            ]
-          },
-          "signup": {
-            "title": "Stay Informed",
-            "description": "Join our newsletter to receive updates on our progress towards No Poverty",
-            "buttonText": "Sign Up for Updates",
-            "buttonUrl": "signup.html"
-          }
+    "mainbanner": {
+      "title": "No Poverty",
+      "subtitle": "End poverty in all its forms everywhere."
     },
-    "newsletter":{
-      "header": {
-        "title": "Stay Informed",
-        "description": "Join our newsletter to receive updates on our progress towards No Poverty"
-      },
-      "inputs": [
+    "statistics": {
+      "title": "Key Statistics",
+      "stats": [
         {
-          "label": "First Name: ",
-          "type": "text",
-          "name": "firstName"
+          "value": "575 Million",
+          "description": "People will be living in extreme poverty by 2030"
         },
         {
-          "label": "Last Name: ",
-          "type": "text",
-          "name": "lastName"
+          "value": "8.5%",
+          "description": "Of the worlds population live in extreme poverty, or under $2.15 a day"
         },
         {
-          "label": "Email: ",
-          "type": "email",
-          "name": "email"
-        },
-        {
-          "label": "Comments: ",
-          "type": "text",
-          "name": "comments"
-        },
-        {
-          "label": "I would like to receive newsletters: ",
-          "type": "checkbox",
-          "name": "receive"
+          "value": "1 in 3",
+          "description": "People lack access to basic financial services"
         }
       ]
     },
-
-
-
-
-    "common": {
-        "footer": {
-            "contact": {
-              "title": "Contact Us",
-              "email": "email: info@sdginitiative.org",
-              "phone": "phone: +44 7927149538"
-            },
-            "quickLinks": {
-              "title": "Quick Links",
-              "links": [
-                { "text": "Home", "url": "index.html" },
-                { "text": "Zero Hunger", "url": "goal2-page.html" },
-                { "text": "About Us", "url": "aboutus.html" }
-              ]
-            },
-            "social": {
-              "title": "Follow Us",
-              "links": [
-                { "platform": "Twitter", "url": "#" },
-                { "platform": "LinkedIn", "url": "#" },
-                { "platform": "Facebook", "url": "#" }
-              ]
-            },
-            "copyright": "© 2024 Sustainability Advisory Committee. All rights reserved."
-          }
+    "targets": {
+      "title": "Key Targets",
+      "items": [
+        {
+          "title": "Eradicate extreme poverty",
+          "description": "Eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day."
+        },
+        {
+          "title": "Reduce Poverty By At Least 50%",
+          "description": "By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions."
+        },
+        {
+          "title": "Implement Social Protection Systems",
+          "description": "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable."
+        },
+        {
+          "title": "Build Resilience to Environmental, Economic and Social Disasters",
+          "description": "Build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to extreme events."
+        }
+      ]
+    },
+    "signup": {
+      "title": "Stay Informed",
+      "description": "Join our newsletter to receive updates on our progress towards No Poverty",
+      "buttonText": "Sign Up for Updates",
+      "buttonUrl": "newsletter.html"
     }
+  },
+  "newsletter": {
+    "header": {
+      "title": "Stay Informed",
+      "description": "Join our newsletter to receive updates on our progress towards No Poverty"
+    },
+    "inputs": [
+      {
+        "label": "First Name: ",
+        "type": "text",
+        "name": "firstName"
+      },
+      {
+        "label": "Last Name: ",
+        "type": "text",
+        "name": "lastName"
+      },
+      {
+        "label": "Email: ",
+        "type": "email",
+        "name": "email"
+      },
+      {
+        "label": "Comments: ",
+        "type": "text",
+        "name": "comments"
+      },
+      {
+        "label": "I would like to receive newsletters: ",
+        "type": "checkbox",
+        "name": "receive"
+      }
+    ]
+  },
 
-
+  "common": {
+    "navigation": {
+      "brand": "SDG advisory comittee",
+      "links": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "No Poverty", "url": "noPov.html", "active": true },
+        { "text": "Zero Hunger", "url": "zH.html" },
+        { "text": "Good Health and Wellbeing", "url": "goodhealth.html" },
+        { "text": "Our Team", "url": "ourteam.html" },
+        { "text": "Newsletter", "url": "newsletter.html", "isButton": true }
+      ]
+    },
+    "footer": {
+      "contact": {
+        "title": "Contact Us",
+        "email": "email: info@sdginitiative.org",
+        "phone": "phone: +44 7927149538"
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "links": [
+          { "text": "Home", "url": "index.html" },
+          { "text": "Zero Hunger", "url": "zH.html" },
+          { "text": "About Us", "url": "aboutus.html" }
+        ]
+      },
+      "social": {
+        "title": "Follow Us",
+        "links": [
+          { "platform": "Twitter", "url": "#" },
+          { "platform": "LinkedIn", "url": "#" },
+          { "platform": "Facebook", "url": "#" }
+        ]
+      },
+      "copyright": "© 2024 Sustainability Advisory Committee. All rights reserved."
+    }
+  }
 }
