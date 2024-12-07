@@ -19,7 +19,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
 
       //   adding the target element
-           
+        targetTitle = document.getElementById("targetTitle");
+        targetTitle.textContent = data.targets.title;
+        //get each target box
+        targets = document.(".target");
+        // loop through each box and load contents
+        for (i = 0; i < targets.length; i++){
+          // create a list of the content element of the box
+          targetElement = targets[i].children;
+          // h3
+          targetElement[0].textContent = data.targets.items[i].Title;
+          // p
+          targetElement[1].textContent = data.targets.items[i].Target;
+          //img create
+          image = document.createElement("img");
+          image.src = data.targets[i].imgurl;
+          image.alt = data.target[i].source;
+
+        }
       //   for (item of responseData.targets){
       //       targetArticle = document.createElement("article");
       //       targetArticle.classList.add("target");
