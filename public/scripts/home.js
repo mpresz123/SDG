@@ -68,7 +68,7 @@ if (document.getElementById("homepage")) {
                 heading4b.textContent = homeData.title3;
 
 
-                article1.appendChild(heading1);
+                schedules_section.appendChild(heading1);
                 article1.appendChild(imageElement);
                 article1.appendChild(heading4);
                 article1.appendChild(text1);
