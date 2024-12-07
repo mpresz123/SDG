@@ -1,7 +1,7 @@
 /*Global Variables */
 :root {
   --zerohunger-red: #e5243b;
-  --highlight-color: #4c9f38;
+  --highlight-color: #fd6925;
   --off-black: #333333;
   --paper-gray: #f4f4f4;
   --white: #ffffff;
@@ -282,7 +282,7 @@ td th {
   padding: 15px;
   border-radius: 8px;
   transition: 0.5s ease-in;
-  font-size: 1.2em;
+  font-size: 1.1rem;
 }
 
 .final-nav-links li:hover {
@@ -663,7 +663,7 @@ td th {
 
 
 @media (max-width: 768px) {
-  /* nav-bar
+  /*nav-bar*/
   .navSection {
     position: fixed;
     background-color: white;
@@ -678,19 +678,23 @@ td th {
   .navSection figure img {
     width: 20%;
     height: 20%;
-  }*/
+  }
 
   /* nav-links */
+  
   #nBtn {
     display: inline-block;
     color: var(--secondary-color);
     margin-left: 60%;
   }
+  
+  
   #nBtn:hover {
     cursor: pointer;
   }
   .final-nav-bar {
-    display: none;
+    
+    display: auto;
   }
 
   #home-header, #zH-header, #gH-header, #nopov-header figure {
