@@ -4,7 +4,6 @@ var article1 = document.querySelector("#home-article-1");
 var article2 = document.querySelector("#home-article-2");
 var article3 = document.querySelector("#home-article-3");
 
-
 if (document.getElementById("homepage")) {
     document.addEventListener('DOMContentLoaded', () => {
         fetch(localJSONFile)
