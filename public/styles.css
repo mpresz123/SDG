@@ -294,7 +294,6 @@ td th {
 }
 
 .final-nav-links a {
-  color: var(--off-black);
   padding: 8px 15px;
   border: 2px solid transparent;
   border-radius: 4px;
