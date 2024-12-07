@@ -2,7 +2,8 @@ localJsonFile = "final.json";
 document.addEventListener("DOMContentLoaded", () => {
   fetch(localJsonFile)
     .then((response) => response.json())
-    .then((data) => {
+    .then((responseData) => {
+      data = responseData;
       /*nav*/
       const navLinks = document.querySelector(".final-nav-links");
       data.noPov.navigation.links.forEach((link) => {

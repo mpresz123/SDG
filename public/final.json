@@ -249,6 +249,17 @@
   },
 
   "common": {
+    "navigation": {
+      "brand": "SDG advisory comittee",
+      "links": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "No Poverty", "url": "noPov.html", "active": true },
+        { "text": "Zero Hunger", "url": "zH.html" },
+        { "text": "Good Health and Wellbeing", "url": "goodhealth.html" },
+        { "text": "Our Team", "url": "ourteam.html" },
+        { "text": "Newsletter", "url": "newsletter.html", "isButton": true }
+      ]
+    },
     "footer": {
       "contact": {
         "title": "Contact Us",
