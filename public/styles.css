@@ -126,12 +126,15 @@ td th {
 
 #team-article {
   display: inline-block;
-  background-color: gray;
-  width: 40%;
-  padding: 20px;
-  margin: 2rem;
-  border-radius: 5px;
-  border-color: #c7c4c4;
+  background-color: #c7c4c4;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border-radius: 12px;
+  border-color: blue;
   box-shadow: var(--shadow);
   box-sizing: border-box;
   overflow: hidden;
@@ -139,10 +142,15 @@ td th {
   transition: 0.5s ease-in-out;
 }
 
+#contributions-heading{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 #team-contributions-article {
   display: inline-block;
   width: auto;
-  background-color: #b3e178;
+  background-color: #c7c7c7;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 11px;
@@ -153,6 +161,8 @@ td th {
   box-sizing: border-box;
   overflow: hidden;
   transition: 0.5s ease-in-out;
+  box-shadow: var(--shadow);
+  
 }
 
 #team-contributions-article:hover {
