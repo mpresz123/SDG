@@ -1,84 +1,132 @@
+
 //This is a implementation of my hamburger icon for my websiet in which allows users to click the icon and get the different options within the navbar.
 const hamburger = document.querySelector('#hamburger-icon');
-const navLinks = document.querySelector('.final-nav-links');
+const navLinks = document.querySelector('.nav-links');
 //'#hamburger-icon' selects the element with the matching id
 // on the other hand 'nav-links' selects the elemnt with the matching class
 function showNav() {
-    navLinks.classList.toggle('shownav');
+   navLinks.classList.toggle('shownav');
 }
 // This toggle shownav fucntion allows it to toggle the css class 'shownav'
 hamburger.addEventListener('click', showNav);
-// This straightforwardly adds a clicl event listener so that when the hamburger icon is clicked it outputs the shownav function
+// This straightforwardly adds a click event listener so that when the hamburger icon is clicked it outputs the shownav function
 
 
 
 let localJsonFile = "final.json";
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch(localJsonFile)
-        .then(response => response.json())
-        .then((data) => { 
-            console.log(data);
+   fetch(localJsonFile)
+       .then(response => response.json())
+       .then((data) => { 
+           console.log(data);
 
 
-            for (const i in data.main) {
-                const item = data.main[i]
-                const element = document.querySelector(item.Element)
-                const h = element.querySelector('h2')
-                h.textContent = item.title
-                
-                if (i === 0) {
-                    const initiative = item.initiative
-                    const ul = element.querySelector('ul')
-                    for (const i of initiative) {
-                        const li = document.createElement('li')
-                        li.textContent = i 
-                        ul.appendChild(li)
-                    }
-                } else if (i === 1) {
+           for (const i in data.main) {
+               const item = data.main[i]
+               const element = document.querySelector(item.Element)
+               const h = element.querySelector('h2')
+               h.textContent = item.title
+               
+               if (i === 0) {
+                   const initiative = item.initiative
+                   const ul = element.querySelector('ul')
+                   for (const i of initiative) {
+                       const li = document.createElement('li')
+                       li.textContent = i 
+                       ul.appendChild(li)
+                   
+               } 
+
+               }
+
+
+               if(i === 2) {
+                   const challenges = item.challenges
+                   const ul = element.querySelector('ul')
+                   for (const i of challenges) {
+                       const li = document.createElement('li')
+                       li.textContent = i 
+                       ul.appendChild(li)
+                //  For this certain code this performs through the data.main object where each bit involved contains information and content about each specfic element and data. For each item within the data.main section this selects a DOM element which links with the content as shown by using the Element variable and updates the text content with the h2 tag to match the title.
+                // the first index handles the iniatives by creating a li elemnt for each iniative and appends them to a ul within the existing content. 
+                // Also in the same way the next index processes the challenges list by appending the li to the ul.
+                } 
 
                 }
+       }
+            for (const item of data.main){ 
+            const element = document.querySelector(data.element);
 
+            if (element) {
+              // Sets the title of the article as per the JSON
+              const title = document.createElement('h1');
+              title.textContent = data.title;
+              element.appendChild(title);
+            
+              // Creates a list to implement the development steps
+              const ul = document.createElement('ul');
+              element.appendChild(ul);
+            
+              // Performs through the development steps and adds them to the list
+              data.steps.forEach((step, i) => {
+                const li = document.createElement('li');
+                if (i === 0) {
+                    const initiative = step.title + ": " + step.description;
+                    li.textContent = initiative;
+                } else if (i === 1) {
+                    li.textContent = step.title + ": " + step.description;
+                } else {
+                    li.textContent = step.title + ": " + step.description;
+                }
 
-                if(i === 2) {
-                    const challenges = item.challenges
-                    const ul = element.querySelector('ul')
-                    for (const i of challenges) {
-                        const li = document.createElement('li')
-                        li.textContent = i 
-                        ul.appendChild(li)
-                    }
-                 } else if (i === 3) {
+                ul.appendChild(li);
+                // this is used to handle the development steps, this creates a ul where each step is a list (li)
+                // it formats the text which is within the JSON by implementing both the title and description and appends each list item to their ul parenting item.
+              });
+            } else {
+              console.error(`Element with selector "${data.Element}" not found.`);
+            }
+        }
 
-                 }
+            const element = document.querySelector(data.element);
 
-
-
+            if (element) {
+              // Sets the title of the article as shown in the JSON
+              const title = document.createElement('h1');
+              title.textContent = data.title;
+              element.appendChild(title);
+            
+              // Creates a list to hold the current policy recommendations
+              const ul = document.createElement('ul');
+              element.appendChild(ul);
+            
+              // performs through the policy recommendations and adds them to the list
+              data.recommendations.forEach((recommendation, i) => {
+                const li = document.createElement('li');
+                li.textContent = recommendation.title + ": " + recommendation.description;
+                ul.appendChild(li);
+              });
+            } else {
+              console.error(`Element with selector "${data.Element}" not found.`);
             }
 
-
-            
-            // const mainInitiatives = document.querySelector('article');
-
-            // const initiativesList = mainInitiatives.querySelectorAll('li');
-            // const localChallenges = document.querySelector('article.gH-overview-card');
-            // const challengesList = localChallenges.querySelectorAll('li');
-            // const developmentplan = document.querySelector('article.Development-plan');
-            // const developmentsteps = developmentplan.querySelectorAll('li');
-            // const policyrecommendations = document.querySelector('article.policy-recommendations');
-            // const recommendations = policyrecommendations.querySelectorAll('li');
-            
-        //     const footer = document.getElementById('footer');
-        //     (footer.querySelector('h2')).textContent = data.footer.title
-        //      const footerDescription = footer.querySelector('p');
-        //      footerDescription.textContent = data.footer.description
-        //      const footerContact = footer.querySelector('.contact');
-        //      footerContact.textContent = data.footer.contact
-        //      const footerPhone = footerContact.querySelector('.phone');
-        //      footerPhone.textContent = data.footer.contact.phone
-        //      const footerEmail = footerContact.querySelector('.email');
-        //      footerEmail.textContent = data.footer.contact.email
-        // })
-        //.catch(error => console.error("Error fetching JSON data:", error));
-
-})})
+           
+           
+           const footer = document.getElementById('footer');
+           if (footer) {
+               const title = footer.querySelector('h2');
+               if (title) title.textContent = data.footer.title;
+           
+               const description = footer.querySelector('p');
+               if (description) description.textContent = data.footer.description;
+           
+               const phone = footer.querySelector('.contact-phone');
+               if (phone) phone.textContent = 'Phone: ' + data.footer.contact.phone;
+               
+               const email = footer.querySelector('.contact-email');
+               if (email) email.textContent = 'Email: ' + data.footer.contact.email;
+// This selects the footer element on the page by its id, it looks for the h2 tag within the footer and sets all the textcontent to the title from the data.footer.title.
+// Also finds the p paragraph tag and updates all the text content within the desription from the data.footer.description.
+// Finally looks for the classes for the contact.phone and contact.email and sets the text content to both by showing the phone number and email address from data.footer.contact.phone aswell as data.footer.contact.email.
+}})})
