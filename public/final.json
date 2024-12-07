@@ -16,7 +16,7 @@
     "zeroHunger": {
         "header": {
             "imgURL": "assets/goal2.png",
-            "rightContent": ["Goal3", "Zero Hunger", "Make sure no one straves anymore"] 
+            "rightContent": ["Goal3", "Zero Hunger", "Make sure no one starves anymore"] 
         },
         "targets":{
             "title": "Targets",
