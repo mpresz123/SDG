@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         a.href = link.url;
         a.textContent = link.text;
         if (link.active) a.classList.add("final-active");
-        if (link.isButton) a.classList.add("final-nav-button");
+        if (link.isButton) a.classList.add("final-nav-buttonNp");
         
         li.appendChild(a);
         navLinks.appendChild(li);

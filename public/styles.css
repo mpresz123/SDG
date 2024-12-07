@@ -314,9 +314,27 @@ td th {
   height: 100px;
 }
 
-.final-nav-button {
+.final-nav-buttonNp {
   background-color: var(--zerohunger-red);
-  color: var(--white) !important; /* this overrides the black colour it was before so you can see it over the red */
+  color: var(--white) !important;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+}
+.final-nav-buttonHome {
+  background-color: dodgerblue;
+  color: var(--white) !important; 
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+}
+.final-nav-buttonzH {
+  background-color: #dda63a;
+  color: var(--white) !important;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+}
+.final-nav-buttongH {
+  background-color: #4CAF50;
+  color: var(--white) !important;
   padding: 0.6rem 1rem;
   border-radius: 50px;
 }
