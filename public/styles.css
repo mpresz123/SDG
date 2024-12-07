@@ -22,7 +22,7 @@
 main {
   margin: 0;
   flex: 1;
-  margin-top: var(--navbar-height, 3rem); /* Fallback if var not set */
+  margin-top: var(--navbar-height, 2.5rem); /* Fallback if var not set */
 
 }
 
@@ -294,7 +294,6 @@ td th {
 }
 
 .final-nav-links a {
-  color: var(--off-black);
   padding: 8px 15px;
   border: 2px solid transparent;
   border-radius: 4px;
