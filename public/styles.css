@@ -618,18 +618,20 @@ td th {
 }
 
 #form-box {
+  padding: 0rem 6rem 3rem 6rem;
   background-color: var(--highlight-color);
 }
 
 #signup-form{
-  border-radius: 5px;
+  border-radius: 10px;
   line-height: 2rem;
+  background-color: var(--paper-gray);
 }
 
 #signup-form label{
   display: block;
   padding-left: 20%;
-  color: var(--white);
+  padding-bottom: 0.5rem;
 }
 
 #signup-form label input {
@@ -644,6 +646,21 @@ td th {
 #signup-form .check-box input {
   display: inline;
   width: auto;
+}
+
+#signup-form .submitBtn{
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--highlight-color);
+  color: var(--white);
+  border-radius: 15px;
+}
+
+#signup-form .submitBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease-in-out;
 }
 /*responsive web design / media queries*/
 
