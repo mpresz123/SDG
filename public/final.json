@@ -160,8 +160,8 @@
       "brand": "SDG advisory comittee",
       "links": [
         { "text": "Home", "url": "index.html" },
-        { "text": "No Poverty", "url": "goal1-page.html", "active": true },
-        { "text": "Zero Hunger!", "url": "zH.html" },
+        { "text": "No Poverty", "url": "noPov.html", "active": true },
+        { "text": "Zero Hunger", "url": "zH.html" },
         { "text": "Good Health", "url": "goodhealth.html" },
         { "text": "About Us", "url": "aboutus.html" },
         { "text": "Newsletter", "url": "newsletter.html", "isButton": true }
@@ -179,12 +179,12 @@
           "description": "People will be living in extreme poverty by 2030"
         },
         {
-          "value": "7 trillion",
-          "description": "words that word and word with word"
+          "value": "8.5%",
+          "description": "Of the worlds population live in extreme poverty, or under $2.15 a day"
         },
         {
-          "value": "50%",
-          "description": "chance of getting heads"
+          "value": "1 in 3",
+          "description": "People lack access to basic financial services"
         }
       ]
     },
