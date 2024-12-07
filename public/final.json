@@ -223,27 +223,32 @@
       {
         "label": "First Name: ",
         "type": "text",
-        "name": "firstName"
+        "name": "firstName",
+        "isRequired": "true"
       },
       {
         "label": "Last Name: ",
         "type": "text",
-        "name": "lastName"
+        "name": "lastName",
+        "isRequired": "true"
       },
       {
         "label": "Email: ",
         "type": "email",
-        "name": "email"
+        "name": "email",
+        "isRequired": "true"
       },
       {
         "label": "Comments: ",
         "type": "text",
-        "name": "comments"
+        "name": "comments",
+        "isRequired": "false"
       },
       {
         "label": "I would like to receive newsletters: ",
         "type": "checkbox",
-        "name": "receive"
+        "name": "receive",
+        "isRequired": "false"
       }
     ]
   },
