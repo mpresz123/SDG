@@ -13,12 +13,10 @@
         "button": "Learn More",
         "alt": "no poverty image"
     },
-    "zero-hunger": {
+    "zeroHunger": {
         "header": {
             "imgURL": "assets/goal2.png",
-            "h3Content": "Goal3",
-            "h1Content": "Zero Hunger",
-            "pContent": "Make sure no one straves anymore"
+            "rightContent": ["Goal3", "Zero Hunger", "Make sure no one straves anymore"] 
         },
         "targets":{
             "title": "Targets",
