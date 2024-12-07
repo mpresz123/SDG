@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         targetTitle = document.getElementById("targetTitle");
         targetTitle.textContent = data.targets.title;
         //get each target box
-        targets = document.(".target");
+        targets = document.querySelectorAll(".target");
         // loop through each box and load contents
         for (i = 0; i < targets.length; i++){
           // create a list of the content element of the box
