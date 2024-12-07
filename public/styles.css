@@ -1,7 +1,9 @@
 /*Global Variables */
 :root {
   --zerohunger-red: #e5243b;
-  --highlight-color: #4c9f38;
+  --zH-yellow: #DDA63A;
+  --gH-green: #4C9F38;
+  --highlight-color: #fd6925;
   --off-black: #333333;
   --paper-gray: #f4f4f4;
   --white: #ffffff;
@@ -18,9 +20,9 @@
 }
 
 main {
-  margin: 0px 15% 0px 15%;
+  margin: 0;
   flex: 1;
-  margin-top: var(--navbar-height, 80px); /* Fallback if var not set */
+  margin-top: var(--navbar-height, 3rem); /* Fallback if var not set */
 
 }
 
@@ -282,7 +284,7 @@ td th {
   padding: 15px;
   border-radius: 8px;
   transition: 0.5s ease-in;
-  font-size: 1.2em;
+  font-size: 1.1rem;
 }
 
 .final-nav-links li:hover {
@@ -403,6 +405,26 @@ td th {
   margin-bottom: 1rem;
 }
 
+.signup-section {
+  background-color: var(--paper-gray);
+  text-align: center;
+  padding: 1rem 5%;
+}
+
+.signup-button {
+  display: inline-block;
+  background-color: var(--zerohunger-red);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.signup-button:hover {
+  background-color: var(--highlight-color);
+}
+
 /*footer continued*/
 
 .footer-content {
@@ -448,6 +470,8 @@ td th {
   color: var(--white);
   text-decoration: none;
 }
+
+
 
 /* zero hunger header + content*/
 
@@ -663,7 +687,7 @@ td th {
 
 
 @media (max-width: 768px) {
-  /* nav-bar
+  /*nav-bar*/
   .navSection {
     position: fixed;
     background-color: white;
@@ -678,19 +702,22 @@ td th {
   .navSection figure img {
     width: 20%;
     height: 20%;
-  }*/
+  }
 
   /* nav-links */
+  
   #nBtn {
     display: inline-block;
     color: var(--secondary-color);
     margin-left: 60%;
   }
+  
+  
   #nBtn:hover {
     cursor: pointer;
   }
   .final-nav-bar {
-    display: none;
+    display: auto;
   }
 
   #home-header, #zH-header, #gH-header, #nopov-header figure {
@@ -897,25 +924,7 @@ alistair-------------------------------------
 }
 */
 /* Mikolaj------------------------------------
-.signup-section {
-  background-color: var(--paper-gray);
-  text-align: center;
-  padding: 4rem 5%;
-}
 
-.signup-button {
-  display: inline-block;
-  background-color: var(--zerohunger-red);
-  color: var(--white);
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 2rem;
-}
-
-.signup-button:hover {
-  background-color: var(--highlight-color);
-}
 
 .footerSection {
   display: inline-block;
