@@ -294,9 +294,9 @@ td th {
   transition: 0.5s ease-in-out;
 }
 
-.final-nav-links li a{
+.final-nav-links li a {
   color: var(--off-black);
-  padding: 0.5rem 0.8rem;
+  padding: 8px 15px;
   border: 2px solid transparent;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
