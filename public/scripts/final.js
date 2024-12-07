@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       // sign up page fetch
-      if ((currentPage = "/newsletter.html")) {
+      if ((currentPage === "/newsletter.html")) {
         const data = responseData.newsletter;
         console.log(data);
         header = document.getElementById("newsletter-header").children;
