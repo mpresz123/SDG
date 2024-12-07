@@ -11,30 +11,47 @@
     <!-- navigation bar -->
       <nav class="final-nav-bar">
         <header class="nav-logo">
-          <img src = "assets/logo.png" alt = "Logo" class = "logo">
+          <img src = "assets/logo.png" alt = "Logo" class = "final-logo">
         </header>
         <ul class="final-nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="zH.html">Zero Hunger</a></li>
-          <li><a href="aboutus.html">Team</a></li>
-          <li><a href="signup.html" class="final-nav-button-zH">Sign Up</a></li>
+          <li><a href = "index.html">Home</a></li>
+                <li><a href = "zH.html" id = "final-nav-links" class = "final-active">Zero Hunger</a></li>
+                <li><a href = "noPov.html" id = "final-nav-links">No Poverty</a></li>
+                <li><a href = "goodhealth.html" id = "final-nav-links">Good Health and Wellbeing</a></li>
+                <li><a href = "ourteam.html" id = "final-nav-links">Our Team</a></li>
+                <li><a href = "newsletter.html" id = "final-nav-links">Newsletter<a></li>
         </ul>
         <a class="burger-menu"><i class="fa fa-bars"></i></a>
       </nav>
-    
+      <!-- header -->
       <header id="zH-header"> 
       <figure id="headerLeft"> 
       </figure>
       <div id="headerRight" class="headerRight">
-        <!-- <h3>Goal 3</h3>
-        <h1>Zero Hunger </h1>
-        <p>Ensure no one is hungry</p> -->
+        <h3></h3>
+        <h1></h1>
+        <p></p>
       </div>
     </header>
     <main> 
       <!-- the targets section with each target contains an article-class=target conatins h3, p and figure if needed-->
       <section class="keyTargets" id="targets">
-        <h2>Key Targets </h2>
+        <h2 id="targetTitle"></h2>
+        <article class="target">
+          <h3></h3>
+          <p></p>
+          <figure></figure>
+        </article>
+        <article class="target">
+          <h3></h3>
+          <p></p>
+          <figure></figure>
+        </article>
+        <article class="target">
+          <h3></h3>
+          <p></p>
+          <figure></figure>
+        </article>
         <!-- <article class="target">
           <h3>Target 1</h3>
           <p>
@@ -129,40 +146,6 @@
             </p>
           </li>
         </ul>
-      </section>
-      <button id="sBtn">Sign Up for Our Newsletter </button>
-      <section class="hidden signUp" id="signup">
-        <h1>Sign Up for Our Newsletter </h1>
-        <form action="app.js" method="post">
-          <p> 
-            <label>First Name: 
-              <input type="text" name="firstName">
-            </label>
-          </p>
-          <p> 
-            <label>Last Name: 
-              <input type="text" name="lastName">
-            </label>
-          </p>
-          <p>  
-            <label>Email: 
-              <input type="email" name="email">
-            </label>
-          </p>
-          <p> 
-            <label>Comments: 
-              <input type="text" name="comments">
-            </label>
-          </p>
-          <p>
-            <label>I would like to receive newsletters 
-              <input type="checkbox" name="receive">
-            </label>
-          </p>
-          <p> 
-            <input class="submitBtn" type="submit" name="sumit">
-          </p>
-        </form>
       </section>
     </main>
     <!-- footer -->

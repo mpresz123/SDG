@@ -1,36 +1,53 @@
 var localJSONFile = "final.json";
-var scheduley = document.querySelector("#featured_goals");
+var featuredgoals = document.querySelector("#home-featured-goals");
+var article1 = document.querySelector("#home-article-1");
 
 if (document.getElementById("homepage")) {
     document.addEventListener('DOMContentLoaded', () => {
-    fetch(localJSONFile)
-        .then(response => response.json())
-        .then(responseData => {
+        fetch(localJSONFile)
+            .then(response => response.json())
+            .then(responseData => {
+                // Access the 'home' object directly
+                const homeData = responseData.home;
 
-                
-            for (const item of responseData) {
-                const schedules = document.createElement("section");
-                schedules.setAttribute("id", "home-featured-goals");
+                const schedules_section = document.createElement("section");
+                schedules_section.setAttribute("id", "home-featured-goals");
+
+                // Create the heading for the main title
                 const heading1 = document.createElement("h1");
-                heading1.setAttribute("id", "home-main-title")
-                heading1.textContent = item.main_title;
-                
-                schedules.appendChild(heading1);
+                heading1.setAttribute("id", "home-main-title");
+                heading1.textContent = homeData.main_title;
 
-                scheduley.appendChild(schedules);
-            }
+                schedules_section.appendChild(heading1);
+
+                featuredgoals.appendChild(schedules_section);
+
+
+                const schedules2 = document.createElement("article");
+                schedules2.setAttribute("id", "home-article-1");
+
+                const imageElement = document.createElement("img");
+                imageElement.src = homeData.imageURL;
+                imageElement.alt = homeData.alt;
+                imageElement.setAttribute("id", "home-info-pic")
+
+                schedules2.appendChild(imageElement);
+
+
+                article1.appendChild(schedules2);
+
+            })
+    
+    });
+}
 
             
 
 
             for (const item of responseData) {
-                const schedules = document.createElement("article");
-                schedules.setAttribute("id", "article");
+                
 
-                const imageElement = document.createElement("img");
-                imageElement.src = item.imageURL;
-                imageElement.alt = item.alt;
-                imageElement.setAttribute("id", "home-info-pic")
+                
 
                 const heading4 = document.createElement("h4");
                 heading4.textContent = item.title;
@@ -46,13 +63,11 @@ if (document.getElementById("homepage")) {
 
                 
                 
-                schedules.appendChild(imageElement);
-                schedules.appendChild(heading4);
-                schedules.appendChild(text1);
-                schedules.appendChild(button);
+                schedules2.appendChild(heading4);
+                schedules2.appendChild(text1);
+                schedules2.appendChild(button);
             
 
-                scheduley.appendChild(schedules);
             }
             for (const item of responseData) {
                 const schedules = document.createElement("article");
@@ -107,6 +122,5 @@ if (document.getElementById("homepage")) {
 
                 scheduley.appendChild(schedules);
             }
-        });
+        
 
-})};
