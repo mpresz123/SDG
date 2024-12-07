@@ -23,10 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
             inputElement = document.createElement("input");
             inputElement.type = data.inputs[i].type;
             inputElement.name = data.inputs[i].name;
+            inputElement.required = data.inputs[i].isRequired;
           }
           formElement[i].textContent = data.inputs[i].label;
           formElement[i].appendChild(inputElement);
         }
+
         formElement[3].classList.add("comment");
         formElement[4].classList.add("check-box");
       }
