@@ -22,71 +22,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
         targetTitle = document.getElementById("targetTitle");
         targetTitle.textContent = data.targets.title;
         //get each target box
-        targets = document.querySelectorAll(".target");
+        tList = document.querySelectorAll(".target");
         // loop through each box and load contents
-        for (i = 0; i < targets.length; i++){
-          // create a list of the content element of the box
-          targetElement = targets[i].children;
+        for (i = 0; i < tList.length; i++){
+          // create a list of the content elements of the box
+          targetElement = tList[i].children;
           // h3
           targetElement[0].textContent = data.targets.items[i].Title;
           // p
           targetElement[1].textContent = data.targets.items[i].Target;
           //img create
           image = document.createElement("img");
-          image.src = data.targets[i].imgurl;
-          image.alt = data.target[i].source;
-
+          image.src = data.targets.items[i].imgurl;
+          image.alt = data.targets.items[i].source;
+          //append img into figure
+          targetElement[2].appendChild(image);
         }
-      //   for (item of responseData.targets){
-      //       targetArticle = document.createElement("article");
-      //       targetArticle.classList.add("target");
-      //       targetElement = document.createElement("h3");
-      //       targetElement.textContent = item.Title;
-      //       targetArticle.appendChild(targetElement);
-      //       targetElement = document.createElement("p");
-      //       targetElement.textContent = item.Target;
-      //       targetArticle.appendChild(targetElement);
-      //       targetElement = document.createElement("img");
-      //       targetElement.src = item.imgurl;
-      //       targetElement.alt =item.source;
-      //       targetFigure = document.createElement("figure");
-      //       targetFigure.appendChild(targetElement);
-      //       targetArticle.appendChild(targetFigure);
-      //       document.getElementById("targets").appendChild(targetArticle);
-      //   }
-      //   /*footer*/
-      // const footerSections = document.querySelectorAll(".footer-section");
-
-      // // Loop through each footer section
-      // footerSections.forEach((section, index) => {
-      //   // Add appropriate content based on section index
-      //   if (index === 0) {
-      //     // Contact section
-      //     section.querySelector("h4").textContent = data.footer.contact.title;
-      //     const paragraphs = section.querySelectorAll("p");
-      //     paragraphs[0].textContent = `Email: ${data.footer.contact.email}`;
-      //     paragraphs[1].textContent = `Phone: ${data.footer.contact.phone}`;
-      //   } else if (index === 1) {
-      //     // Quick Links section
-      //     section.querySelector("h4").textContent =
-      //       data.footer.quickLinks.title;
-      //     const ul = section.querySelector("ul");
-      //     data.footer.quickLinks.links.forEach((link) => {
-      //       const li = section.querySelector(`li a[href="${link.url}"]`);
-      //       if (li) li.textContent = link.text;
-      //     });
-      //   } else if (index === 2) {
-      //     // Social Links section
-      //     section.querySelector("h4").textContent = data.footer.social.title;
-      //     const socialLinks = section.querySelectorAll(".social-link");
-      //     data.footer.social.links.forEach((link, i) => {
-      //       if (socialLinks[i]) socialLinks[i].textContent = link.platform;
-      //     });
-      //   }
-      //   /*bottom of footer*/
-      //   document.querySelector(".footer-bottom").textContent =
-      //     data.footer.copyright;
-      // });
+        // plans
+        
     })
     .catch(error => console.error("Error fetching JSON data:", error))
 })
