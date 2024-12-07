@@ -158,8 +158,8 @@
       "brand": "SDG advisory comittee",
       "links": [
         { "text": "Home", "url": "index.html" },
-        { "text": "Zero Hunger", "url": "zH.html" },
         { "text": "No Poverty", "url": "noPov.html", "active": true },
+        { "text": "Zero Hunger", "url": "zH.html" },
         { "text": "Good Health and Wellbeing", "url": "goodhealth.html" },
         { "text": "Our Team", "url": "ourteam.html" },
         { "text": "Newsletter", "url": "newsletter.html", "isButton": true }
