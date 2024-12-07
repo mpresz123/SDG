@@ -7,11 +7,11 @@
         "text1": "Click here to learn more about our plans to eliminate poverty!",
         "text2": "Click here to learn more about our plans to estinguish starvation!",
         "text3": "Click here to see our plans for good health and wellbeing!",
-        "imageURL": "no_poverty.jpg",
-        "imageURL2": "zero_hunger.jpg",
-        "imageURL3": "good_health_&_wb.jpg",
+        "imageURL": "assets/no_poverty.jpg",
+        "imageURL2": "assets/zero_hunger.jpg",
+        "imageURL3": "assets/good_health_&_wb.jpg",
         "button": "Learn More",
-        "alt": "no poverty image"
+        "alt": "goal image"
     },
     "zeroHunger": {
         "header": {
