@@ -164,7 +164,7 @@
         { "text": "Zero Hunger!", "url": "zH.html" },
         { "text": "Good Health", "url": "goodhealth.html" },
         { "text": "About Us", "url": "aboutus.html" },
-        { "text": "Newsletter", "url": "signup.html", "isButton": true }
+        { "text": "Newsletter", "url": "newsletter.html", "isButton": true }
       ]
     },
     "mainbanner": {
