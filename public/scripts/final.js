@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
               /*stats*/
               document.querySelector(".content-section h2").textContent =
-                data.noPov.targets.title;
+                data.noPov.statistics.title;
               const statBoxes = document.querySelectorAll(".info-box");
               data.noPov.statistics.stats.forEach((stat, index) => {
                 statBoxes[index].querySelector("h3").textContent = stat.value;

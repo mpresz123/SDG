@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         data.noPov.mainbanner.title;
       document.querySelector(".main-banner p").textContent =
         data.noPov.mainbanner.subtitle;
+
       /*stats*/
       document.querySelector(".content-section h2").textContent =
         data.noPov.statistics.title;
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       /*goals*/
+      document.querySelector("#goals-section h2").textContent = data.noPov.targets.title;
       const goalBoxes = document.querySelectorAll(".goal-box");
       data.noPov.targets.items.forEach((box, index) => {
         goalBoxes[index].querySelector("h3").textContent = box.title;
