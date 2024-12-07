@@ -22,7 +22,7 @@
 main {
   margin: 0;
   flex: 1;
-  margin-top: var(--navbar-height, 3rem); /* Fallback if var not set */
+  margin-top: var(--navbar-height, 2.5rem); /* Fallback if var not set */
 
 }
 
