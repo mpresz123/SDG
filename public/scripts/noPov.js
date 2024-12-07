@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         statBoxes[index].querySelector("h3").textContent = stat.value;
         statBoxes[index].querySelector("p").textContent = stat.description;
       });
+
       /*goals*/
       const goalBoxes = document.querySelectorAll(".goal-box");
       data.noPov.targets.items.forEach((box, index) => {

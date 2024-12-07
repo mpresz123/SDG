@@ -52,27 +52,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 li.appendChild(a);
                 navLinks.appendChild(li);
               });
+
               /*banner*/
               document.querySelector(".main-banner h1").textContent =
                 data.noPov.mainbanner.title;
               document.querySelector(".main-banner p").textContent =
                 data.noPov.mainbanner.subtitle;
+
               /*stats*/
               document.querySelector(".content-section h2").textContent =
-                data.noPov.statistics.title;
+                data.noPov.targets.title;
               const statBoxes = document.querySelectorAll(".info-box");
               data.noPov.statistics.stats.forEach((stat, index) => {
                 statBoxes[index].querySelector("h3").textContent = stat.value;
                 statBoxes[index].querySelector("p").textContent =
                   stat.description;
               });
+
               /*goals*/
+              document.querySelector(".#goals-section").textContent =
+                data.noPov.targets.title;
               const goalBoxes = document.querySelectorAll(".goal-box");
               data.noPov.targets.items.forEach((box, index) => {
                 goalBoxes[index].querySelector("h3").textContent = box.title;
                 goalBoxes[index].querySelector("p").textContent =
                   box.description;
               });
+
               /*signup*/
               document.querySelector(".signup-section h2").textContent =
                 data.noPov.signup.title;
@@ -82,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 data.noPov.signup.buttonText;
               document.querySelector(".signup-button").href =
                 data.noPov.signup.buttonUrl;
+
               /*footer*/
               const footerSections =
                 document.querySelectorAll(".footer-section");
