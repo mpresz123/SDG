@@ -457,6 +457,16 @@ td th {
   margin-top: 2rem;
 }
 
+.trello-button{
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
 .signup-button:hover {
   background-color: var(--highlight-color);
 }

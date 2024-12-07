@@ -252,7 +252,9 @@
       }
     ]
   },
-
+  "ourTeam":{
+    "button": "Find out more on trello"
+  },
   "common": {
     "navigation": {
       "brand": "SDG advisory comittee",
