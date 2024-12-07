@@ -340,12 +340,6 @@ td th {
   border-radius: 50px;
 }
 /* same as the one above but color is different -Bosco Chan */
-.final-nav-button-zH {
-  background-color: var(--secondary-color);
-  color: var(--white) !important; /* this overrides the black colour it was before so you can see it over the red */
-  padding: 0.6rem 1rem;
-  border-radius: 50px;
-}
 
 .final-nav-button:hover {
   background-color: var(--highlight-color);
