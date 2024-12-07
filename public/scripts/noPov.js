@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       /*nav*/
       const navLinks = document.querySelector(".final-nav-links");
-      data.navigation.links.forEach((link) => {
+      data.noPov.navigation.links.forEach((link) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
         a.href = link.url;
@@ -17,31 +17,32 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       /*banner*/
       document.querySelector(".main-banner h1").textContent =
-        data.mainbanner.title;
+        data.noPov.mainbanner.title;
       document.querySelector(".main-banner p").textContent =
-        data.mainbanner.subtitle;
+        data.noPov.mainbanner.subtitle;
       /*stats*/
       document.querySelector(".content-section h2").textContent =
-        data.statistics.title;
+        data.noPov.statistics.title;
       const statBoxes = document.querySelectorAll(".info-box");
-      data.statistics.stats.forEach((stat, index) => {
+      data.noPov.statistics.stats.forEach((stat, index) => {
         statBoxes[index].querySelector("h3").textContent = stat.value;
         statBoxes[index].querySelector("p").textContent = stat.description;
       });
       /*goals*/
       const goalBoxes = document.querySelectorAll(".goal-box");
-      data.targets.items.forEach((target, index) => {
-        goalBoxes[index].querySelector("h3").textContent = target.title;
-        goalBoxes[index].querySelector("p").textContent = target.description;
+      data.noPov.targets.items.forEach((box, index) => {
+        goalBoxes[index].querySelector("h3").textContent = box.title;
+        goalBoxes[index].querySelector("p").textContent = box.description;
       });
       /*signup*/
       document.querySelector(".signup-section h2").textContent =
-        data.signup.title;
+        data.noPov.signup.title;
       document.querySelector(".signup-section p").textContent =
-        data.signup.description;
+        data.noPov.signup.description;
       document.querySelector(".signup-button").textContent =
-        data.signup.buttonText;
-      document.querySelector(".signup-button").href = data.signup.buttonUrl;
+        data.noPov.signup.buttonText;
+      document.querySelector(".signup-button").href =
+        data.noPov.signup.buttonUrl;
       /*footer*/
       const footerSections = document.querySelectorAll(".footer-section");
 
@@ -50,30 +51,32 @@ document.addEventListener("DOMContentLoaded", () => {
         // Add appropriate content based on section index
         if (index === 0) {
           // Contact section
-          section.querySelector("h4").textContent = data.footer.contact.title;
+          section.querySelector("h4").textContent =
+            data.common.footer.contact.title;
           const paragraphs = section.querySelectorAll("p");
-          paragraphs[0].textContent = `Email: ${data.footer.contact.email}`;
-          paragraphs[1].textContent = `Phone: ${data.footer.contact.phone}`;
+          paragraphs[0].textContent = data.common.footer.contact.email;
+          paragraphs[1].textContent = data.common.footer.contact.phone;
         } else if (index === 1) {
           // Quick Links section
           section.querySelector("h4").textContent =
-            data.footer.quickLinks.title;
+            data.common.footer.quickLinks.title;
           const ul = section.querySelector("ul");
-          data.footer.quickLinks.links.forEach((link) => {
+          data.common.footer.quickLinks.links.forEach((link) => {
             const li = section.querySelector(`li a[href="${link.url}"]`);
             if (li) li.textContent = link.text;
           });
         } else if (index === 2) {
           // Social Links section
-          section.querySelector("h4").textContent = data.footer.social.title;
+          section.querySelector("h4").textContent =
+            data.common.footer.social.title;
           const socialLinks = section.querySelectorAll(".social-link");
-          data.footer.social.links.forEach((link, i) => {
+          data.common.footer.social.links.forEach((link, i) => {
             if (socialLinks[i]) socialLinks[i].textContent = link.platform;
           });
         }
         /*bottom of footer*/
         document.querySelector(".footer-bottom").textContent =
-          data.footer.copyright;
+          data.common.footer.copyright;
       });
     });
 });
