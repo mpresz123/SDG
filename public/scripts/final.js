@@ -100,11 +100,17 @@ if (document.getElementById("homepage")) {
                 const button = document.createElement("button");
                 button.setAttribute("id", "home-info-button");
                 button.textContent = homeData.button;
+                button.onclick = () => {
+                  window.location.href = "/noPov.html";
+              };
 
 
                 const button2 = document.createElement("button");
                 button2.setAttribute("id", "home-info-button");
                 button2.textContent = homeData.button;
+                button2.onclick = () => {
+                  window.location.href = "/zH.html";
+              };
 
                 const heading4a = document.createElement("h4");
                 heading4a.textContent = homeData.title2;
@@ -125,6 +131,9 @@ if (document.getElementById("homepage")) {
                 const button3 = document.createElement("button");
                 button3.setAttribute("id", "home-info-button");
                 button3.textContent = homeData.button;
+                button3.onclick = () => {
+                  window.location.href = "/goodhealth.html";
+              };
 
                 const text3 = document.createElement("p");
                 text3.textContent = homeData.text3;
