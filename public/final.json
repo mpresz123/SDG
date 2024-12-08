@@ -14,7 +14,16 @@
     "alt": "no poverty image"
   },
   "ourteam": {
-    "main_heading": "Our Team"
+    "main_heading": "Our Team",
+    "team_heading": "About Us",
+    "bio1": "Bosco Chan: Just a regular computer science student",
+    "bio2": "Alex McKenna A bit more regular than the guy above",
+    "bio3": "Alistair Rekala: A bit less regular than the guy below",
+    "bio4": "Mikolaj Presz: The most regular in the team",
+    "contributions": "Contributions",
+    "button1" : "Find out more!",
+    "href1" : "https://trello.com/b/ceSVFrIr/web-based-project"
+
   },
   "zeroHunger": {
     "header": {
