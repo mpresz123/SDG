@@ -1,4 +1,4 @@
-var localJSONFile = "final.json";
+/*var localJSONFile = "final.json";
 var ourteam = document.querySelector("#team-section");
 var article1 = document.querySelector("#team-contributions-article");
 var article2 = document.querySelector("#team-article");
@@ -58,4 +58,4 @@ if (document.getElementById("teampage")) {
             })
             .catch(error => console.error('Error loading JSON data:', error));
     });
-}
+}*/
