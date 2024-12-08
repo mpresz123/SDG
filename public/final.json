@@ -27,7 +27,16 @@
     "bio4": "Mikolaj Presz: The most regular in the team",
     "contributions": "Contributions",
     "button1" : "Find out more!",
-    "href1" : "https://trello.com/b/ceSVFrIr/web-based-project"
+    "href1" : "https://trello.com/b/ceSVFrIr/web-based-project",
+    "items": [
+      ["Pages", "Task", "Name"],
+      ["index.html", "HTML + CSS + JS", "Alex"],
+      ["zerohunger.html", "HTML + CSS + JS", "Bosco"],
+      ["nopoverty.html", "HTML + CSS + JS", "Mikolaj"],
+      ["goodhealthandwb.html", "HTML + CSS + JS", "Alistair"],
+      ["ourteam.html", "HTML + CSS + JS", "Alex"],
+      ["newsletter.html", "HTML + CSS + JS", "Group"]
+    ]
 
   },
   "zeroHunger": {

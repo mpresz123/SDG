@@ -22,8 +22,6 @@ if (document.getElementById("teampage")) {
             .then(responseData => {
                 const teamData = responseData.ourteam;
 
-              
-
                 const heading1 = document.createElement("h1");
                 heading1.textContent = teamData.main_heading;
                 heading1.setAttribute("id", "home-main-title");
@@ -52,9 +50,11 @@ if (document.getElementById("teampage")) {
                 const text4 = document.createElement("p")
                 text4.textContent = teamData.bio4;
 
+                rows = document.getElementById("contributionsTable").children;
+                for (i = 0; i < rows.length; i++){
+                    
+                }
                 
-
-
                 ourteam.appendChild(article4);
                 article4.appendChild(heading3);
                 article4.appendChild(button1);
@@ -420,8 +420,6 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
       });
-      
-
       document.querySelector(".footer-bottom").textContent = responseData.common.footer.copyright;
     })
     .catch(error => {
