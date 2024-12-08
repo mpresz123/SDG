@@ -417,8 +417,6 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
       });
-      
-
       document.querySelector(".footer-bottom").textContent = responseData.common.footer.copyright;
     })
     .catch(error => {
