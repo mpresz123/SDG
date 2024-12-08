@@ -126,7 +126,7 @@ td th {
 
 #team-article {
   display: inline-block;
-  background-color: #c7c4c4;
+  background-color: #d6d2d2;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 11px;
@@ -150,7 +150,7 @@ td th {
 #team-contributions-article {
   display: inline-block;
   width: auto;
-  background-color: #c7c7c7;
+  background-color: #d6d2d2;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 11px;
@@ -286,6 +286,8 @@ td th {
   color: white;
   text-decoration: none;
 }
+
+
 
 .overlay {
   position: absolute;
@@ -497,6 +499,16 @@ td th {
   border-radius: 5px;
   text-decoration: none;
   margin-top: 2rem;
+  transition: ease-in 0.5s;
+}
+
+.trello-button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#trello-button-container{
+  text-align: center;
 }
 
 .signup-button:hover {
