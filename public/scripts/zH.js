@@ -39,7 +39,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
           targetElement[2].appendChild(image);
         }
         // plans
-        
+        document.getElementById("plan").children[0].textContent = data.plans.title;
+        planList = document.getElementsByClassName("planListBox");
+        for (i = 0; i < planList.length; i++){
+          boxContent = planList[i].children;
+          boxContent[0].textContent = i+1;
+          boxContent[1].textContent = data.plans.items[i].Title;
+          boxContent[2].textContent = data.plans.items[i].Plan;
+        }
     })
     .catch(error => console.error("Error fetching JSON data:", error))
 })
