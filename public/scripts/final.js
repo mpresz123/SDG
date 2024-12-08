@@ -84,6 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const check_team = document.createElement("h4");
         check_team.textContent = homeData.team_heading;
+        check_team.setAttribute("id", "check-out-team-heading");
+
         
 
         // Create the image element
