@@ -3,6 +3,7 @@ var featuredgoals = document.querySelector("#home-featured-goals");
 var article1 = document.querySelector("#home-article-1");
 var article2 = document.querySelector("#home-article-2");
 var article3 = document.querySelector("#home-article-3");
+var ourteam = document.querySelector("#team-section");
 
 if (document.getElementById("homepage")) {
     document.addEventListener('DOMContentLoaded', () => {
@@ -89,3 +90,4 @@ if (document.getElementById("homepage")) {
             .catch(error => console.error('Error loading JSON data:', error));
     });
 }
+
