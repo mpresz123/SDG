@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       // sign up page fetch
-      if ((currentPage = "/newsletter.html")) {
+      if ((currentPage === "/newsletter.html")) {
         const data = responseData.newsletter;
         console.log(data);
         header = document.getElementById("newsletter-header").children;
@@ -111,3 +111,26 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 });
+
+// get the form element
+form = document.getElementById("signup-form");
+// create eventlistner when the submit button is clicked
+form.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    const formBody = {
+        fistname: firstName.value,
+        lastname: lastName.value,
+        userEmail: email.value,
+        userComments: comments.value
+    }
+    
+    const requestHeaders = {
+        "Content-Type": "application/json"
+    };
+
+    fetch('/signUp', {
+        method: 'POST',
+        headers: requestHeaders,
+        body: JSON.stringify(formBody)
+    })
+})
