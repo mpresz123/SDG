@@ -651,7 +651,7 @@ td th {
   list-style-type: none;
 }
 
-.planListBox {
+.planListBox, .policyListBox {
   display: inline-block;
   width: 25rem;
   height: 10rem;
@@ -675,12 +675,12 @@ td th {
   align-items: center;
 }
 
-.planListBox h3{
+.planListBox h3, .policyListBox h3{
   display: flex;
   position: relative;
   margin-top: -59px;
 }
-.planListBox p{
+.planListBox p, .policyListBox p{
   margin-top: 6px;
 }
 
@@ -690,7 +690,7 @@ td th {
   list-style-type: none;
 }
 
-.policyListBox {
+/* .policyListBox {
   display: inline-block;
   width: 15rem;
   height: 10rem;
@@ -699,7 +699,7 @@ td th {
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: var(--shadow);
-}
+} */
 
 .policyListBox div {
   background-color: var(--secondary-color);
