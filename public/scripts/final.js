@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } 
         
         if (link.isButton) {
-          if (currentPage === "/noPov.html") {
+          if (currentPage === "/public/noPov.html") {
             a.classList.add("final-nav-buttonNp");
-          } else if (currentPage === "/zH.html") {
+          } else if (currentPage === "/public/zH.html") {
             a.classList.add("final-nav-buttonzH");
-          } else if (currentPage === "/goodhealth.html") {
+          } else if (currentPage === "/public/goodhealth.html") {
             a.classList.add("final-nav-buttongH");
           } else {
             a.classList.add("final-nav-buttonHome");
