@@ -88,6 +88,8 @@ if (document.getElementById("homepage")) {
                 const lineBreak4 = document.createElement("br");
                 const lineBreak5 = document.createElement("br");
                 const lineBreak6 = document.createElement("br");
+                const lineBreak7 = document.createElement("br");
+
 
 
                 const schedules_section = document.createElement("section");
@@ -106,9 +108,8 @@ if (document.getElementById("homepage")) {
                 mainheading2.textContent = homeData.mainheading2;
                 mainheading2.setAttribute("id", "home-h2");
 
-                const check_team = document.createElement("h1");
+                const check_team = document.createElement("h4");
                 check_team.textContent = homeData.team_heading;
-                check_team.setAttribute("id", "home-h2");
                 
 
                 // Create the image element
@@ -138,6 +139,12 @@ if (document.getElementById("homepage")) {
                   window.location.href = "/zH.html";
               };
 
+               const team_button = document.createElement("button");
+               team_button.setAttribute("id", "home-info-button");
+               team_button.textContent = homeData.button3;
+               team_button.onclick = () => {
+                window.location.href = "/ourteam.html";
+            };
               
 
                 const heading4a = document.createElement("h4");
@@ -201,6 +208,8 @@ if (document.getElementById("homepage")) {
                 article3.appendChild(button3);
 
                 article6.appendChild(check_team);
+                article6.appendChild(lineBreak7);
+                article6.appendChild(team_button);
 
 
                 featuredgoals.appendChild(schedules_section);
