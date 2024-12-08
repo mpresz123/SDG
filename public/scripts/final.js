@@ -1,12 +1,10 @@
 const localJsonFile = "final.json";
-//get the current page
-currentPage = window.location.pathname;
-console.log(currentPage);
+const currentPage = window.location.pathname;
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch(localJsonFile)
     .then((response) => response.json())
     .then((responseData) => {
-
       /*global navbar*/
       const navLinks = document.querySelector(".final-nav-links");
       responseData.noPov.navigation.links.forEach((link) => {
@@ -15,9 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         a.href = link.url;
         a.textContent = link.text;
+
         if (link.url === currentPage) {
           a.classList.add("final-active");
-        }
+        } 
         
         if (link.isButton) {
           if (currentPage === "/noPov.html") {
@@ -30,16 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
             a.classList.add("final-nav-buttonHome");
           }
         }
+
         li.appendChild(a);
         navLinks.appendChild(li);
       });
 
-
-      // sign up page fetch
-      if ((currentPage = "/newsletter.html")) {
+      // signup page fetch
+      if (currentPage === "/public/newsletter.html") {
         const data = responseData.newsletter;
         console.log(data);
-        header = document.getElementById("newsletter-header").children;
+        const header = document.getElementById("newsletter-header").children;
         header[0].textContent = data.header.title;
         header[1].textContent = data.header.description;
         formElement = document.getElementById("signup-form").children;
@@ -60,9 +59,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
         formElement[3].classList.add("comment");
         formElement[4].classList.add("check-box");
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const formBody = {
+            firstName: formData.get("firstName"),
+            lastName: formData.get("lastName"),
+            userEmail: formData.get("email"),
+            userComments: formData.get("comments")
+          };
+          
+          fetch('/signUp', {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formBody)
+          });
+        });
       }
-      // index page fetch
-      if ((currentPage === "/index.html")) {
+
+      /* unhardcoding each page*/
+      if (currentPage === "/public/noPov.html") {
+        const data = responseData;
+        
+        // Banner section
+        const mainBanner = document.querySelector(".main-banner");
+        mainBanner.querySelector("h1").textContent = data.noPov.mainbanner.title;
+        mainBanner.querySelector("p").textContent = data.noPov.mainbanner.subtitle;
+
+        /*stats*/
+        const statsSection = document.querySelector(".content-section");
+        statsSection.querySelector("h2").textContent = data.noPov.statistics.title;
+        const statBoxes = statsSection.querySelectorAll(".info-box");
+        data.noPov.statistics.stats.forEach((stat, index) => {
+          statBoxes[index].querySelector("h3").textContent = stat.value;
+          statBoxes[index].querySelector("p").textContent = stat.description;
+        });
+
+        /*goals*/
+        const goalsSection = document.querySelector("#goals-section");
+        goalsSection.querySelector("h2").textContent = data.noPov.targets.title;
+        const goalBoxes = goalsSection.querySelectorAll(".goal-box");
+        data.noPov.targets.items.forEach((box, index) => {
+          goalBoxes[index].querySelector("h3").textContent = box.title;
+          goalBoxes[index].querySelector("p").textContent = box.description;
+        });
+
+        /*signup*/
+        const signupSection = document.querySelector(".signup-section");
+        signupSection.querySelector("h2").textContent = data.noPov.signup.title;
+        signupSection.querySelector("p").textContent = data.noPov.signup.description;
+        const signupButton = signupSection.querySelector(".signup-button");
+        signupButton.textContent = data.noPov.signup.buttonText;
+        signupButton.href = data.noPov.signup.buttonUrl;
       }
       // noPov page fetch
       if ((currentPage === "/noPov.html")) {
@@ -76,61 +127,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
       /*global footer*/
       const footerSections = document.querySelectorAll(".footer-section");
-
-      // Loop through each footer section
       footerSections.forEach((section, index) => {
-        // Add appropriate content based on section index
+        const footerData = responseData.common.footer;
+        
         if (index === 0) {
-          // Contact section
-          section.querySelector("h4").textContent =
-            responseData.common.footer.contact.title;
+          section.querySelector("h4").textContent = footerData.contact.title;
           const paragraphs = section.querySelectorAll("p");
-          paragraphs[0].textContent = responseData.common.footer.contact.email;
-          paragraphs[1].textContent = responseData.common.footer.contact.phone;
-        } else if (index === 1) {
-          // Quick Links section
-          section.querySelector("h4").textContent =
-            responseData.common.footer.quickLinks.title;
+          paragraphs[0].textContent = footerData.contact.email;
+          paragraphs[1].textContent = footerData.contact.phone;
+        } 
+        else if (index === 1) {
+          section.querySelector("h4").textContent = footerData.quickLinks.title;
           const ul = section.querySelector("ul");
-          responseData.common.footer.quickLinks.links.forEach((link) => {
+          footerData.quickLinks.links.forEach((link) => {
             const li = section.querySelector(`li a[href="${link.url}"]`);
             if (li) li.textContent = link.text;
           });
-        } else if (index === 2) {
-          // Social Links section
-          section.querySelector("h4").textContent =
-            responseData.common.footer.social.title;
+        } 
+        else if (index === 2) {
+          section.querySelector("h4").textContent = footerData.social.title;
           const socialLinks = section.querySelectorAll(".social-link");
-          responseData.common.footer.social.links.forEach((link, i) => {
+          footerData.social.links.forEach((link, i) => {
             if (socialLinks[i]) socialLinks[i].textContent = link.platform;
           });
         }
-        /*bottom of footer*/
-        document.querySelector(".footer-bottom").textContent =
-          responseData.common.footer.copyright;
       });
+      
+
+      document.querySelector(".footer-bottom").textContent = responseData.common.footer.copyright;
+    })
+    .catch(error => {
+      console.error('Error loading data:', error);
     });
 });
-
-// get the form element
-form = document.getElementById("signup-form");
-// create eventlistner when the submit button is clicked
-form.addEventListener("submit", (e) =>{
-    e.preventDefault();
-    const formBody = {
-        fistname: firstName.value,
-        lastname: lastName.value,
-        userEmail: email.value,
-        userComments: comments.value
-    }
-    
-    const requestHeaders = {
-        "Content-Type": "application/json"
-    };
-
-    fetch('/signUp', {
-        method: 'POST',
-        headers: requestHeaders,
-        body: JSON.stringify(formBody)
-    })
-})
