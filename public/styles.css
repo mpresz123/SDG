@@ -42,6 +42,8 @@ td th {
   width: 100%;
 }
 
+
+
 /*Headers*/
 
 #zH-header {
@@ -190,8 +192,8 @@ td th {
   display: inline-block;
   background-color: var(--paper-gray);
   margin-top: 35px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 0;
+  padding-bottom: 10px;
   padding-left: 11px;
   padding-right: 11px;
   margin-bottom: 20px;
@@ -203,6 +205,7 @@ td th {
   overflow: hidden;
   transition: 0.5s ease-in-out;
   width: 450px;
+  max-height: 145px;
   
 }
 
@@ -314,6 +317,32 @@ td th {
 }
 
 #home-info-button:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+#check-out-team-heading{
+  position: relative;
+  bottom: 100px;
+}
+
+#home-info-button1 {
+  display: block;
+  position: relative;
+  bottom: 100px;
+  margin: auto;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: ease-in 0.5s;
+  border: none;
+  text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea, 0 0 24px #00ffea;
+}
+
+#home-info-button1:hover {
   background-color: #4caf50;
   transform: scale(1.05);
 }
@@ -654,7 +683,7 @@ td th {
   list-style-type: none;
 }
 
-.planListBox, .policyListBox {
+.planListBox {
   display: inline-block;
   width: 25rem;
   height: 10rem;
@@ -678,12 +707,12 @@ td th {
   align-items: center;
 }
 
-.planListBox h3, .policyListBox h3{
+.planListBox h3{
   display: flex;
   position: relative;
   margin-top: -59px;
 }
-.planListBox p, .policyListBox p{
+.planListBox p{
   margin-top: 6px;
 }
 
@@ -693,7 +722,7 @@ td th {
   list-style-type: none;
 }
 
-/* .policyListBox {
+.policyListBox {
   display: inline-block;
   width: 15rem;
   height: 10rem;
@@ -702,7 +731,7 @@ td th {
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: var(--shadow);
-} */
+}
 
 .policyListBox div {
   background-color: var(--secondary-color);
