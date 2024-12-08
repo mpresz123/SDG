@@ -109,6 +109,7 @@ if (document.getElementById("homepage")) {
                 mainheading2.setAttribute("id", "home-h2");
 
                 const check_team = document.createElement("h4");
+                check_team.setAttribute("id", "check-out-team-heading")
                 check_team.textContent = homeData.team_heading;
                 
 
@@ -140,7 +141,7 @@ if (document.getElementById("homepage")) {
               };
 
                const team_button = document.createElement("button");
-               team_button.setAttribute("id", "home-info-button");
+               team_button.setAttribute("id", "home-info-button1");
                team_button.textContent = homeData.button3;
                team_button.onclick = () => {
                 window.location.href = "/ourteam.html";
