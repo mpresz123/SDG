@@ -617,7 +617,7 @@ td th {
 
 .planListBox {
   display: inline-block;
-  width: 15rem;
+  width: 25rem;
   height: 10rem;
   padding: 2rem;
   margin: 1rem;
@@ -638,6 +638,16 @@ td th {
   justify-content: center;
   align-items: center;
 }
+
+.planListBox h3{
+  display: flex;
+  position: relative;
+  margin-top: -59px;
+}
+.planListBox p{
+  margin-top: 6px;
+}
+
 
 .policyList {
   margin-top: 10px;
@@ -667,6 +677,7 @@ td th {
   justify-content: center;
   align-items: center;
 }
+
 
 /* good health and wellbeing content*/
 
