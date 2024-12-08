@@ -1,5 +1,5 @@
 const localJsonFile = "final.json";
-const currentPage = window.location.pathname;
+const currentPage = window.location.pathname.split("/").pop();
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch(localJsonFile)
@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } 
         
         if (link.isButton) {
-          if (currentPage === "/public/noPov.html") {
+          if (currentPage === "noPov.html") {
             a.classList.add("final-nav-buttonNp");
-          } else if (currentPage === "/public/zH.html") {
+          } else if (currentPage === "zH.html") {
             a.classList.add("final-nav-buttonzH");
-          } else if (currentPage === "/public/goodhealth.html") {
+          } else if (currentPage === "goodhealth.html") {
             a.classList.add("final-nav-buttongH");
           } else {
             a.classList.add("final-nav-buttonHome");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       // signup page fetch
-      if (currentPage === "/public/newsletter.html") {
+      if (currentPage === "newsletter.html") {
         const data = responseData.newsletter;
         console.log(data);
         const header = document.getElementById("newsletter-header").children;
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       /* unhardcoding each page*/
-      if (currentPage === "/public/noPov.html") {
+      if (currentPage === "noPov.html") {
         const data = responseData;
         
         // Banner section

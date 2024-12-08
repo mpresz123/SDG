@@ -161,18 +161,18 @@
     "navigation": {
       "brand": "SDG advisory comittee",
       "links": [
-        { "text": "Home", "url": "/public/index.html", "active": false },
-        { "text": "No Poverty", "url": "/public/noPov.html", "active": false },
-        { "text": "Zero Hunger", "url": "/public/zH.html", "active": false },
+        { "text": "Home", "url": "index.html", "active": false },
+        { "text": "No Poverty", "url": "noPov.html", "active": false },
+        { "text": "Zero Hunger", "url": "zH.html", "active": false },
         {
           "text": "Good Health and Wellbeing",
-          "url": "/public/goodhealth.html",
+          "url": "goodhealth.html",
           "active": false
         },
-        { "text": "Our Team", "url": "/public/ourteam.html", "active": false },
+        { "text": "Our Team", "url": "ourteam.html", "active": false },
         {
           "text": "Newsletter",
-          "url": "/public/newsletter.html",
+          "url": "newsletter.html",
           "isButton": true
         }
       ]
