@@ -62,16 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
         formElement[4].classList.add("check-box");
       }
       // index page fetch
-      if ((currentPage = "/index.html")) {
+      if ((currentPage === "/index.html")) {
       }
       // noPov page fetch
-      if ((currentPage = "/noPov.html")) {
+      if ((currentPage === "/noPov.html")) {
       }
       // good health page fetch
-      if ((currentPage = "/goodhealth.html")) {
+      if ((currentPage === "/goodhealth.html")) {
       }
       // zero hunger page fetch
-      if ((currentPage = "/zH.html")) {
+      if ((currentPage === "/zH.html")) {
       }
 
       /*global footer*/
