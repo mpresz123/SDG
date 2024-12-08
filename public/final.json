@@ -13,6 +13,9 @@
     "button": "Learn More",
     "alt": "no poverty image"
   },
+  "ourteam": {
+    "main_heading": "Our Team"
+  },
   "zeroHunger": {
     "header": {
       "imgURL": "assets/goal2.png",
