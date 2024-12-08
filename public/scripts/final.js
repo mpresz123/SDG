@@ -4,9 +4,11 @@ var localJSONFile = "final.json";
 const currentPage = window.location.pathname.split("/").pop();
 
 var featuredgoals = document.querySelector("#home-featured-goals");
+var overlayclass = document.querySelector(".overlay");
 var article1 = document.querySelector("#home-article-1");
 var article2 = document.querySelector("#home-article-2");
 var article3 = document.querySelector("#home-article-3");
+var article6 = document.querySelector("#team");
 var ourteam = document.querySelector("#team-section");
 var article4 = document.querySelector("#team-contributions-article");
 var article5 = document.querySelector("#team-article");
@@ -19,6 +21,8 @@ if (document.getElementById("teampage")) {
             .then(response => response.json())
             .then(responseData => {
                 const teamData = responseData.ourteam;
+
+              
 
                 const heading1 = document.createElement("h1");
                 heading1.textContent = teamData.main_heading;
@@ -48,6 +52,8 @@ if (document.getElementById("teampage")) {
                 const text4 = document.createElement("p")
                 text4.textContent = teamData.bio4;
 
+                
+
 
                 ourteam.appendChild(article4);
                 article4.appendChild(heading3);
@@ -76,6 +82,13 @@ if (document.getElementById("homepage")) {
             .then(responseData => {
                 // Access the 'home' object directly
                 const homeData = responseData.home;
+                const lineBreak = document.createElement("br");
+                const lineBreak2 = document.createElement("br");
+                const lineBreak3 = document.createElement("br");
+                const lineBreak4 = document.createElement("br");
+                const lineBreak5 = document.createElement("br");
+                const lineBreak6 = document.createElement("br");
+
 
                 const schedules_section = document.createElement("section");
                 schedules_section.setAttribute("id", "home-featured-goals");
@@ -84,6 +97,19 @@ if (document.getElementById("homepage")) {
                 const heading1 = document.createElement("h1");
                 heading1.setAttribute("id", "home-main-title");
                 heading1.textContent = homeData.main_title;
+
+                const mainheading1 = document.createElement("h1");
+                mainheading1.textContent = homeData.mainheading1;
+                mainheading1.setAttribute("id", "home-h1");
+
+                const mainheading2 = document.createElement("h1");
+                mainheading2.textContent = homeData.mainheading2;
+                mainheading2.setAttribute("id", "home-h2");
+
+                const check_team = document.createElement("h1");
+                check_team.textContent = homeData.team_heading;
+                check_team.setAttribute("id", "home-h2");
+                
 
                 // Create the image element
                 const imageElement = document.createElement("img");
@@ -111,6 +137,8 @@ if (document.getElementById("homepage")) {
                 button2.onclick = () => {
                   window.location.href = "/zH.html";
               };
+
+              
 
                 const heading4a = document.createElement("h4");
                 heading4a.textContent = homeData.title2;
@@ -143,20 +171,37 @@ if (document.getElementById("homepage")) {
 
 
                 schedules_section.appendChild(heading1);
+                overlayclass.appendChild(mainheading1);
+                overlayclass.appendChild(mainheading2);
+
+                schedules_section.appendChild(article1);
+                schedules_section.appendChild(article2);
+                schedules_section.appendChild(article3);
+
+
                 article1.appendChild(imageElement);
                 article1.appendChild(heading4);
+                article1.appendChild(lineBreak);
                 article1.appendChild(text1);
+                article1.appendChild(lineBreak2);
                 article1.appendChild(button);
 
                 article2.appendChild(imageElementa);
                 article2.appendChild(heading4a);
+                article2.appendChild(lineBreak3);
                 article2.appendChild(text2);
+                article2.appendChild(lineBreak4);
                 article2.appendChild(button2);
 
                 article3.appendChild(imageElementb);
                 article3.appendChild(heading4b);
+                article3.appendChild(lineBreak5);
                 article3.appendChild(text3);
+                article3.appendChild(lineBreak6);
                 article3.appendChild(button3);
+
+                article6.appendChild(check_team);
+
 
                 featuredgoals.appendChild(schedules_section);
             })

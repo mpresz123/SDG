@@ -11,7 +11,12 @@
     "imageURL2": "assets/zero_hunger.jpg",
     "imageURL3": "assets/good_health_&_wb.jpg",
     "button": "Learn More",
-    "alt": "no poverty image"
+    "alt": "no poverty image",
+    "mainheading1" : "Sustainable Development Goals",
+    "mainheading2" : "Supporting local policy makers in advancing Sustainable Development Goals",
+    "team_heading" : "Check out our Team here!",
+    "button2" : "Learn more"
+
   },
   "ourteam": {
     "main_heading": "Our Team",
