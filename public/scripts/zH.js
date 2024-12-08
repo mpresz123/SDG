@@ -47,6 +47,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
           boxContent[1].textContent = data.plans.items[i].Title;
           boxContent[2].textContent = data.plans.items[i].Plan;
         }
+        // plans
+        document.getElementById("policy").children[0].textContent = data.policy.title;
+        policyList = document.getElementsByClassName("policyListBox");
+        for (i = 0; i < policyList.length; i++){
+          boxContent = policyList[i].children;
+          boxContent[0].textContent = i+1;
+          boxContent[1].textContent = data.policy.items[i].Title;
+          boxContent[2].textContent = data.policy.items[i].Plan;
+        }
     })
     .catch(error => console.error("Error fetching JSON data:", error))
 })
