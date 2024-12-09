@@ -49,11 +49,6 @@ if (document.getElementById("teampage")) {
                 text3.textContent = teamData.bio3;
                 const text4 = document.createElement("p")
                 text4.textContent = teamData.bio4;
-
-                rows = document.getElementById("contributionsTable").children;
-                for (i = 0; i < rows.length; i++){
-                    
-                }
                 
                 ourteam.appendChild(article4);
                 article4.appendChild(heading3);
@@ -67,6 +62,14 @@ if (document.getElementById("teampage")) {
                 article5.appendChild(text2);
                 article5.appendChild(text3);
                 article5.appendChild(text4);
+                rows = document.getElementById("contributionsTable").children[0].children;
+                for (i = 0; i < rows.length; i++){
+                    rowContent = rows[i].children;
+                    for (n = 0; n < rowContent.length; n++){
+                        console.log(`i: ${i}, n: ${n}`);
+                        rowContent[n].textContent = teamData.items[i][n];
+                    }
+                }
 
             })
             .catch(error => console.error('Error loading JSON data:', error));
@@ -275,6 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           formElement[i].textContent = data.inputs[i].label;
           formElement[i].appendChild(inputElement);
+          
         }
 
         formElement[3].classList.add("comment");

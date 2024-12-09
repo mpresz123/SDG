@@ -724,7 +724,7 @@ td th {
 
 .policyListBox {
   display: inline-block;
-  width: 15rem;
+  width: 25rem;
   height: 10rem;
   padding: 2rem;
   margin: 2rem;
@@ -744,6 +744,15 @@ td th {
   height: 40px;
   justify-content: center;
   align-items: center;
+}
+
+.policyListBox h3{
+  display: flex;
+  position: relative;
+  margin-top: -59px;
+}
+.policyListBox p{
+  margin-top: 6px;
 }
 
 
