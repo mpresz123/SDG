@@ -693,12 +693,12 @@ td th {
   align-items: center;
 }
 
-.planListBox h3 {
+.planListBox h3, .policyListBox h3 {
   display: flex;
   position: relative;
   margin-top: -59px;
 }
-.planListBox p {
+.planListBox p, .policyListBox p{
   margin-top: 6px;
 }
 
@@ -709,7 +709,7 @@ td th {
 
 .policyListBox {
   display: inline-block;
-  width: 15rem;
+  width: 25rem;
   height: 10rem;
   padding: 2rem;
   margin: 2rem;
