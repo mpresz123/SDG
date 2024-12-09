@@ -308,6 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "https://trello.com/b/ceSVFrIr/web-based-project";
     };
 
+    // create bios
     const text1 = document.createElement("p");
     text1.textContent = teamData.bio1;
     const text2 = document.createElement("p");
@@ -316,6 +317,12 @@ document.addEventListener("DOMContentLoaded", () => {
     text3.textContent = teamData.bio3;
     const text4 = document.createElement("p");
     text4.textContent = teamData.bio4;
+
+    // create br tags
+    breakLine = document.createElement("br");
+    breakLine2 = document.createElement("br");
+    breakLine3 = document.createElement("br");
+    breakLine4 = document.createElement("br");
 
     const rows = document.getElementById("contributionsTable").children[0].children;
     for (let i = 0; i < rows.length; i++) {
@@ -336,9 +343,13 @@ document.addEventListener("DOMContentLoaded", () => {
     ourteam.appendChild(article5);
 
     article5.appendChild(heading2);
+    article5.appendChild(breakLine);
     article5.appendChild(text1);
+    article5.appendChild(breakLine2);
     article5.appendChild(text2);
+    article5.appendChild(breakLine3);
     article5.appendChild(text3);
+    article5.appendChild(breakLine4);
     article5.appendChild(text4);
 }
       // good health page fetch
