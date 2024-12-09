@@ -684,6 +684,7 @@ td th {
 
 #targetTitle{
   margin-left: 32px;
+  margin-top: 30px;
 }
 
 .target h3 {
@@ -718,6 +719,7 @@ td th {
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: var(--shadow);
+  
 }
 
 .planListBox div, .policyListBox div {

@@ -54,7 +54,7 @@
       "items": [
         {
           "Title": "Target 1",
-          "Target": "100% access to adequate food all year round. \nAchieving universal access to adequate food throughout the year is a fundamental aspect of addressing global hunger and promoting sustainable development. This goal is enshrined in Sustainable Development Goal (SDG) 2, which aims to end hunger, achieve food security, and improve nutrition by 2030.",
+          "Target": "100% access to adequate food all year round. \nAchieving universal access to adequate food throughout the year is a fundamental aspect of addressing global hunger and promoting sustainable development. This goal is enshrined in Sustainable Development Goal 2, which aims to end hunger, achieve food security, and improve nutrition by 2030.",
           "imgurl": "assets/food_safety.png",
           "source": "https://www.foodsafety.gov/keep-food-safe/food-safety-by-type-food"
         },
@@ -81,11 +81,11 @@
         },
         {
           "Title": "Promoting Breastfeeding",
-          "Plan": "Encourage exclusive breastfeeding for the first six months and continue breastfeeding until two years old. Or provide private space to mothers to make breastfeeeding more accessable."
+          "Plan": "Encourage breastfeeding for the first six months and continue until two years, or provide private spaces to make it more accessible."
         },
         {
           "Title": "Reducing Food Waste",
-          "Plan": "Educate consumers on portion sizes, proper food storage, and repurposing leftovers"
+          "Plan": "Educate consumers on proper portion sizes, effective food storage techniques, and creative ways to repurpose leftovers to reduce waste."
         }
       ]
     },
@@ -94,7 +94,7 @@
       "items": [
         {
           "Title": "Expand Social Protection Programs",
-          "Plan": "Implement food assistance programs such as food vouchers or cash transfers targeted at vulnerable populations."
+          "Plan": "Implement food assistance programs like vouchers or cash for vulnerable populations."
         },
         {
           "Title": "Expand Access to Health Services",
