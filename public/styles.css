@@ -448,8 +448,8 @@ td th {
 
 .final-logo {
   display: block;
-  position: relative;
   border-radius: 10px;
+  position: relative;
   width: 100px;
   height: 100px;
   right: 245px;

@@ -364,11 +364,18 @@ document.addEventListener("DOMContentLoaded", () => {
         mainTitle.textContent = data.pageTitle;
         introParagraph.textContent = data.introduction;
 
+        mainSection.appendChild(mainTitle);
+        mainSection.appendChild(introParagraph);
+
         /* initiatives*/
         const initiativesArticle = document.querySelector('.article');
         const initiativesTitle = initiativesArticle.querySelector('.gH-h2');
         const initiativesList = initiativesArticle.querySelector('ul');
         
+        mainSection.appendChild(initiativesArticle);
+        mainSection.appendChild(initiativesTitle);
+        mainSection.appendChild(initiativesList);
+
         initiativesTitle.textContent = data.main[0].title;
         initiativesList.innerHTML = '';
         for(let i = 0; i < data.main[0].initiatives.length; i++) {
@@ -377,10 +384,15 @@ document.addEventListener("DOMContentLoaded", () => {
             initiativesList.appendChild(li);
         }
 
+
         /*challenges*/
         const challengesArticle = document.querySelector('.gH-overview-card');
         const challengesTitle = challengesArticle.querySelector('.gH-h2');
         const challengesList = challengesArticle.querySelector('.challenge-list');
+
+        mainSection.appendChild(challengesArticle);
+        challengesArticle.append(challengesTitle);
+        challengesArticle.append(challengesList);
         
         challengesTitle.textContent = data.main[1].title;
         challengesList.innerHTML = '';
@@ -390,10 +402,15 @@ document.addEventListener("DOMContentLoaded", () => {
             challengesList.appendChild(li);
         }
 
+       
         /*development*/
         const developmentArticle = document.querySelector('.gH-Development-plan');
         const developmentTitle = developmentArticle.querySelector('.gH-h2');
         const stepCards = developmentArticle.querySelectorAll('.gH-step-card');
+
+        mainSection.appendChild(developmentArticle);
+        developmentArticle.appendChild(developmentTitle);
+   
         
         developmentTitle.textContent = data.main[2].title;
         for(let i = 0; i < stepCards.length; i++) {
@@ -413,6 +430,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const policyArticle = document.querySelector('.gH-policy-recommendations');
         const policyTitle = policyArticle.querySelector('.gH-h2');
         const recommendationCards = policyArticle.querySelectorAll('.recommendation-card');
+
+        mainSection.appendChild(policyArticle);
+        policyArticle.appendChild(policyTitle);
         
         policyTitle.textContent = data.main[3].title;
         for(let i = 0; i < recommendationCards.length; i++) {
@@ -425,6 +445,18 @@ document.addEventListener("DOMContentLoaded", () => {
             title.textContent = rec.title;
             description.textContent = rec.description;
         }
+
+        //video 
+
+        const video1 = document.getElementById("video");
+        video1.src = "healthandwellbeing.mp4";
+        video1.controls = true;
+        video1.autoplay = false;
+        video1.width = 640;
+        video1.height = 360;
+
+        mainSection.appendChild(video1);
+
       }
       // zero hunger page fetch
       if ((currentPage === "zH.html")) {
