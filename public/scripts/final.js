@@ -50,10 +50,14 @@ if (document.getElementById("teampage")) {
                 const text4 = document.createElement("p")
                 text4.textContent = teamData.bio4;
 
-                rows = document.getElementById("contributionsTable").children;
-                for (i = 0; i < rows.length; i++){
-                    
-                }
+                rows = document.getElementById("contributionsTable").children[0].children;
+                    for (i = 0; i < rows.length; i++){
+                        rowContent = rows[i].children;
+                        for (n = 0; n < rowContent.length; n++){
+                            console.log(`i: ${i}, n: ${n}`);
+                            rowContent[n].textContent = teamData.items[i][n];
+                        }
+                    }
                 
                 ourteam.appendChild(article4);
                 article4.appendChild(heading3);
@@ -218,55 +222,64 @@ if (document.getElementById("homepage")) {
                 featuredgoals.appendChild(schedules_section);
                 featuredgoals.appendChild(article6);
                 }
-            }
+              })
+              .catch(error => console.error('Error loading JSON data:', error));
+      });
+  }
+
+            
             // signup page fetch
             if (currentPage === "newsletter.html") {
-                const data = responseData.newsletter;
-                console.log(data);
-                const header = document.getElementById("newsletter-header").children;
-                header[0].textContent = data.header.title;
-                header[1].textContent = data.header.description;
-                formElement = document.getElementById("signup-form").children;
-                for (let i = 0; i < 5; i++) {
-                if (i === 3) {
-                    inputElement = document.createElement("textarea");
-                    inputElement.name = data.inputs[i].name;
-                } else {
-                    formElement[i].textContent = data.inputs[i].label;
-                    inputElement = document.createElement("input");
-                    inputElement.type = data.inputs[i].type;
-                    inputElement.name = data.inputs[i].name;
-                    if(i < 3) {
-                    inputElement.required = data.inputs[i].isRequired
-                    }
-                }
-                formElement[i].textContent = data.inputs[i].label;
-                formElement[i].appendChild(inputElement);
-                
-                }
-
-                formElement[3].classList.add("comment");
-                formElement[4].classList.add("check-box");
-
-                form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                const formData = new FormData(form);
-                const formBody = {
-                    firstName: formData.get("firstName"),
-                    lastName: formData.get("lastName"),
-                    userEmail: formData.get("email"),
-                    userComments: formData.get("comments")
-                };
-                
-                fetch('/signUp', {
-                    method: 'POST',
-                    headers: {
-                    "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(formBody)
-                });
-                });
-            }
+              const data = responseData.newsletter;
+              console.log(data);
+          
+              const header = document.getElementById("newsletter-header").children;
+              header[0].textContent = data.header.title;
+              header[1].textContent = data.header.description;
+          
+              const formElement = document.getElementById("signup-form").children;
+              for (let i = 0; i < 5; i++) {
+                  let inputElement;
+                  if (i === 3) {
+                      inputElement = document.createElement("textarea");
+                      inputElement.name = data.inputs[i].name;
+                  } else {
+                      formElement[i].textContent = data.inputs[i].label;
+                      inputElement = document.createElement("input");
+                      inputElement.type = data.inputs[i].type;
+                      inputElement.name = data.inputs[i].name;
+                      if (i < 3) {
+                          inputElement.required = data.inputs[i].isRequired;
+                      }
+                  }
+                  formElement[i].textContent = data.inputs[i].label;
+                  formElement[i].appendChild(inputElement);
+              }
+          
+              formElement[3].classList.add("comment");
+              formElement[4].classList.add("check-box");
+          
+              const form = document.getElementById("signup-form"); // Ensure `form` is defined
+              form.addEventListener("submit", (e) => {
+                  e.preventDefault();
+                  const formData = new FormData(form);
+                  const formBody = {
+                      firstName: formData.get("firstName"),
+                      lastName: formData.get("lastName"),
+                      userEmail: formData.get("email"),
+                      userComments: formData.get("comments")
+                  };
+          
+                  fetch('/signUp', {
+                      method: 'POST',
+                      headers: {
+                          "Content-Type": "application/json"
+                      },
+                      body: JSON.stringify(formBody)
+                    })
+                    .catch(error => console.error('Error loading JSON data:', error));
+            });
+        }
 
             /* unhardcoding each page*/
             if (currentPage === "noPov.html") {
@@ -303,74 +316,8 @@ if (document.getElementById("homepage")) {
                 signupButton.textContent = data.noPov.signup.buttonText;
                 signupButton.href = data.noPov.signup.buttonUrl;
             }
-            // ourteam page fetch
-            if ((currentPage === "/ourteam.html")) {
-                var featuredgoals = document.querySelector("#home-featured-goals");
-                var overlayclass = document.querySelector(".overlay");
-                var article1 = document.querySelector("#home-article-1");
-                var article2 = document.querySelector("#home-article-2");
-                var article3 = document.querySelector("#home-article-3");
-                var article6 = document.querySelector("#team");
-                var ourteam = document.querySelector("#team-section");
-                var article4 = document.querySelector("#team-contributions-article");
-                var article5 = document.querySelector("#team-article");
             
-                const teamData = responseData.ourteam;
-
             
-
-                const heading1 = document.createElement("h1");
-                heading1.textContent = teamData.main_heading;
-                heading1.setAttribute("id", "home-main-title");
-
-                const heading2 = document.createElement("h1");
-                heading2.setAttribute("id", "team-heading");
-                heading2.textContent = teamData.team_heading;
-
-                const heading3 = document.createElement("h1");
-                heading3.setAttribute("id", "contributions-heading");
-                heading3.textContent = teamData.contributions;
-
-                const button1 = document.createElement("button");
-                button1.setAttribute("class", "trello-button");
-                button1.textContent = teamData.button1;
-                button1.onclick = () => {
-                    window.location.href = "https://trello.com/b/ceSVFrIr/web-based-project";
-                };
-
-                const text1 = document.createElement("p")
-                text1.textContent = teamData.bio1;
-                const text2 = document.createElement("p")
-                text2.textContent = teamData.bio2;
-                const text3 = document.createElement("p")
-                text3.textContent = teamData.bio3;
-                const text4 = document.createElement("p")
-                text4.textContent = teamData.bio4;
-
-                rows = document.getElementById("contributionsTable").children[0].children;
-                    for (i = 0; i < rows.length; i++){
-                        rowContent = rows[i].children;
-                        for (n = 0; n < rowContent.length; n++){
-                            console.log(`i: ${i}, n: ${n}`);
-                            rowContent[n].textContent = teamData.items[i][n];
-                        }
-                    }
-
-
-                ourteam.appendChild(article4);
-                article4.appendChild(heading3);
-                article4.appendChild(button1);
-                ourteam.appendChild(article5);
-                article4.appendChild(heading1);
-                ourteam.appendChild(heading1);
-
-                article5.appendChild(heading2);
-                article5.appendChild(text1);
-                article5.appendChild(text2);
-                article5.appendChild(text3);
-                article5.appendChild(text4);
-
-            }
             // good health page fetch
             if ((currentPage === "goodhealth.html")) {
                 const data = responseData.goodHealth;
@@ -444,6 +391,7 @@ if (document.getElementById("homepage")) {
                     title.textContent = rec.title;
                     description.textContent = rec.description;
                 }
+                
             }
             // zero hunger page fetch
             if ((currentPage === "zH.html")) {
@@ -526,8 +474,4 @@ if (document.getElementById("homepage")) {
                 }
       });
       document.querySelector(".footer-bottom").textContent = responseData.common.footer.copyright;
-    })
-    .catch(error => {
-      console.error('Error loading data:', error);
-    });
-};
+
