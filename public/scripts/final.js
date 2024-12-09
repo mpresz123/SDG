@@ -2,12 +2,17 @@ const localJsonFile = "final.json";
 var localJSONFile = "final.json";
 
 const currentPage = window.location.pathname.split("/").pop();
+console.log(currentPage);
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch(localJsonFile)
     .then((response) => response.json())
     .then((responseData) => {
       /*global navbar*/
+      const logo = document.getElementById("logo-button");
+      logo.setAttribute("href", "index.html");
       const navLinks = document.querySelector(".final-nav-links");
       responseData.noPov.navigation.links.forEach((link) => {
         const li = document.createElement("li");
@@ -277,7 +282,7 @@ document.addEventListener("DOMContentLoaded", () => {
         signupButton.href = data.noPov.signup.buttonUrl;
       }
       // ourteam page fetch
-      if ((currentPage === "/ourteam.html")) {
+      if ((currentPage === "ourteam.html")) {
         var featuredgoals = document.querySelector("#home-featured-goals");
         var overlayclass = document.querySelector(".overlay");
         var article1 = document.querySelector("#home-article-1");
@@ -319,7 +324,15 @@ document.addEventListener("DOMContentLoaded", () => {
         text3.textContent = teamData.bio3;
         const text4 = document.createElement("p")
         text4.textContent = teamData.bio4;
-
+        rows = document.getElementById("contributionsTable").children[0].children;
+        for (i = 0; i < rows.length; i++){
+           rowContent = rows[i].children;
+           for (n = 0; n < rowContent.length; n++){
+               console.log(`i: ${i}, n: ${n}`);
+               rowContent[n].textContent = teamData.items[i][n];
+               console.log(`content: ${teamData.items[i][n]}`);
+           }
+       }
         
 
 
