@@ -768,7 +768,7 @@ td th {
   margin: auto;
   overflow-wrap: normal;
   padding: 20px;
-}
+} 
 
 .challenge-list,
   .recommendations-grid {
@@ -780,8 +780,15 @@ td th {
   display: none;
 }
 
+
+.gH-h2, .gH-h2 li{
+  display: block;
+  text-align: center;
+  color: lightskyblue;
+
+}
+
 .gH-h1,
-.gH-h2,
 .gH-h3 {
   color: lightskyblue;
   font-style: initial;
