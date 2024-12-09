@@ -709,7 +709,7 @@ td th {
 
 .policyListBox {
   display: inline-block;
-  width: 25rem;
+  width: 15rem;
   height: 10rem;
   padding: 2rem;
   margin: 2rem;
@@ -730,17 +730,6 @@ td th {
   justify-content: center;
   align-items: center;
 }
-
-.policyListBox h3{
-  display: flex;
-  position: relative;
-  margin-top: -59px;
-}
-.policyListBox p{
-  margin-top: 6px;
-}
-
-
 
 /* good health and wellbeing content*/
 
@@ -818,6 +807,9 @@ td th {
 }
 
 #signup-form {
+  width: 80%;
+  max-width: 642px;
+  margin: auto;
   border-radius: 10px;
   line-height: 2rem;
   background-color: var(--paper-gray);
@@ -842,6 +834,10 @@ td th {
   display: inline;
   width: auto;
 }
+#submitBtn-container{
+  display: block;
+  text-align: center;
+}
 
 #signup-form .submitBtn {
   width: auto;
@@ -850,8 +846,7 @@ td th {
   background-color: var(--highlight-color);
   color: var(--white);
   border-radius: 15px;
-}
-
+  text-align: center;
 #signup-form .submitBtn:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -979,151 +974,4 @@ td th {
   .video {
     height: 150px;
   }
-}
-
-/*
-alistair-------------------------------------
-
-/*referencing for css: 
-1 rem meaning = 1 font-size. I believe it is more useful than what we have been taught in lab sessions as the sizing does not match well when using px as using rem can ensure consistency.
-1fr meaning = 1 fraction. when we have many items within a page this 1fr function allows us to portray each item into an available space which makes the page look more presentable for users. */
-/*
-
-.navbar {
-    position:fixed;
-    top: 0;
-    width: 100%;
-    background-color: lightskyblue;
-    height: 50px;
-  }
-  .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    margin-right: 5%;
-  }
-  .nav-links ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .nav-links li{
-    margin-left: 2.5rem;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-  }
-  .nav-links a:hover{
-    color: #4CAF50;
-  }
-  .nav-links a.active {
-    color: #4CAF50;
-    font-weight: bold;
-  }
-
-  bosco----------------------------
-
-  #nBtn {
-  display: none;
-}
-.navSection {
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  z-index: 1000;
-}
-.navSection figure {
-  display: inline;
-  margin-left: 1%;
-}
-.navSection figure img {
-  width: 8%;
-  height: 8%;
-}
-.navBar {
-  display: inline-block;
-  width: fit-content;
-  margin-left: 50%;
-  margin-bottom: 0.5%;
-}
-.navBar ul {
-  list-style: none;
-}
-.navBar ul li {
-  display: inline;
-  padding-left: 1rem;
-}
-.navBar ul li a {
-  text-decoration: none;
-}
-.newsLetter {
-  display: inline-block;
-  background-color: var(--secondary-color);
-  border-radius: 20px;
-  padding: 1rem;
-}
-.navSection nav ul li a:hover {
-  color: var(--primary-color);
-}
-
-/* newsletter */
-/*
-#sBtn {
-  display: flex;
-  padding: 1rem;
-  margin-left: 40%;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  background-color: var(--secondary-color);
-  color: white;
-}
-.showSignUp:hover {
-  cursor: pointer;
-}
-.signUp {
-  box-shadow: --shadow;
-}
-.hidden {
-  display: none;
-}
-.signUp form {
-  padding: 10px;
-}
-.signUp form p {
-  margin: 20px;
-}
-.submitBtn {
-  color: white;
-  padding: 1rem;
-  background-color: var(--primary-color);
-  border-radius: 10%;
-}
-*/
-/* Mikolaj------------------------------------
-
-
-.footerSection {
-  display: inline-block;
-  width: 512px;
-}
-
-.footerSection p {
-  top: 60px;
-}
-
-#teaminfo {
-  padding-bottom: 60px;
-}
-
-.footerLinks {
-  margin-left: 200px;
-}
-
-.footerSection nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-*/
+}}

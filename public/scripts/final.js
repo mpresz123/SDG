@@ -196,6 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // signup page fetch
       if (currentPage === "newsletter.html") {
         const data = responseData.newsletter;
+        const form = document.getElementById("signup-form");
         console.log(data);
         const header = document.getElementById("newsletter-header").children;
         header[0].textContent = data.header.title;
