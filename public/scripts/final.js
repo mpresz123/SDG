@@ -384,6 +384,17 @@ document.addEventListener("DOMContentLoaded", () => {
             initiativesList.appendChild(li);
         }
 
+        //video 
+
+        const video1 = document.getElementById("video");
+        video1.src = "healthandwellbeing.mp4";
+        video1.controls = true;
+        video1.autoplay = false;
+        video1.width = 640;
+        video1.height = 360;
+
+        mainSection.appendChild(video1);
+
 
         /*challenges*/
         const challengesArticle = document.querySelector('.gH-overview-card');
@@ -445,17 +456,6 @@ document.addEventListener("DOMContentLoaded", () => {
             title.textContent = rec.title;
             description.textContent = rec.description;
         }
-
-        //video 
-
-        const video1 = document.getElementById("video");
-        video1.src = "healthandwellbeing.mp4";
-        video1.controls = true;
-        video1.autoplay = false;
-        video1.width = 640;
-        video1.height = 360;
-
-        mainSection.appendChild(video1);
 
       }
       // zero hunger page fetch
