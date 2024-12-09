@@ -862,6 +862,7 @@ td th {
   color: var(--white);
   border-radius: 15px;
   text-align: center;
+}
 #signup-form .submitBtn:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -869,124 +870,22 @@ td th {
 }
 /*responsive web design / media queries*/
 
-@media (max-width: 768px) {
-  /*nav-bar*/
-  .navSection {
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .navSection figure {
-    display: inline;
-    margin-left: 1%;
-  }
-  .navSection figure img {
-    width: 20%;
-    height: 20%;
-  }
-
-  /* nav-links */
-
-  #nBtn {
-    display: inline-block;
-    color: var(--secondary-color);
-    margin-left: 60%;
-  }
-
-  #nBtn:hover {
-    cursor: pointer;
-  }
+@media only screen and (max-width: 768px) {
   .final-nav-bar {
     display: auto;
+    max-height: 8%;
   }
-
-  #home-header,
-  #zH-header,
-  #gH-header,
-  #nopov-header figure {
-    width: 60%;
+  .final-nav-links{
+    display: auto;
+    background-color: var(--paper-gray);
+    border-radius: 10px;
+    opacity: 0.8;
+    position: 0px, 0px;
   }
-
-  #home-header {
-    width: 40%;
-    height: 40%;
-  }
-
-  /* targets */
-  .target {
-    width: 70%;
-  }
-
-  /* footer */
-  #teaminfo {
-    padding-bottom: 0px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .final-nav-links {
-    flex-direction: column;
-    align-items: center;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .final-nav-links a {
-    margin-bottom: 0.4rem;
-  }
-
-  .heading img {
-    height: 150px;
-  }
-
-  .challenge-list,
-  .recommendations-grid {
-    grid-template-columns: 1fr;
-    margin: 0 0 0 1rem;
-  }
-
-  #hamburger-icon {
-    float: right;
-    display: block;
-    color: #7f869a;
-    padding: 2%;
-    opacity: 0.5;
-  }
-
-  .final-nav-links.shownav {
-    height: 300px;
+  .final-nav-links li{
     display: block;
   }
 }
 
-/* whereby this is also a media screen which shows an even more reduced version of the website as stated(480px), this also allows users to view content visibly in a 480 px tab.  */
-@media screen and (max-width: 480px) {
-  .heading img {
-    height: 100px;
-  }
 
-  .h1 {
-    font-size: 1.4rem;
-  }
 
-  .h2 {
-    font-size: 1.1rem;
-  }
-
-  .h3 {
-    font-size: 1rem;
-  }
-
-  .Introduction,
-  .overview-card,
-  .Development-plan,
-  .policy-recommendations {
-    padding: 1rem;
-  }
-
-  .video {
-    height: 150px;
-  }
-}}
