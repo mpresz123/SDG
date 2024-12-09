@@ -361,6 +361,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if ((currentPage === "goodhealth.html")) {
         const data = responseData.goodHealth;
         console.log(data);
+        // get header
+        gHHeader = document.getElementById("gH-header");
+        headerContent = gHHeader.children;
+        for (i = 0; i < headerContent.length; i++){
+          console.log(data.header[i])
+          headerContent[i].textContent = data.header[i];
+        }
 
         /* get main title and introduction*/
         const mainSection = document.querySelector('.gH-Introduction');
@@ -369,17 +376,17 @@ document.addEventListener("DOMContentLoaded", () => {
         mainTitle.textContent = data.pageTitle;
         introParagraph.textContent = data.introduction;
 
-        mainSection.appendChild(mainTitle);
-        mainSection.appendChild(introParagraph);
+        // mainSection.appendChild(mainTitle);
+        // mainSection.appendChild(introParagraph);
 
         /* initiatives*/
         const initiativesArticle = document.querySelector('.article');
         const initiativesTitle = initiativesArticle.querySelector('.gH-h2');
         const initiativesList = initiativesArticle.querySelector('ul');
         
-        mainSection.appendChild(initiativesArticle);
-        mainSection.appendChild(initiativesTitle);
-        mainSection.appendChild(initiativesList);
+        // mainSection.appendChild(initiativesArticle);
+        // mainSection.appendChild(initiativesTitle);
+        // mainSection.appendChild(initiativesList);
 
         initiativesTitle.textContent = data.main[0].title;
         initiativesList.innerHTML = '';
@@ -398,7 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
         video1.width = 640;
         video1.height = 360;
 
-        mainSection.appendChild(video1);
+        // mainSection.appendChild(video1);
 
 
         /*challenges*/
@@ -406,9 +413,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const challengesTitle = challengesArticle.querySelector('.gH-h2');
         const challengesList = challengesArticle.querySelector('.challenge-list');
 
-        mainSection.appendChild(challengesArticle);
-        challengesArticle.append(challengesTitle);
-        challengesArticle.append(challengesList);
+        // mainSection.appendChild(challengesArticle);
+        // challengesArticle.append(challengesTitle);
+        // challengesArticle.append(challengesList);
         
         challengesTitle.textContent = data.main[1].title;
         challengesList.innerHTML = '';
@@ -420,26 +427,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
        
         /*development*/
-        const developmentArticle = document.querySelector('.gH-Development-plan');
-        const developmentTitle = developmentArticle.querySelector('.gH-h2');
-        const stepCards = developmentArticle.querySelectorAll('.gH-step-card');
-
-        mainSection.appendChild(developmentArticle);
-        developmentArticle.appendChild(developmentTitle);
-   
-        
-        developmentTitle.textContent = data.main[2].title;
-        for(let i = 0; i < stepCards.length; i++) {
-            const card = stepCards[i];
-            const step = data.main[2].steps[i];
-            
-            const stepNumber = card.querySelector('.step-number');
-            const stepTitle = card.querySelector('.gH-h3');
-            const stepDescription = card.querySelector('p');
-            
-            stepNumber.textContent = step.number + '.';
-            stepTitle.textContent = step.title;
-            stepDescription.textContent = step.description;
+        developmentArticle = document.querySelector(".gH-Development-plan");
+        console.log(developmentArticle.classList);
+        cards = developmentArticle.children;
+        cards[0].textContent = data.main[2].title;
+        console.log(data.main[2].title);
+        for (i = 1; i < cards.length-1; i++){
+          console.log(`${i+1}.`)
+          cardContent = cards[i].children;
+          cardContent[0].textContent = `${i}.`;
+          cardContent[1].textContent = data.main[2].steps[i].title;
+          cardContent[2].textContent = data.main[2].steps[i].description;
         }
 
         /*policies*/
@@ -447,8 +445,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const policyTitle = policyArticle.querySelector('.gH-h2');
         const recommendationCards = policyArticle.querySelectorAll('.recommendation-card');
 
-        mainSection.appendChild(policyArticle);
-        policyArticle.appendChild(policyTitle);
+        // mainSection.appendChild(policyArticle);
+        // policyArticle.appendChild(policyTitle);
         
         policyTitle.textContent = data.main[3].title;
         for(let i = 0; i < recommendationCards.length; i++) {
