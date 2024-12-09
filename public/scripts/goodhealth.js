@@ -110,23 +110,4 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
               console.error(`Element with selector "${data.Element}" not found.`);
             }
-
-           
-           
-           const footer = document.getElementById('footer');
-           if (footer) {
-               const title = footer.querySelector('h2');
-               if (title) title.textContent = data.footer.title;
-           
-               const description = footer.querySelector('p');
-               if (description) description.textContent = data.footer.description;
-           
-               const phone = footer.querySelector('.contact-phone');
-               if (phone) phone.textContent = 'Phone: ' + data.footer.contact.phone;
-               
-               const email = footer.querySelector('.contact-email');
-               if (email) email.textContent = 'Email: ' + data.footer.contact.email;
-// This selects the footer element on the page by its id, it looks for the h2 tag within the footer and sets all the textcontent to the title from the data.footer.title.
-// Also finds the p paragraph tag and updates all the text content within the desription from the data.footer.description.
-// Finally looks for the classes for the contact.phone and contact.email and sets the text content to both by showing the phone number and email address from data.footer.contact.phone aswell as data.footer.contact.email.
-}})});
+})});

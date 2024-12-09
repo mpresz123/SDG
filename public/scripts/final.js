@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", () => {
         article5.appendChild(text4);
       }
       // good health page fetch
-      if ((currentPage === "/goodhealth.html")) {
+      if ((currentPage === "goodhealth.html")) {
       }
       // zero hunger page fetch
       if ((currentPage === "zH.html")) {
