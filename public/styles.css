@@ -1,14 +1,14 @@
 /*Global Variables */
 :root {
   --zerohunger-red: #e5243b;
-  --zH-yellow: #DDA63A;
-  --gH-green: #4C9F38;
+  --zH-yellow: #dda63a;
+  --gH-green: #4c9f38;
   --highlight-color: #fd6925;
   --off-black: #333333;
   --paper-gray: #f4f4f4;
   --white: #ffffff;
   /*--primary-color: rgb(67, 192, 67);*/
-  --primary-color: #009EDB;
+  --primary-color: #009edb;
   --secondary-color: rgb(255, 166, 0.9);
   --shadow: 0px 0px 5px gray;
 }
@@ -24,7 +24,6 @@ main {
   margin: 0;
   flex: 1;
   margin-top: var(--navbar-height, 0.1rem); /* Fallback if var not set */
-
 }
 
 html {
@@ -41,8 +40,6 @@ table {
 td th {
   width: 100%;
 }
-
-
 
 /*Headers*/
 
@@ -72,13 +69,13 @@ td th {
   overflow: hidden;
 }
 
-#team-heading{
+#team-heading {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-#nopov-header{
+#nopov-header {
   height: 6vh;
   position: relative;
   background-color: #f8f2e4;
@@ -94,8 +91,6 @@ td th {
   color: var(--white);
   padding: 3rem 5% 1rem;
 }
-
-
 
 #our-team-h1 {
   display: inline;
@@ -145,7 +140,7 @@ td th {
   transition: 0.5s ease-in-out;
 }
 
-#contributions-heading{
+#contributions-heading {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -165,7 +160,6 @@ td th {
   overflow: hidden;
   transition: 0.5s ease-in-out;
   box-shadow: var(--shadow);
-  
 }
 
 #team-contributions-article:hover {
@@ -184,11 +178,11 @@ td th {
   text-align: center;
 }
 
-#team-container{
+#team-container {
   text-align: center;
 }
 
-#team{
+#team {
   display: inline-block;
   background-color: var(--paper-gray);
   margin-top: 35px;
@@ -206,10 +200,9 @@ td th {
   transition: 0.5s ease-in-out;
   width: 450px;
   max-height: 145px;
-  
 }
 
-#team:hover{
+#team:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -233,18 +226,17 @@ td th {
   text-align: center;
 }
 
-
 #home-main-title {
   font-size: 2.5rem;
-  font-weight: 700; 
-  margin: 20px auto; 
-  color: #333; 
-  text-align: center; 
-  letter-spacing: 0.5px; 
+  font-weight: 700;
+  margin: 20px auto;
+  color: #333;
+  text-align: center;
+  letter-spacing: 0.5px;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 15px; 
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   width: fit-content;
 }
 
@@ -252,7 +244,6 @@ td th {
   background-color: #ffffff;
   text-align: center;
 }
-
 
 #home-featured-goals article {
   display: inline-block;
@@ -272,11 +263,13 @@ td th {
   transition: 0.5s ease-in-out;
 }
 
-#home-article-1, #home-article-2, #home-article-3{
+#home-article-1,
+#home-article-2,
+#home-article-3 {
   width: 450px;
 }
 
-#home-featured-goals article:hover{
+#home-featured-goals article:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: 0.5s ease-in-out;
@@ -286,10 +279,9 @@ td th {
   width: 100%;
   position: relative;
   margin-top: 6vh;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 }
-
 
 #home-info-pic {
   display: block;
@@ -321,8 +313,7 @@ td th {
   transform: scale(1.05);
 }
 
-#check-out-team-heading{
-  position: relative;
+#check-out-team-heading {
   bottom: 100px;
 }
 
@@ -352,8 +343,6 @@ td th {
   text-decoration: none;
 }
 
-
-
 .overlay {
   position: absolute;
   left: 0;
@@ -381,11 +370,10 @@ td th {
   color: var(--off-black);
 }
 
-
 /*decided navbar*/
 
 .final-nav-bar {
-  background-color:  #ffe6b3;
+  background-color: #ffe6b3;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -403,7 +391,7 @@ td th {
   align-items: center;
 }
 
-.final-nav-links li{
+.final-nav-links li {
   display: inline;
   padding: 15px;
   border-radius: 8px;
@@ -424,7 +412,7 @@ td th {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   font-weight: 500;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .final-nav-links a:hover {
@@ -448,7 +436,7 @@ td th {
 }
 .final-nav-buttonHome {
   background-color: dodgerblue;
-  color: var(--white) !important; 
+  color: var(--white) !important;
   padding: 0.6rem 1rem;
   border-radius: 50px;
 }
@@ -459,7 +447,7 @@ td th {
   border-radius: 50px;
 }
 .final-nav-buttongH {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: var(--white) !important;
   padding: 0.6rem 1rem;
   border-radius: 50px;
@@ -559,7 +547,7 @@ td th {
   margin-top: 2rem;
 }
 
-.trello-button{
+.trello-button {
   display: inline-block;
   background-color: var(--primary-color);
   color: var(--white);
@@ -570,12 +558,12 @@ td th {
   transition: ease-in 0.5s;
 }
 
-.trello-button:hover{
+.trello-button:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-#trello-button-container{
+#trello-button-container {
   text-align: center;
 }
 
@@ -628,8 +616,6 @@ td th {
   color: var(--white);
   text-decoration: none;
 }
-
-
 
 /* zero hunger header + content*/
 
@@ -707,15 +693,14 @@ td th {
   align-items: center;
 }
 
-.planListBox h3{
+.planListBox h3 {
   display: flex;
   position: relative;
   margin-top: -59px;
 }
-.planListBox p{
+.planListBox p {
   margin-top: 6px;
 }
-
 
 .policyList {
   margin-top: 10px;
@@ -756,22 +741,22 @@ td th {
 }
 
 
+
 /* good health and wellbeing content*/
 
 .gH-body {
-  font-style:normal;
+  font-style: normal;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 .gH-header {
-    background-color: #4CAF50;
-    text-align: center;
-    padding: 3rem;
-    
+  background-color: #4caf50;
+  text-align: center;
+  padding: 3rem;
 }
 
 .gH-Introduction {
@@ -781,16 +766,27 @@ td th {
   padding: 20px;
 }
 
-#hamburger-icon{
+.challenge-list,
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+    margin: 0 0 0 2rem;
+  }
+
+#hamburger-icon {
   display: none;
 }
 
-.gH-h1, .gH-h2, .gH-h3{
-    color: lightskyblue;
-    font-style: initial;
+.gH-h1,
+.gH-h2,
+.gH-h3 {
+  color: lightskyblue;
+  font-style: initial;
 }
 
-.gH-overview-card, .gH-Development-plan, .gH-step-card, .gH-policy-recommendations{
+.gH-overview-card,
+.gH-Development-plan,
+.gH-step-card,
+.gH-policy-recommendations {
   width: 92%;
   background-color: #fff;
   padding-top: 24px;
@@ -801,7 +797,7 @@ td th {
   margin-bottom: 20px;
   margin-left: 15px;
   margin-right: auto;
-  box-sizing: border-box;   
+  box-sizing: border-box;
   border-radius: 20px;
 }
 
@@ -821,13 +817,13 @@ td th {
   background-color: var(--highlight-color);
 }
 
-#signup-form{
+#signup-form {
   border-radius: 10px;
   line-height: 2rem;
   background-color: var(--paper-gray);
 }
 
-#signup-form label{
+#signup-form label {
   display: block;
   padding-left: 20%;
   padding-bottom: 0.5rem;
@@ -847,7 +843,7 @@ td th {
   width: auto;
 }
 
-#signup-form .submitBtn{
+#signup-form .submitBtn {
   width: auto;
   height: auto;
   padding: 1rem;
@@ -862,7 +858,6 @@ td th {
   transition: 0.5s ease-in-out;
 }
 /*responsive web design / media queries*/
-
 
 @media (max-width: 768px) {
   /*nav-bar*/
@@ -883,14 +878,13 @@ td th {
   }
 
   /* nav-links */
-  
+
   #nBtn {
     display: inline-block;
     color: var(--secondary-color);
     margin-left: 60%;
   }
-  
-  
+
   #nBtn:hover {
     cursor: pointer;
   }
@@ -898,7 +892,10 @@ td th {
     display: auto;
   }
 
-  #home-header, #zH-header, #gH-header, #nopov-header figure {
+  #home-header,
+  #zH-header,
+  #gH-header,
+  #nopov-header figure {
     width: 60%;
   }
 
@@ -906,7 +903,7 @@ td th {
     width: 40%;
     height: 40%;
   }
-  
+
   /* targets */
   .target {
     width: 70%;
@@ -919,66 +916,70 @@ td th {
 }
 
 @media screen and (max-width: 768px) {
-    .final-nav-links {
-      flex-direction: column;
-      align-items: center;
-      height: 0;
-      overflow: hidden;
-    }
-  
-    .final-nav-links a {
-      margin-bottom: 0.4rem;
-    }
-  
-    .heading img {
-      height: 150px;
-    }
-  
-    .challenge-list, .recommendations-grid {
-      grid-template-columns: 1fr;
-    }
-  
+  .final-nav-links {
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+  }
 
-    #hamburger-icon{
-        float: right;
-        display: block;
-        color: #7f869a;
-        padding: 2%;
-        opacity: 0.5;
-    }
+  .final-nav-links a {
+    margin-bottom: 0.4rem;
+  }
 
-    .final-nav-links.shownav{
-      height: 300px;
-      display:block;
+  .heading img {
+    height: 150px;
   }
+
+  .challenge-list,
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+    margin: 0 0 0 1rem;
   }
-  
-  /* whereby this is also a media screen which shows an even more reduced version of the website as stated(480px), this also allows users to view content visibly in a 480 px tab.  */
-  @media screen and (max-width: 480px) {
-    .heading img {
-      height: 100px;
-    }
-  
-    .h1 {
-      font-size: 1.4rem;
-    }
-  
-    .h2 {
-      font-size: 1.1rem;
-    }
-  
-    .h3 {
-      font-size: 1rem;
-    }
-  
-    .Introduction, .overview-card, .Development-plan, .policy-recommendations {
-      padding: 1rem;
-    }
-  
-    .video {
-      height: 150px;
-    }
+
+  #hamburger-icon {
+    float: right;
+    display: block;
+    color: #7f869a;
+    padding: 2%;
+    opacity: 0.5;
   }
+
+  .final-nav-links.shownav {
+    height: 300px;
+    display: block;
+  }
+}
+
+/* whereby this is also a media screen which shows an even more reduced version of the website as stated(480px), this also allows users to view content visibly in a 480 px tab.  */
+@media screen and (max-width: 480px) {
+  .heading img {
+    height: 100px;
+  }
+
+  .h1 {
+    font-size: 1.4rem;
+  }
+
+  .h2 {
+    font-size: 1.1rem;
+  }
+
+  .h3 {
+    font-size: 1rem;
+  }
+
+  .Introduction,
+  .overview-card,
+  .Development-plan,
+  .policy-recommendations {
+    padding: 1rem;
+  }
+
+  .video {
+    height: 150px;
+  }
+}
 
 /*
 alistair-------------------------------------

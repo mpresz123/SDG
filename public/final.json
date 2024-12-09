@@ -1,7 +1,7 @@
 {
   "home": {
     "title2": "Zero Hunger",
-    "main_title": "Features Sustained Development Goals",
+    "main_title": "Featured Sustained Development Goals",
     "title": "No Poverty",
     "title3": "Good Health & Wellbeing",
     "text1": "Click here to learn about our plans to eliminate poverty!",
@@ -33,9 +33,10 @@
       ["index.html", "HTML + CSS + JS", "Alex"],
       ["zerohunger.html", "HTML + CSS + JS", "Bosco"],
       ["nopoverty.html", "HTML + CSS + JS", "Mikolaj"],
-      ["goodhealthandwb.html", "HTML + CSS + JS", "Alistair"],
+      ["goodhealth.html", "HTML + CSS + JS", "Alistair"],
       ["ourteam.html", "HTML + CSS + JS", "Alex"],
-      ["newsletter.html", "HTML + CSS + JS", "Group"]
+      ["newsletter.html", "HTML + CSS + JS", "Group"],
+      ["navbar and footer", "HTML + CSS + JS", "Mikolaj"]
     ]
 
   },
@@ -107,6 +108,8 @@
     }
   },
   "goodHealth": {
+    "pageTitle": "Good Health and Wellbeing",
+    "introduction": "The sustainability Advisory Committee is committed to promoting and stimulating good health and well being in our community. We as a committee believe that a healthy and harmless environment is essential to the wellbeing of all individuals.",
     "main": [
       {
         "Element": "article",
