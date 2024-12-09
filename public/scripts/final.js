@@ -289,6 +289,8 @@ document.addEventListener("DOMContentLoaded", () => {
     var article5 = document.querySelector("#team-article");
 
     const teamData = responseData.ourteam;
+    const tableTitle = document.getElementById("contributions-heading");
+    tableTitle.textContent = teamData.contributions;
 
     const heading1 = document.createElement("h1");
     heading1.textContent = teamData.main_heading;
@@ -298,9 +300,6 @@ document.addEventListener("DOMContentLoaded", () => {
     heading2.setAttribute("id", "team-heading");
     heading2.textContent = teamData.team_heading;
 
-    const heading3 = document.createElement("h1");
-    heading3.setAttribute("id", "contributions-heading");
-    heading3.textContent = teamData.contributions;
 
     const button1 = document.createElement("button");
     button1.setAttribute("class", "trello-button");
@@ -333,7 +332,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Append the articles to the section as usual
     ourteam.appendChild(article4);
-    article4.appendChild(heading3);
     article4.appendChild(button1);
     ourteam.appendChild(article5);
 
