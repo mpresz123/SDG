@@ -33,9 +33,10 @@
       ["index.html", "HTML + CSS + JS", "Alex"],
       ["zerohunger.html", "HTML + CSS + JS", "Bosco"],
       ["nopoverty.html", "HTML + CSS + JS", "Mikolaj"],
-      ["goodhealthandwb.html", "HTML + CSS + JS", "Alistair"],
+      ["goodhealth.html", "HTML + CSS + JS", "Alistair"],
       ["ourteam.html", "HTML + CSS + JS", "Alex"],
-      ["newsletter.html", "HTML + CSS + JS", "Group"]
+      ["newsletter.html", "HTML + CSS + JS", "Group"],
+      ["navbar and footer", "HTML + CSS + JS", "Mikolaj"]
     ]
 
   },
