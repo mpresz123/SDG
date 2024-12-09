@@ -4,9 +4,14 @@ var localJSONFile = "final.json";
 const currentPage = window.location.pathname.split("/").pop();
 console.log(currentPage);
 
-
+function toggleMenu() {
+  const navLinks = document.querySelector('.final-nav-links');
+  navLinks.classList.toggle('showNav');
+}
 
 document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById('hamburger-final');
+  hamburger.addEventListener('click', toggleMenu);
   fetch(localJsonFile)
     .then((response) => response.json())
     .then((responseData) => {

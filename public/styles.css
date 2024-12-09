@@ -874,24 +874,45 @@ td th {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: 0.5s ease-in-out;
 }
+
+#hamburger-final{
+  display: none;
+}
+
 /*responsive web design / media queries*/
 
+/* For mobile devices */
 @media only screen and (max-width: 768px) {
-  .final-nav-bar {
-    display: auto;
-    max-height: 8%;
+  /* Initially hide the nav menu */
+  .final-nav-links {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
-  .final-nav-links{
-    display: auto;
-    background-color: var(--paper-gray);
-    border-radius: 10px;
+
+  /* Style for list items (make them block for vertical alignment) */
+  .final-nav-links li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .final-nav-bar{
+    max-height: 200px;
+  }
+
+  /* Style for the hamburger icon */
+  #hamburger-final {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
     opacity: 0.8;
-    position: 0px, 0px;
   }
-  .final-nav-links li{
+
+  /* Toggle class for when menu is visible */
+  .showNav {
     display: block;
   }
 }
-
 
 
