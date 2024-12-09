@@ -283,73 +283,66 @@ document.addEventListener("DOMContentLoaded", () => {
         signupButton.href = data.noPov.signup.buttonUrl;
       }
       // ourteam page fetch
-      if ((currentPage === "ourteam.html")) {
-        var featuredgoals = document.querySelector("#home-featured-goals");
-        var overlayclass = document.querySelector(".overlay");
-        var article1 = document.querySelector("#home-article-1");
-        var article2 = document.querySelector("#home-article-2");
-        var article3 = document.querySelector("#home-article-3");
-        var article6 = document.querySelector("#team");
-        var ourteam = document.querySelector("#team-section");
-        var article4 = document.querySelector("#team-contributions-article");
-        var article5 = document.querySelector("#team-article");
-      
-        const teamData = responseData.ourteam;
+      if (currentPage === "ourteam.html") {
+    var ourteam = document.querySelector("#team-section");
+    var article4 = document.querySelector("#team-contributions-article");
+    var article5 = document.querySelector("#team-article");
 
-      
+    const teamData = responseData.ourteam;
 
-        const heading1 = document.createElement("h1");
-        heading1.textContent = teamData.main_heading;
-        heading1.setAttribute("id", "home-main-title");
+    const heading1 = document.createElement("h1");
+    heading1.textContent = teamData.main_heading;
+    heading1.setAttribute("id", "home-main-title");
 
-        const heading2 = document.createElement("h1");
-        heading2.setAttribute("id", "team-heading");
-        heading2.textContent = teamData.team_heading;
+    const heading2 = document.createElement("h1");
+    heading2.setAttribute("id", "team-heading");
+    heading2.textContent = teamData.team_heading;
 
-        const heading3 = document.createElement("h1");
-        heading3.setAttribute("id", "contributions-heading");
-        heading3.textContent = teamData.contributions;
+    const heading3 = document.createElement("h1");
+    heading3.setAttribute("id", "contributions-heading");
+    heading3.textContent = teamData.contributions;
 
-        const button1 = document.createElement("button");
-        button1.setAttribute("class", "trello-button");
-        button1.textContent = teamData.button1;
-        button1.onclick = () => {
-            window.location.href = "https://trello.com/b/ceSVFrIr/web-based-project";
-        };
+    const button1 = document.createElement("button");
+    button1.setAttribute("class", "trello-button");
+    button1.textContent = teamData.button1;
+    button1.onclick = () => {
+        window.location.href = "https://trello.com/b/ceSVFrIr/web-based-project";
+    };
 
-        const text1 = document.createElement("p")
-        text1.textContent = teamData.bio1;
-        const text2 = document.createElement("p")
-        text2.textContent = teamData.bio2;
-        const text3 = document.createElement("p")
-        text3.textContent = teamData.bio3;
-        const text4 = document.createElement("p")
-        text4.textContent = teamData.bio4;
-        rows = document.getElementById("contributionsTable").children[0].children;
-        for (i = 0; i < rows.length; i++){
-           rowContent = rows[i].children;
-           for (n = 0; n < rowContent.length; n++){
-               console.log(`i: ${i}, n: ${n}`);
-               rowContent[n].textContent = teamData.items[i][n];
-               console.log(`content: ${teamData.items[i][n]}`);
-           }
-       }
-        
+    const text1 = document.createElement("p");
+    text1.textContent = teamData.bio1;
+    const text2 = document.createElement("p");
+    text2.textContent = teamData.bio2;
+    const text3 = document.createElement("p");
+    text3.textContent = teamData.bio3;
+    const text4 = document.createElement("p");
+    text4.textContent = teamData.bio4;
 
+    const rows = document.getElementById("contributionsTable").children[0].children;
+    for (let i = 0; i < rows.length; i++) {
+        const rowContent = rows[i].children;
+        for (let n = 0; n < rowContent.length; n++) {
+            console.log(`i: ${i}, n: ${n}`);
+            rowContent[n].textContent = teamData.items[i][n];
+            console.log(`content: ${teamData.items[i][n]}`);
+        }
+    }
 
-        ourteam.appendChild(article4);
-        article4.appendChild(heading3);
-        article4.appendChild(button1);
-        ourteam.appendChild(article5);
-        article4.appendChild(heading1);
-        ourteam.appendChild(heading1);
+    // Append the heading1 to the team-section before appending articles
+    ourteam.appendChild(heading1);
 
-        article5.appendChild(heading2);
-        article5.appendChild(text1);
-        article5.appendChild(text2);
-        article5.appendChild(text3);
-        article5.appendChild(text4);
-      }
+    // Append the articles to the section as usual
+    ourteam.appendChild(article4);
+    article4.appendChild(heading3);
+    article4.appendChild(button1);
+    ourteam.appendChild(article5);
+
+    article5.appendChild(heading2);
+    article5.appendChild(text1);
+    article5.appendChild(text2);
+    article5.appendChild(text3);
+    article5.appendChild(text4);
+}
       // good health page fetch
       if ((currentPage === "goodhealth.html")) {
         const data = responseData.goodHealth;
