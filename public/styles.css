@@ -670,8 +670,10 @@ td th {
   height: 200px;
 }
 
-.planList {
+.planList, .policyList {
+  display: inline-block;
   margin-top: 10px;
+
   list-style-type: none;
   display: block;
   text-align: center;
@@ -679,18 +681,19 @@ td th {
 
 
 
-.planListBox {
+.planListBox, .policyListBox {
   display: inline-block;
   width: 25rem;
   height: 10rem;
   padding: 2rem;
-  margin: 1rem;
+  margin: 0rem 1rem 1rem 1rem;
+  position: relative;
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: var(--shadow);
 }
 
-.planListBox div {
+.planListBox div, .policyListBox div {
   background-color: var(--secondary-color);
   position: relative;
   top: -50px;
@@ -709,38 +712,8 @@ td th {
   margin-top: -59px;
 }
 .planListBox p, .policyListBox p{
+  height: 92px;
   margin-top: 6px;
-}
-
-.policyList {
-  margin-top: 10px;
-  list-style-type: none;
-  display: block;
-  text-align: center;
-}
-
-.policyListBox {
-  display: inline-block;
-  width: 25rem;
-  height: 10rem;
-  padding: 2rem;
-  margin: 2rem;
-  background-color: lightgray;
-  border-radius: 5px;
-  box-shadow: var(--shadow);
-}
-
-.policyListBox div {
-  background-color: var(--secondary-color);
-  position: relative;
-  top: -50px;
-  right: 50px;
-  border-radius: 20px;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
 }
 
 /* good health and wellbeing content*/

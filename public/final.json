@@ -54,19 +54,19 @@
       "items": [
         {
           "Title": "Target 1",
-          "Target": "100% access to adequate food all year round\nAchieving universal access to adequate food throughout the year is a fundamental aspect of addressing global hunger and promoting sustainable development. This goal is enshrined in Sustainable Development Goal (SDG) 2, which aims to end hunger, achieve food security, and improve nutrition by 2030.",
+          "Target": "100% access to adequate food all year round. \nAchieving universal access to adequate food throughout the year is a fundamental aspect of addressing global hunger and promoting sustainable development. This goal is enshrined in Sustainable Development Goal (SDG) 2, which aims to end hunger, achieve food security, and improve nutrition by 2030.",
           "imgurl": "assets/food_safety.png",
           "source": "https://www.foodsafety.gov/keep-food-safe/food-safety-by-type-food"
         },
         {
           "Title": "Target 2",
-          "Target": "Zero stunted children under the age of two\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+          "Target": "Zero stunted children under the age of two. \nEliminating stunting in children under two years old is a vital goal for global health and development. Stunting, characterized by impaired growth and development due to chronic malnutrition during critical periods of a child's life, has long-term consequences for individuals and societies.",
           "imgurl": "assets/starvation.png",
           "source": "https://www.aljazeera.com/news/2023/10/25/starvation-used-as-a-weapon-of-war-on-civilians-in-gaza-oxfam"
         },
         {
           "Title": "Target 3",
-          "Target": "All food systems are substainable\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non",
+          "Target": "All food systems are substainable. \nCreating sustainable food systems is essential to ensuring global food security, reducing environmental impacts, and improving livelihoods. A sustainable food system provides sufficient, nutritious, and affordable food for all while preserving ecosystems, mitigating climate change, and promoting social equity.",
           "imgurl": "assets/substainable.png",
           "source": "https://healthchefjulia.com/sustainability-sustainable-food-system/"
         }
@@ -76,16 +76,16 @@
       "title": "Plans",
       "items": [
         {
-          "Title": "Plan 1",
-          "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+          "Title": "Empowering Smallholder Farmers",
+          "Plan": "By providing technology and access to fair market of their product,  increases the amount of food produce."
         },
         {
-          "Title": "Plan 2",
-          "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+          "Title": "Promoting Breastfeeding",
+          "Plan": "Encourage exclusive breastfeeding for the first six months and continue breastfeeding until two years old. Or provide private space to mothers to make breastfeeeding more accessable."
         },
         {
-          "Title": "Plan 3",
-          "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+          "Title": "Reducing Food Waste",
+          "Plan": "Educate consumers on portion sizes, proper food storage, and repurposing leftovers"
         }
       ]
     },
@@ -93,16 +93,16 @@
       "title": "Policys",
       "items": [
         {
-          "Title": "Policy 1",
-          "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+          "Title": "Expand Social Protection Programs",
+          "Plan": "Implement food assistance programs such as food vouchers or cash transfers targeted at vulnerable populations."
         },
         {
-          "Title": "Policy 2",
-          "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+          "Title": "Expand Access to Health Services",
+          "Plan": "Offer routine growth monitoring and malnutrition screening for children under two"
         },
         {
-          "Title": "Policy 3",
-          "Plan": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde illum iusto qui, possimus similique eligendi facere velit inventore molestias voluptas earum totam explicabo reiciendis quasi quos voluptatem praesentium! Laborum, non"
+          "Title": "Reduce Food Waste",
+          "Plan": "Set national targets for reducing food loss in production and consumption"
         }
       ]
     }
