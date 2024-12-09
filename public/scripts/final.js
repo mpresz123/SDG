@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
         signupButton.textContent = data.noPov.signup.buttonText;
         signupButton.href = data.noPov.signup.buttonUrl;
       }
-      // noPov page fetch
+      // ourteam page fetch
       if ((currentPage === "/ourteam.html")) {
         var featuredgoals = document.querySelector("#home-featured-goals");
         var overlayclass = document.querySelector(".overlay");
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
           headerContent[i].textContent = data.header.rightContent[i];
         }
 
-      //   adding the target element
+      //  adding the target element
         targetTitle = document.getElementById("targetTitle");
         targetTitle.textContent = data.targets.title;
         //get each target box
