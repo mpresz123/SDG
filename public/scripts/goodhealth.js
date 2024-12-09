@@ -18,9 +18,9 @@ let localJsonFile = "final.json";
 document.addEventListener('DOMContentLoaded', () => {
    fetch(localJsonFile)
        .then(response => response.json())
-       .then((data) => { 
-           console.log(data);
-
+       .then((responseData) => { 
+           console.log(responseData);
+           data = responseData.goodHealth;
 
            for (const i in data.main) {
                const item = data.main[i]

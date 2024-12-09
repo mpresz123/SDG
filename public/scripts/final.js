@@ -86,8 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
         check_team.textContent = homeData.team_heading;
         check_team.setAttribute("id", "check-out-team-heading");
 
-        
-
         // Create the image element
         const imageElement = document.createElement("img");
         imageElement.src = homeData.imageURL;
@@ -212,7 +210,9 @@ document.addEventListener("DOMContentLoaded", () => {
             inputElement = document.createElement("input");
             inputElement.type = data.inputs[i].type;
             inputElement.name = data.inputs[i].name;
-            inputElement.required = data.inputs[i].isRequired;
+            if(i < 3) {
+              inputElement.required = data.inputs[i].isRequired
+            }
           }
           formElement[i].textContent = data.inputs[i].label;
           formElement[i].appendChild(inputElement);
