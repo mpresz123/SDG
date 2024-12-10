@@ -17,12 +17,12 @@ app.listen(port, ()=> {
     console.log(`listening at ${port}...`)
 })
 
-app.post("/signUp", (req, res)=>{
+app.post("/Form", (req, res)=>{
     console.log(req.body);
     data = req.body
     fs.writeFile('data.json', JSON.stringify(data, null, 2), (error)=>{
         if (error){
-            console.log(`Failed to save data ${error}`);
+            console.log(`Failed to save data ${error}`)
         }
     });
     console.log("data sent")

@@ -235,20 +235,26 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener("submit", (e) => {
           e.preventDefault();
           const formData = new FormData(form);
+            firstName = formData.get("firstName");
+            lastName = formData.get("lastName");
+            userEmail = formData.get("email");
           const formBody = {
             firstName: formData.get("firstName"),
             lastName: formData.get("lastName"),
             userEmail: formData.get("email"),
             userComments: formData.get("comments")
           };
-          
-          fetch('/signUp', {
+          document.getElementById("message-received").textContent = `Thank you ${firstName} ${lastName} for submiting the form, we will contact you with this ${userEmail}.`;
+          fetch('/Form', {
             method: 'POST',
             headers: {
               "Content-Type": "application/json"
             },
             body: JSON.stringify(formBody)
-          });
+          })
+          .catch(error => {
+            console.error('Error loading data:', error);
+          });;
         });
       }
 
