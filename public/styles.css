@@ -13,7 +13,7 @@
   --shadow: 0px 0px 5px gray;
 }
 
-p{
+p {
   display: block;
   text-align: center;
 }
@@ -39,10 +39,9 @@ html {
 
 table {
   padding: 10px;
-
 }
 
-#table-contents{
+#table-contents {
   display: block;
   text-align: left;
   margin: 0 auto;
@@ -51,7 +50,7 @@ table {
 
 td th {
   padding: 8px;
-  text-align: left;  
+  text-align: left;
 }
 
 /*Headers*/
@@ -183,12 +182,11 @@ td th {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-  #contributionsTable{
-    width: 100%;
-    border-collapse: collapse; /*reduces the gap between each box*/
-    text-align: left;
-  }
-
+#contributionsTable {
+  width: 100%;
+  border-collapse: collapse; /*reduces the gap between each box*/
+  text-align: left;
+}
 
 #team-article:hover {
   transform: scale(1.05);
@@ -264,7 +262,6 @@ td th {
   max-width: 100%;
   height: 77px;
   line-height: normal;
-
 }
 
 #home-featured-goals {
@@ -449,7 +446,6 @@ td th {
   display: block;
   flex-shrink: 0;
   border-radius: 10px;
-  position: relative;
   width: 100px;
   height: 100px;
   right: 245px;
@@ -683,7 +679,7 @@ td th {
   box-shadow: var(--shadow);
 }
 
-#targetTitle{
+#targetTitle {
   margin-left: 32px;
   margin-top: 30px;
 }
@@ -699,7 +695,8 @@ td th {
   height: 200px;
 }
 
-.planList, .policyList {
+.planList,
+.policyList {
   display: inline-block;
   margin-top: 10px;
 
@@ -708,9 +705,8 @@ td th {
   text-align: center;
 }
 
-
-
-.planListBox, .policyListBox {
+.planListBox,
+.policyListBox {
   display: inline-block;
   width: 25rem;
   height: 10rem;
@@ -720,10 +716,10 @@ td th {
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: var(--shadow);
-  
 }
 
-.planListBox div, .policyListBox div {
+.planListBox div,
+.policyListBox div {
   background-color: var(--secondary-color);
   position: relative;
   top: -50px;
@@ -736,12 +732,14 @@ td th {
   align-items: center;
 }
 
-.planListBox h3, .policyListBox h3 {
+.planListBox h3,
+.policyListBox h3 {
   display: flex;
   position: relative;
   margin-top: -59px;
 }
-.planListBox p, .policyListBox p{
+.planListBox p,
+.policyListBox p {
   height: 92px;
   margin-top: 6px;
 }
@@ -773,24 +771,23 @@ td th {
   margin: auto;
   overflow-wrap: normal;
   padding: 20px;
-} 
+}
 
 .challenge-list,
-  .recommendations-grid {
-    grid-template-columns: 1fr;
-    margin: 0 0 0 2rem;
-  }
+.recommendations-grid {
+  grid-template-columns: 1fr;
+  margin: 0 0 0 2rem;
+}
 
 #hamburger-icon {
   display: none;
 }
 
-
-.gH-h2, .gH-h2 li{
+.gH-h2,
+.gH-h2 li {
   display: block;
   text-align: center;
   color: lightskyblue;
-
 }
 
 .gH-h1,
@@ -861,7 +858,7 @@ td th {
   display: inline;
   width: auto;
 }
-#submitBtn-container{
+#submitBtn-container {
   display: block;
   text-align: center;
 }
@@ -881,15 +878,14 @@ td th {
   transition: 0.5s ease-in-out;
 }
 
-#hamburger-final{
+#hamburger-final {
   display: none;
 }
 
 /*responsive web design / media queries*/
 
-@media only screen and (max-width: 768px){
-
-  .final-nav-bar{
+@media only screen and (max-width: 768px) {
+  .final-nav-bar {
     max-height: 88px;
   }
   .final-nav-links {
@@ -904,13 +900,11 @@ td th {
     opacity: 0.8;
   }
 
-  
   .final-nav-links li {
     display: block;
     text-align: center;
     margin: 10px 0;
   }
- 
 
   #hamburger-final {
     display: block;
@@ -923,13 +917,12 @@ td th {
   .showNav {
     display: block;
   }
-  .final-logo{
+  .final-logo {
     right: 328px;
-  
   }
   .home-bg-image {
     background-position: top;
-}
+  }
 
   .overlay {
     height: 57%;
@@ -942,37 +935,35 @@ td th {
     margin-bottom: 1rem;
     position: relative;
     bottom: 41px;
-  
+  }
+
+  #home-h1 {
+    font-size: 3.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #5ba55e;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 50px;
+    font-weight: 1000;
+    margin-top: -129px;
+  }
+
+  #home-h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 1000;
+  }
 }
 
-#home-h1 {
-  font-size: 3.5em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  color: #5ba55e;
-  text-align: center;
-  display: block;
-  position: relative;
-  margin-bottom: 50px;
-  font-weight: 1000;
-  margin-top: -129px;
-}
-
-#home-h2 {
-  font-size: 2.5em;
-  color: #4caf50;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  margin-top: 20px;
-  border-radius: 8px;
-  letter-spacing: 1px;
-  text-align: center;
-  font-weight: 1000;
-}
-}
-
-
-@media only screen and (minx-width: 468px){
-  .final-nav-bar{
+@media only screen and (minx-width: 468px) {
+  .final-nav-bar {
     max-height: 88px;
   }
   .final-nav-links {
@@ -987,13 +978,11 @@ td th {
     opacity: 0.8;
   }
 
-  
   .final-nav-links li {
     display: block;
     text-align: center;
     margin: 10px 0;
   }
- 
 
   #hamburger-final {
     display: block;
@@ -1006,12 +995,12 @@ td th {
   .showNav {
     display: block;
   }
-  .final-logo{
+  .final-logo {
     right: 328px;
   }
   .home-bg-image {
     background-position: top;
-}
+  }
 
   .overlay {
     height: 57%;
@@ -1024,30 +1013,29 @@ td th {
     margin-bottom: 1rem;
     position: relative;
     bottom: 41px;
-  
-}
+  }
 
-#home-h1 {
-  font-size: 3.5em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  color: #5ba55e;
-  text-align: center;
-  display: block;
-  position: relative;
-  margin-bottom: 50px;
-  font-weight: 1000;
-  margin-top: -129px;
-}
+  #home-h1 {
+    font-size: 3.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #5ba55e;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 50px;
+    font-weight: 1000;
+    margin-top: -129px;
+  }
 
-#home-h2 {
-  font-size: 2.5em;
-  color: #4caf50;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  margin-top: 20px;
-  border-radius: 8px;
-  letter-spacing: 1px;
-  text-align: center;
-  font-weight: 1000;
-}
+  #home-h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 1000;
+  }
 }
