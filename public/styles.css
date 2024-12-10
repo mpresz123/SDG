@@ -447,6 +447,7 @@ td th {
 
 .final-logo {
   display: block;
+  flex-shrink: 0;
   border-radius: 10px;
   position: relative;
   width: 100px;
@@ -886,11 +887,10 @@ td th {
 
 /*responsive web design / media queries*/
 
-/* For mobile devices */
-@media only screen and (max-width: 768px) {
-  /* Initially hide the nav menu */
+@media only screen and (max-width: 768px){
+
   .final-nav-bar{
-    max-height: 100px;
+    max-height: 88px;
   }
   .final-nav-links {
     display: none;
@@ -898,13 +898,12 @@ td th {
     padding: 0;
     margin: 0;
     position: fixed;
-    left: 172px;
-    top: 0px;
+    left: 485px;
+    top: 101px;
     background-color: var(--paper-gray);
     opacity: 0.8;
   }
 
-  /* Style for list items (make them block for vertical alignment) */
   
   .final-nav-links li {
     display: block;
@@ -913,7 +912,6 @@ td th {
   }
  
 
-  /* Style for the hamburger icon */
   #hamburger-final {
     display: block;
     padding: 0px;
@@ -922,10 +920,134 @@ td th {
     left: 710px;
   }
 
-  /* Toggle class for when menu is visible */
   .showNav {
     display: block;
   }
+  .final-logo{
+    right: 328px;
+  
+  }
+  .home-bg-image {
+    background-position: top;
+}
+
+  .overlay {
+    height: 57%;
+  }
+  .headerRight {
+    display: inline-block;
+    width: 25%;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: 41px;
+  
+}
+
+#home-h1 {
+  font-size: 3.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #5ba55e;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-bottom: 50px;
+  font-weight: 1000;
+  margin-top: -129px;
+}
+
+#home-h2 {
+  font-size: 2.5em;
+  color: #4caf50;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 1000;
+}
 }
 
 
+@media only screen and (minx-width: 468px){
+  .final-nav-bar{
+    max-height: 88px;
+  }
+  .final-nav-links {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 485px;
+    top: 101px;
+    background-color: var(--paper-gray);
+    opacity: 0.8;
+  }
+
+  
+  .final-nav-links li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+ 
+
+  #hamburger-final {
+    display: block;
+    padding: 0px;
+    cursor: pointer;
+    position: fixed;
+    left: 710px;
+  }
+
+  .showNav {
+    display: block;
+  }
+  .final-logo{
+    right: 328px;
+  }
+  .home-bg-image {
+    background-position: top;
+}
+
+  .overlay {
+    height: 57%;
+  }
+  .headerRight {
+    display: inline-block;
+    width: 25%;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: 41px;
+  
+}
+
+#home-h1 {
+  font-size: 3.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #5ba55e;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-bottom: 50px;
+  font-weight: 1000;
+  margin-top: -129px;
+}
+
+#home-h2 {
+  font-size: 2.5em;
+  color: #4caf50;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 1000;
+}
+}
